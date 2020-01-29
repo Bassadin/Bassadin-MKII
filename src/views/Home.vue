@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <h1>Hier entsteht die neue Webseite von Bastian Hodapp!</h1>
     <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
