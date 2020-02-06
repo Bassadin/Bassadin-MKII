@@ -39,7 +39,9 @@
       "plugin:vue/essential",
       "@vue/prettier"
     ],
-    "rules": {},
+    "rules": {
+      "tabWidth": 4
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
