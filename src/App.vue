@@ -4,11 +4,11 @@
             <div class="d-flex align-center">
                 <v-img
                     alt="Vuetify Logo"
-                    class="shrink mr-2"
+                    class="mr-3"
                     contain
-                    src="@/assets/bassadinlogowithpaddingblackbg.svg"
+                    src="@/assets/avatar_logo512x512.png"
                     transition="scale-transition"
-                    width="40"
+                    width="50"
                 />
 
                 <h2>Bassadin</h2>
