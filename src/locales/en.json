@@ -1,11 +1,10 @@
 {
   "homepage": {
-    "myNameIsIDo": "My name is Bastian. I do",
+    "myNameIsIDo": "My name is Bastian. I am a ",
     "iDoOptions": [
-      "Photography.",
-      "Programming.",
-      "Webdesign.",
-      "Game Programming."
+      "Photography Enthusiast.",
+      "Webdesigner.",
+      "Game Programmer."
     ]
   }
 }
