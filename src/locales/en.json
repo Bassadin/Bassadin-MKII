@@ -1,3 +1,11 @@
 {
-  "message": "Hello i18n!"
+  "homepage": {
+    "myNameIsIDo": "My name is Bastian. I do",
+    "iDoOptions": [
+      "Photography.",
+      "Programming.",
+      "Webdesign.",
+      "Game Programming."
+    ]
+  }
 }
