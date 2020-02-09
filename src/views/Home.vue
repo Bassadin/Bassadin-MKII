@@ -1,30 +1,34 @@
 <template>
     <div class="home">
-        <v-layout text-center column mt-8>
-            <h1 class="display-2 font-weight-bold mb-3">
-                My name is Bastian. I do
-                <vue-typer
-                    :text="[
-                        'Photography.',
-                        'Programming.',
-                        'Webdesign.',
-                        'Game Programming.'
-                    ]"
-                    :shuffle="true"
-                    :pre-type-delay="600"
-                    :pre-erase-delay="2500"
-                    :erase-delay="50"
-                    erase-style="backspace"
-                ></vue-typer>
-            </h1>
-            <v-divider></v-divider>
-            <v-flex text-center column mt-8>
-                <v-img
-                    src="@/assets/Bastian_white_blackBG.jpg"
-                    max-width="400px"
-                ></v-img>
-            </v-flex>
-        </v-layout>
+        <v-row justify="center">
+            <h-layout text-center>
+                <h1 class="ma-5 text-center">
+                    My name is Bastian. I do
+                    <vue-typer
+                        :text="[
+                            'Photography.',
+                            'Programming.',
+                            'Webdesign.',
+                            'Game Programming.'
+                        ]"
+                        :shuffle="true"
+                        :pre-type-delay="600"
+                        :type-delay="80"
+                        :pre-erase-delay="2500"
+                        :erase-delay="50"
+                        erase-style="backspace"
+                    ></vue-typer>
+                </h1>
+                <v-flex class="justify-center">
+                    <v-img
+                        style="margin: 0 auto; border-radius: 50%; padding: 8px;"
+                        src="@/assets/Bastian_white_blackBG.jpg"
+                        width="100vw"
+                        max-width="350px"
+                    ></v-img>
+                </v-flex>
+            </h-layout>
+        </v-row>
     </div>
 </template>
 
