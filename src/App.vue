@@ -13,6 +13,16 @@
 
                 <h2>Bassadin</h2>
             </div>
+            <v-spacer></v-spacer>
+            <v-btn color="lime darken-3"
+                ><v-icon left>mdi-account</v-icon> About</v-btn
+            >
+            <v-btn color="light-blue accent-3" class="ml-3"
+                ><v-icon left>mdi-camera</v-icon> Photography</v-btn
+            >
+            <v-btn color="pink accent-3" class="ml-3"
+                ><v-icon left>mdi-head-lightbulb</v-icon> Projects</v-btn
+            >
         </v-app-bar>
 
         <v-content>
