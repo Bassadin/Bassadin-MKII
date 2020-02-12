@@ -27,12 +27,12 @@
 
         <v-content>
             <router-view></router-view>
-            <v-footer padless="true" absolute dark>
+            <v-footer padless="true" dark>
                 <v-card
                     flat
                     tile
                     width="100%"
-                    class="primary darken-1 text-center"
+                    class="primary lighten-1 text-center"
                 >
                     <v-card-text class="white--text">
                         <p>{{ $t("footer.socialMediaInfo") }}</p>

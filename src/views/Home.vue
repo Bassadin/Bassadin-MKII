@@ -22,6 +22,28 @@
                 max-width="350px"
             ></v-img>
         </v-container>
+        <v-container>
+            <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
+                <v-timeline-item
+                    v-for="(item, i) in timelineItems"
+                    :key="i"
+                    :color="item.color"
+                    :icon="item.icon"
+                    fill-dot
+                >
+                    <v-card :color="item.color" dark>
+                        <v-card-title class="title">{{
+                            item.cardTitle
+                        }}</v-card-title>
+                        <v-card-text class="white text--primary">
+                            <p class="pt-4">
+                                {{ item.cardText }}
+                            </p>
+                        </v-card-text>
+                    </v-card>
+                </v-timeline-item>
+            </v-timeline>
+        </v-container>
     </div>
 </template>
 
@@ -32,6 +54,17 @@ export default {
     name: "home",
     components: {
         VueTyper
-    }
+    },
+    data: () => ({
+        timelineItems: [
+            {
+                color: "purple",
+                icon: "mdi-domain",
+                cardTitle: "Abitur",
+                cardText:
+                    "Abitur am Martin-Schongauer-Gymnasium in Breisach am Rhein - Note 1,8"
+            }
+        ]
+    })
 };
 </script>
