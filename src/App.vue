@@ -27,23 +27,23 @@
 
         <v-content>
             <router-view></router-view>
-            <v-footer padless="true">
+            <v-footer padless="true" absolute dark>
                 <v-card
                     flat
                     tile
                     width="100%"
-                    class="secondary darken-2 text-center"
+                    class="primary darken-1 text-center"
                 >
-                    <v-card-text>
+                    <v-card-text class="white--text">
+                        <p>{{ $t("footer.socialMediaInfo") }}</p>
                         <v-btn
                             v-for="icon in icons"
                             :key="icon"
-                            class="mx-4"
                             icon
+                            :href="icon.href"
+                            target="blank"
                         >
-                            <v-icon size="24px" :href="icon.href">{{
-                                icon.icon
-                            }}</v-icon>
+                            <v-icon size="24px">{{ icon.icon }}</v-icon>
                         </v-btn>
                     </v-card-text>
 
@@ -66,8 +66,28 @@ export default {
     data: () => ({
         icons: [
             {
-                icon: "mdi-account",
-                href: "/"
+                icon: "mdi-twitter",
+                href: "https://twitter.com/BasVonBassadin"
+            },
+            {
+                icon: "mdi-linkedin",
+                href: "https://www.linkedin.com/in/basvonbassadin/"
+            },
+            {
+                icon: "mdi-xing",
+                href: "https://www.xing.com/profile/Bastian_Hodapp"
+            },
+            {
+                icon: "mdi-instagram",
+                href: "https://www.instagram.com/bassadin/"
+            },
+            {
+                icon: "mdi-reddit",
+                href: "https://www.reddit.com/user/vadsvads"
+            },
+            {
+                icon: "mdi-email",
+                href: "mailto:bastianhodapp@gmail.com"
             }
         ]
     })
