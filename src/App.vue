@@ -25,9 +25,9 @@
             >
         </v-app-bar>
 
-        <v-content>
-            <router-view></router-view>
-            <v-footer padless="true" dark>
+        <v-content style="position: relative;min-height: 100vh;">
+            <router-view style="padding-bottom: 2.5rem;"></router-view>
+            <v-footer padless="true" dark absolute style="height: 2.5rem;">
                 <v-card
                     flat
                     tile
