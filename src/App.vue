@@ -27,7 +27,7 @@
 
         <v-content style="position: relative;min-height: 100vh;">
             <router-view style="padding-bottom: 2.5rem;"></router-view>
-            <v-footer padless="true" dark absolute style="height: 2.5rem;">
+            <v-footer :padless="true" dark absolute style="height: 2.5rem;">
                 <v-card
                     flat
                     tile
@@ -38,7 +38,7 @@
                         <p>{{ $t("footer.socialMediaInfo") }}</p>
                         <v-btn
                             v-for="icon in icons"
-                            :key="icon"
+                            :key="icon.key"
                             icon
                             :href="icon.href"
                             target="blank"
