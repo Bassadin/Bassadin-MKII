@@ -2,14 +2,17 @@
     <v-app>
         <v-app-bar app color="primary" dark>
             <div class="d-flex align-center">
-                <v-img
-                    alt="Vuetify Logo"
-                    class="mr-3"
-                    contain
-                    src="@/assets/avatar_logo512x512.png"
-                    transition="scale-transition"
-                    width="50"
-                />
+                <a to="/">
+                    <v-img
+                        alt="Vuetify Logo"
+                        class="mr-3"
+                        contain
+                        src="@/assets/avatar_logo512x512.png"
+                        transition="scale-transition"
+                        width="50"
+                        style="border-radius:50%"
+                    />
+                </a>
 
                 <h2>Bassadin</h2>
             </div>
@@ -27,70 +30,18 @@
 
         <v-content style="position: relative;min-height: 100vh;">
             <router-view style="padding-bottom: 10rem;"></router-view>
-            <v-footer
-                :padless="true"
-                dark
-                absolute
-                style="position: absolute;bottom: 0;width: 100%;height: 10rem;"
-                class="primary lighten-1 text-center"
-            >
-                <v-card flat tile width="100%" class="primary lighten-1">
-                    <v-card-text class="white--text">
-                        <p>{{ $t("footer.socialMediaInfo") }}</p>
-                        <v-btn
-                            v-for="icon in icons"
-                            :key="icon.key"
-                            icon
-                            :href="icon.href"
-                            target="blank"
-                        >
-                            <v-icon size="24px">{{ icon.icon }}</v-icon>
-                        </v-btn>
-                    </v-card-text>
-
-                    <v-divider></v-divider>
-
-                    <v-card-text class="white--text">
-                        {{ new Date().getFullYear() }} —
-                        <strong>Bassadin</strong>
-                    </v-card-text>
-                </v-card>
-            </v-footer>
+            <SocialIconsFooter></SocialIconsFooter>
         </v-content>
     </v-app>
 </template>
 
 <script>
+import SocialIconsFooter from "@/components/SocialIconsFooter";
+
 export default {
     name: "App",
-
-    data: () => ({
-        icons: [
-            {
-                icon: "mdi-twitter",
-                href: "https://twitter.com/BasVonBassadin"
-            },
-            {
-                icon: "mdi-linkedin",
-                href: "https://www.linkedin.com/in/basvonbassadin/"
-            },
-            {
-                icon: "mdi-xing",
-                href: "https://www.xing.com/profile/Bastian_Hodapp"
-            },
-            {
-                icon: "mdi-instagram",
-                href: "https://www.instagram.com/bassadin/"
-            },
-            {
-                icon: "mdi-reddit",
-                href: "https://www.reddit.com/user/vadsvads"
-            },
-            {
-                icon: "mdi-email",
-                href: "mailto:bastianhodapp@gmail.com"
-            }
-        ]
-    })
+    components: {
+        SocialIconsFooter
+    }
 };
 </script>
