@@ -26,14 +26,15 @@
         </v-app-bar>
 
         <v-content style="position: relative;min-height: 100vh;">
-            <router-view style="padding-bottom: 2.5rem;"></router-view>
-            <v-footer :padless="true" dark absolute style="height: 2.5rem;">
-                <v-card
-                    flat
-                    tile
-                    width="100%"
-                    class="primary lighten-1 text-center"
-                >
+            <router-view style="padding-bottom: 10rem;"></router-view>
+            <v-footer
+                :padless="true"
+                dark
+                absolute
+                style="position: absolute;bottom: 0;width: 100%;height: 10rem;"
+                class="primary lighten-1 text-center"
+            >
+                <v-card flat tile width="100%" class="primary lighten-1">
                     <v-card-text class="white--text">
                         <p>{{ $t("footer.socialMediaInfo") }}</p>
                         <v-btn
