@@ -63,7 +63,7 @@ export default {
             {
                 color: "purple",
                 icon: "mdi-domain",
-                timeRangeString: "2007-2015",
+                timeRangeString: "2007 - 2015",
                 dark: true,
                 cardTitle: "Abitur MSG Breisach",
                 cardTexts: [
@@ -74,7 +74,7 @@ export default {
             {
                 color: "blue darken-3",
                 icon: "mdi-school",
-                timeRangeString: "2015-2018",
+                timeRangeString: "2015 - 2018",
                 dark: true,
                 cardTitle: "Studium Wirtschaftsinformatik (B.Sc.) DHBW Lörrach",
                 cardTexts: [
@@ -83,12 +83,24 @@ export default {
                 ]
             },
             {
-                color: "yellow darken-2",
-                icon: "mdi-school",
-                timeRangeString: "2018-2019",
+                color: "yellow darken-4",
+                icon: "mdi-briefcase",
+                dark: true,
+                timeRangeString: "2018 - 2019",
                 cardTitle: "Smalltalk Entwickler HRworks GmbH",
                 cardTexts: [
                     "Ein Jahr zusätzliche Arbeitserfahrung beim Unternehmen <a href='https://www.hrworks.de/' target='blank'>HRworks</a> in Freiburg im Breisgau"
+                ]
+            },
+            {
+                color: "green darken-1",
+                icon: "mdi-school",
+                dark: true,
+                timeRangeString: "2019 - heute",
+                cardTitle: "Studium Medieninformatik (B.Sc.) HFU Furtwangen",
+                cardTexts: [
+                    "Ein Jahr zusätzliche Arbeitserfahrung beim Unternehmen <a href='https://www.hrworks.de/' target='blank'>HRworks</a> in Freiburg im Breisgau",
+                    "Aktuell: 4. Semester"
                 ]
             }
         ]
