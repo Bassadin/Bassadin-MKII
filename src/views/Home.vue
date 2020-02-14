@@ -31,14 +31,17 @@
                     :icon="item.icon"
                     fill-dot
                 >
-                    <v-card :color="item.color" dark>
-                        <v-card-title class="title">{{
-                            item.cardTitle
-                        }}</v-card-title>
-                        <v-card-text class="white text--primary">
-                            <p class="pt-4">
-                                {{ item.cardText }}
-                            </p>
+                    <v-card :color="item.color" :dark="item.dark">
+                        <v-card-title>{{ item.cardTitle }}</v-card-title>
+                        <v-card-subtitle :v-if="item.timeRangeString">{{
+                            item.timeRangeString
+                        }}</v-card-subtitle>
+                        <v-card-text class="white text--primary pt-4 pb-1">
+                            <p
+                                v-for="(html, i) in item.cardTexts"
+                                :key="i"
+                                v-html="html"
+                            ></p>
                         </v-card-text>
                     </v-card>
                 </v-timeline-item>
@@ -60,11 +63,43 @@ export default {
             {
                 color: "purple",
                 icon: "mdi-domain",
-                cardTitle: "Abitur",
-                cardText:
-                    "Abitur am Martin-Schongauer-Gymnasium in Breisach am Rhein - Note 1,8"
+                timeRangeString: "2007-2015",
+                dark: true,
+                cardTitle: "Abitur MSG Breisach",
+                cardTexts: [
+                    "Abitur am <a href='https://msg-breisach.de/' target='blank'>Martin-Schongauer-Gymnasium in Breisach am Rhein</a>",
+                    "Note: 1,8"
+                ]
+            },
+            {
+                color: "blue darken-3",
+                icon: "mdi-school",
+                timeRangeString: "2015-2018",
+                dark: true,
+                cardTitle: "Studium Wirtschaftsinformatik (B.Sc.) DHBW Lörrach",
+                cardTexts: [
+                    "Duales Studium beim Unternehmen <a href='https://www.hrworks.de/' target='blank'>HRworks</a> in Freiburg im Breisgau",
+                    "Nicht abgeschlossen"
+                ]
+            },
+            {
+                color: "yellow darken-2",
+                icon: "mdi-school",
+                timeRangeString: "2018-2019",
+                cardTitle: "Smalltalk Entwickler HRworks GmbH",
+                cardTexts: [
+                    "Ein Jahr zusätzliche Arbeitserfahrung beim Unternehmen <a href='https://www.hrworks.de/' target='blank'>HRworks</a> in Freiburg im Breisgau"
+                ]
             }
         ]
     })
 };
 </script>
+
+<style scoped>
+/* Temporary Hack because of issue https://github.com/vuetifyjs/vuetify/issues/9130 */
+.v-card__text,
+.v-card__title {
+    word-break: normal; /* maybe !important  */
+}
+</style>
