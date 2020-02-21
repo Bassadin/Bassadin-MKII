@@ -36,12 +36,14 @@
                         <v-card-subtitle :v-if="item.timeRangeString">{{
                             item.timeRangeString
                         }}</v-card-subtitle>
-                        <v-card-text class="white text--primary pt-4 pb-1">
-                            <p
-                                v-for="(html, i) in item.cardTexts"
-                                :key="i"
-                                v-html="html"
-                            ></p>
+                        <v-card-text class="white text--primary pa-4">
+                            <ul class="">
+                                <li
+                                    v-for="(html, i) in item.cardTexts"
+                                    :key="i"
+                                    v-html="html"
+                                ></li>
+                            </ul>
                         </v-card-text>
                     </v-card>
                 </v-timeline-item>
