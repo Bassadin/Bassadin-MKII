@@ -6,5 +6,33 @@
             "Spieleprogrammierer.",
             "Webdesigner."
         ]
-    }
+    },
+    "timelineItems": [
+        {
+            "cardTitle": "Abitur MSG Breisach",
+            "cardTexts": [
+                "Abitur am <a href='https://msg-breisach.de/' target='blank'>Martin-Schongauer-Gymnasium in Breisach am Rhein</a>",
+                "Note: 1,8"
+            ]
+        },
+        {
+            "cardTitle": "Studium Wirtschaftsinformatik (B.Sc.) DHBW Lörrach",
+            "cardTexts": [
+                "Duales Studium beim Unternehmen <a href='https://www.hrworks.de/' target='blank'>HRworks</a> in Freiburg im Breisgau",
+                "Nicht abgeschlossen"
+            ]
+        },
+        {
+            "cardTitle": "Smalltalk Entwickler HRworks GmbH",
+            "cardTexts": [
+                "Ein Jahr zusätzliche Arbeitserfahrung beim Unternehmen <a href='https://www.hrworks.de/' target='blank'>HRworks</a> in Freiburg im Breisgau"
+            ]
+        },
+        {
+            "cardTitle": "Studium Medieninformatik (B.Sc.) HFU Furtwangen",
+            "cardTexts": [
+                "Aktuell: 4. Semester"
+            ]
+        }
+    ]
 }

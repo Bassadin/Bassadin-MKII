@@ -3,10 +3,12 @@ module.exports = {
 
     pluginOptions: {
         i18n: {
-            locale: "en",
+            locale: "de",
             fallbackLocale: "en",
             localeDir: "locales",
-            enableInSFC: false
+            enableInSFC: false,
+            returnObjects: true,
+            joinArrays: true
         }
     }
 };
