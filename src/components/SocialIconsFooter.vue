@@ -9,7 +9,6 @@
         >
             <v-card flat tile width="100%" class="primary lighten-1">
                 <v-card-text class="white--text">
-                    <p>{{ $t("footer.socialMediaInfo") }}</p>
                     <v-btn
                         v-for="icon in socialFooterIcons"
                         :key="icon.key"
