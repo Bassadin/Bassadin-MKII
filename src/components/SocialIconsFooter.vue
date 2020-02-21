@@ -4,11 +4,11 @@
             :padless="true"
             dark
             absolute
-            style="position: absolute;bottom: 0;width: 100%;height: 10rem;"
+            style="position: absolute;bottom: 0;width: 100%;height: 8rem;"
             class="primary lighten-1 text-center"
         >
             <v-card flat tile width="100%" class="primary lighten-1">
-                <v-card-text class="white--text">
+                <v-card-text class="white--text pt-3">
                     <v-btn
                         v-for="icon in socialFooterIcons"
                         :key="icon.key"
