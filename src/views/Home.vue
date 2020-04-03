@@ -22,36 +22,39 @@
                 max-width="350px"
             ></v-img>
         </v-container>
-        <v-container>
-            <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
-                <v-timeline-item
-                    v-for="(item, i) in timelineItems"
-                    :key="i"
-                    :color="item.color"
-                    :icon="item.icon"
-                    fill-dot
-                >
-                    <v-card :color="item.color" :dark="item.dark">
-                        <v-card-title>{{
-                            $t("timelineItems")[i].cardTitle
-                        }}</v-card-title>
-                        <v-card-subtitle :v-if="item.timeRangeString">{{
-                            item.timeRangeString
-                        }}</v-card-subtitle>
-                        <v-card-text class="white text--primary pa-4">
-                            <ul class="">
-                                <li
-                                    v-for="(html, j) in $t('timelineItems')[i]
-                                        .cardTexts"
-                                    :key="j"
-                                    v-html="html"
-                                ></li>
-                            </ul>
-                        </v-card-text>
-                    </v-card>
-                </v-timeline-item>
-            </v-timeline>
-        </v-container>
+        <v-row justify="center">
+            <v-col xl="7" lg="8" md="10">
+                <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
+                    <v-timeline-item
+                        v-for="(item, i) in timelineItems"
+                        :key="i"
+                        :color="item.color"
+                        :icon="item.icon"
+                        fill-dot
+                    >
+                        <v-card :color="item.color" :dark="item.dark">
+                            <v-card-title>{{
+                                $t("timelineItems")[i].cardTitle
+                            }}</v-card-title>
+                            <v-card-subtitle :v-if="item.timeRangeString">{{
+                                item.timeRangeString
+                            }}</v-card-subtitle>
+                            <v-card-text class="white text--primary pa-4">
+                                <ul class="">
+                                    <li
+                                        v-for="(html, j) in $t('timelineItems')[
+                                            i
+                                        ].cardTexts"
+                                        :key="j"
+                                        v-html="html"
+                                    ></li>
+                                </ul>
+                            </v-card-text>
+                        </v-card>
+                    </v-timeline-item>
+                </v-timeline>
+            </v-col>
+        </v-row>
     </div>
 </template>
 
