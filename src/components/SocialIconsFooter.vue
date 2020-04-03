@@ -58,6 +58,10 @@ export default {
                 href: "https://www.reddit.com/user/vadsvads"
             },
             {
+                icon: "mdi-codepen",
+                href: "https://codepen.io/bassadin"
+            },
+            {
                 icon: "mdi-email",
                 href: "mailto:bastianhodapp@gmail.com"
             }
