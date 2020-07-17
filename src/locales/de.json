@@ -4,7 +4,8 @@
         "iDoOptions": [
             "Fotografie-Enthusiast.",
             "Spieleprogrammierer.",
-            "Webdesigner."
+            "Webdesigner.",
+            "\"Magic: The Gathering\"-Nerd"
         ]
     },
     "timelineItems": [
@@ -30,9 +31,7 @@
         },
         {
             "cardTitle": "Studium Medieninformatik (B.Sc.), HFU Furtwangen",
-            "cardTexts": [
-                "Aktuell: 4. Semester"
-            ]
+            "cardTexts": ["Aktuell: 4. Semester"]
         }
     ]
 }
