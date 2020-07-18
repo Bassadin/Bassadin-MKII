@@ -1,8 +1,8 @@
 <template>
     <v-app>
         <v-app-bar app color="primary" dark>
-            <div class="d-flex align-center">
-                <a to="/">
+            <div class="d-flex align-center" to="/">
+                <router-link to="/">
                     <v-img
                         alt="Vuetify Logo"
                         class="mr-3"
@@ -12,12 +12,12 @@
                         width="50"
                         style="border-radius:50%"
                     />
-                </a>
+                </router-link>
 
                 <h2>Bassadin</h2>
             </div>
             <v-spacer></v-spacer>
-            <v-btn color="lime darken-3"
+            <v-btn color="lime darken-3" to="/about"
                 ><v-icon left>mdi-account</v-icon> About</v-btn
             >
             <v-btn color="light-blue accent-3" class="ml-3"
