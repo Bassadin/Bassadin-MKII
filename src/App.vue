@@ -12,9 +12,8 @@
                         width="50"
                         style="border-radius:50%"
                     />
+                    <h2>Bassadin</h2>
                 </router-link>
-
-                <h2>Bassadin</h2>
             </div>
             <v-spacer></v-spacer>
             <v-btn color="lime darken-3" to="/about"
