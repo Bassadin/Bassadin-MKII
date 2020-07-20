@@ -1,5 +1,10 @@
 <template>
     <div class="about">
-        <h1>This is an about page</h1>
+        <v-row justify="center">
+            <v-col xl="7" lg="8" md="10">
+                <h1>{{ $t("about.about") }}</h1>
+                <p>Bastian Hodapp</p>
+            </v-col>
+        </v-row>
     </div>
 </template>

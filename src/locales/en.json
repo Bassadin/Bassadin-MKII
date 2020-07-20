@@ -1,4 +1,7 @@
 {
+    "about": {
+        "about": "About me..."
+    },
     "homepage": {
         "myNameIsIDo": "My name is Bastian. I am a ",
         "iDoOptions": [
