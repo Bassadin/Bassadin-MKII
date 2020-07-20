@@ -1,20 +1,18 @@
 <template>
     <v-app>
         <v-app-bar app color="primary" dark>
-            <div class="d-flex align-center" to="/">
-                <router-link to="/">
-                    <v-img
-                        alt="Vuetify Logo"
-                        class="mr-3"
-                        contain
-                        src="@/assets/avatar_logo512x512.png"
-                        transition="scale-transition"
-                        width="50"
-                        style="border-radius:50%"
-                    />
-                    <h2>Bassadin</h2>
-                </router-link>
-            </div>
+            <router-link to="/">
+                <v-img
+                    alt="Vuetify Logo"
+                    class="mr-3"
+                    contain
+                    src="@/assets/avatar_logo512x512.png"
+                    transition="scale-transition"
+                    width="50"
+                    style="border-radius:50%"
+                />
+            </router-link>
+            <h2>Bassadin</h2>
             <v-spacer></v-spacer>
             <v-btn color="lime darken-3" to="/about"
                 ><v-icon left>mdi-account</v-icon> About</v-btn
@@ -27,10 +25,10 @@
             >
         </v-app-bar>
 
-        <v-content style="position: relative;min-height: 100vh;">
+        <v-main style="position: relative;min-height: 100vh;">
             <router-view style="padding-bottom: 10rem;"></router-view>
             <SocialIconsFooter></SocialIconsFooter>
-        </v-content>
+        </v-main>
     </v-app>
 </template>
 
