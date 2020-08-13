@@ -27,8 +27,8 @@
 
         <v-main style="position: relative;min-height: 100vh;">
             <router-view style="padding-bottom: 10rem;"></router-view>
-            <SocialIconsFooter></SocialIconsFooter>
         </v-main>
+        <SocialIconsFooter />
     </v-app>
 </template>
 
