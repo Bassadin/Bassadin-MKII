@@ -25,9 +25,7 @@
             >
         </v-app-bar>
 
-        <v-main style="position: relative;min-height: 100vh;">
-            <router-view style="padding-bottom: 10rem;"></router-view>
-        </v-main>
+        <router-view class="main-content" />
         <SocialIconsFooter />
     </v-app>
 </template>
@@ -42,3 +40,10 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+.main-content {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+</style>
