@@ -93,11 +93,7 @@ export default {
                 timeRangeString: "2019 - heute"
             }
         ]
-    }),
-    mounted: function() {
-        /* eslint-disable no-console */
-        console.log(this.$t("timelineItems"));
-    }
+    })
 };
 </script>
 
