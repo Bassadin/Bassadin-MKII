@@ -1,7 +1,7 @@
 <template>
-    <div class="home">
+    <v-container>
         <v-container fluid>
-            <h1 class="ma-5 text-center">
+            <h1 class="ma-5 text-center typerHeadline">
                 {{ $t("homepage.myNameIsIDo") }}
                 <vue-typer
                     :text="$t('homepage.iDoOptions')"
@@ -18,12 +18,13 @@
                 class="mx-auto"
                 style="border-radius: 50%; padding: 8px;"
                 src="@/assets/Bastian_white_blackBG.jpg"
-                width="100vw"
                 max-width="350px"
             ></v-img>
         </v-container>
         <v-row justify="center">
             <v-col xl="7" lg="8" md="10">
+                <p>{{ $t("homepage.timelineDescription") }}</p>
+
                 <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
                     <v-timeline-item
                         v-for="(item, i) in timelineItems"
@@ -55,7 +56,7 @@
                 </v-timeline>
             </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>
 
 <script>
@@ -102,5 +103,8 @@ export default {
 .v-card__text,
 .v-card__title {
     word-break: normal; /* maybe !important  */
+}
+.typerHeadline {
+    font-size: 1.8rem;
 }
 </style>
