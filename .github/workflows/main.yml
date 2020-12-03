@@ -22,6 +22,6 @@ jobs:
           username: mkii_github
           password: ${{ secrets.FTP_Password }}
           protocol: ftps
-          server-dir:  test/
+          local-dir: dist/
           security: strict
         
