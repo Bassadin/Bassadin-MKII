@@ -1,21 +1,14 @@
-# This is a basic workflow to help you get started with Actions
+name: Deploy to FTP Server
 
-name: CI
-
-# Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  checkout:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@master
@@ -24,16 +17,11 @@ jobs:
       - run: npm ci
       - run: npm run build
       - uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      - with:
-          # ftp server
+        with:
           server: ha01s018.org-dns.com
-          # ftp username
           username: mkii_github
-          # ftp password
           password: ${{ secrets.FTP_Password }}
-          # protocol to deploy with - ftp, ftps, or ftps-legacy
           protocol: ftps
-          # Path to upload to on the server. Must end with trailing slash /
           server-dir:  test/
           security: strict
         
