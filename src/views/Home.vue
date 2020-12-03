@@ -18,12 +18,14 @@
                 class="mx-auto"
                 style="border-radius: 50%; padding: 8px;"
                 src="@/assets/Bastian_white_blackBG.jpg"
-                max-width="350px"
+                max-width="300px"
             ></v-img>
         </v-container>
         <v-row justify="center">
             <v-col xl="7" lg="8" md="10">
-                <p>{{ $t("homepage.timelineDescription") }}</p>
+                <h2 class="text-center">
+                    {{ $t("homepage.timelineDescription") }}
+                </h2>
 
                 <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
                     <v-timeline-item
@@ -66,6 +68,9 @@ export default {
     name: "home",
     components: {
         VueTyper
+    },
+    metaInfo: {
+        title: "Home"
     },
     data: () => ({
         timelineItems: [
