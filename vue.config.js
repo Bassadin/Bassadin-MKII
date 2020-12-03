@@ -10,5 +10,14 @@ module.exports = {
             returnObjects: true,
             joinArrays: true
         }
+    },
+
+    configureWebpack: {
+        optimization: {
+            splitChunks: {
+                minSize: 10000,
+                maxSize: 250000
+            }
+        }
     }
 };
