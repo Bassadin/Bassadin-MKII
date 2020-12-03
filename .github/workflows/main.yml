@@ -18,6 +18,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@master
+        with:
+          node-version: 12
       - run: npm ci
       - run: npm run build
       - uses: SamKirkland/FTP-Deploy-Action@4.0.0
