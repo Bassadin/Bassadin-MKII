@@ -4,7 +4,7 @@
             :padless="true"
             dark
             absolute
-            style="position: absolute;bottom: 0;width: 100%;height: 8rem;"
+            style="bottom: 0;width: 100%;height: 8rem;"
             class="primary lighten-1 text-center"
         >
             <v-card flat tile width="100%" class="primary lighten-1">
