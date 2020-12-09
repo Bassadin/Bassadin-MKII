@@ -7,7 +7,7 @@ on:
     workflow_dispatch:
 
 jobs:
-    npm-build:
+    deploy:
         name: NPM build
         runs-on: ubuntu-latest
         steps:
@@ -15,13 +15,10 @@ jobs:
             - uses: actions/setup-node@master
               with:
                   node-version: 12
+            - name: NPM module install and build
             - run: npm ci
             - run: npm run build
-    deploy-ftp:
-        name: Deploy to FTP Server
-        runs-on: ubuntu-latest
-        needs: npm-build
-        steps:
+            - name: Deploy to FTP Server
             - uses: SamKirkland/FTP-Deploy-Action@4.0.0
               with:
                   server: ha01s018.org-dns.com
@@ -29,11 +26,11 @@ jobs:
                   password: ${{ secrets.FTP_Password }}
                   protocol: ftps
                   local-dir: dist/
-                  security: strict
+                  security: strict            
     check-lighthouse:
         name: Perform Google Lighthouse Check
         runs-on: ubuntu-latest
-        needs: [npm-build, deploy-ftp]
+        needs: deploy
         steps:
             - uses: foo-software/lighthouse-check-action@master
               with:
