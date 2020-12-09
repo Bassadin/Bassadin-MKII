@@ -15,18 +15,19 @@ jobs:
             - uses: actions/setup-node@master
               with:
                   node-version: 12
-            - name: NPM module install and build
-            - run: npm ci
-            - run: npm run build
+            - name: NPM module install
+              run: npm ci
+            - name: NPM build
+              run: npm run build
             - name: Deploy to FTP Server
-            - uses: SamKirkland/FTP-Deploy-Action@4.0.0
+              uses: SamKirkland/FTP-Deploy-Action@4.0.0
               with:
                   server: ha01s018.org-dns.com
                   username: mkii_github
                   password: ${{ secrets.FTP_Password }}
                   protocol: ftps
                   local-dir: dist/
-                  security: strict            
+                  security: strict
     check-lighthouse:
         name: Perform Google Lighthouse Check
         runs-on: ubuntu-latest
