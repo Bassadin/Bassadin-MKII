@@ -1,31 +1,40 @@
 name: Deploy to FTP Server
 
 on:
-  push:
-    branches: [ master ]
+    push:
+        branches: [master]
 
-  workflow_dispatch:
+    workflow_dispatch:
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@master
-        with:
-          node-version: 12
-      - run: npm ci
-      - run: npm run build
-      - uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ha01s018.org-dns.com
-          username: mkii_github
-          password: ${{ secrets.FTP_Password }}
-          protocol: ftps
-          local-dir: dist/
-          security: strict
-      - name: Lighthouse check after deploy
-        uses: foo-software/lighthouse-check-action@master
-        with:
-          urls: 'https://bassadin-mkii.bassadin.de/'
-        
+    npm-build:
+        name: NPM build
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@master
+              with:
+                  node-version: 12
+            - run: npm ci
+            - run: npm run build
+    deploy-ftp:
+        name: Deploy to FTP Server
+        runs-on: ubuntu-latest
+        needs: npm-build
+        steps:
+            - uses: SamKirkland/FTP-Deploy-Action@4.0.0
+              with:
+                  server: ha01s018.org-dns.com
+                  username: mkii_github
+                  password: ${{ secrets.FTP_Password }}
+                  protocol: ftps
+                  local-dir: dist/
+                  security: strict
+    check-lighthouse:
+        name: Perform Google Lighthouse Check
+        runs-on: ubuntu-latest
+        needs: [npm-build, deploy-ftp]
+        steps:
+            - uses: foo-software/lighthouse-check-action@master
+              with:
+                  urls: "https://bassadin-mkii.bassadin.de/"
