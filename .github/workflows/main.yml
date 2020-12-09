@@ -24,4 +24,8 @@ jobs:
           protocol: ftps
           local-dir: dist/
           security: strict
+      - name: Lighthouse check after deploy
+        uses: foo-software/lighthouse-check-action@master
+        with:
+          urls: 'https://bassadin-mkii.bassadin.de/'
         
