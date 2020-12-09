@@ -40,21 +40,20 @@
                     <v-icon v-else>mdi-translate</v-icon>
                 </v-btn>
             </template>
-            <v-btn fab dark color="green">
+            <v-btn fab dark color="green" v-on:click="changeLocale('en')">
                 <country-flag country="gb" size="normal" rounded="true" />
             </v-btn>
-            <v-btn fab dark color="indigo">
+            <v-btn fab dark color="indigo" v-on:click="changeLocale('de')">
                 <country-flag country="de" size="normal" rounded="true" />
             </v-btn>
         </v-speed-dial>
-        -->
-
         <SocialIconsFooter />
     </v-app>
 </template>
 
 <script>
 import SocialIconsFooter from "@/components/SocialIconsFooter";
+import i18n from "@/i18n";
 
 export default {
     name: "App",
@@ -76,6 +75,11 @@ export default {
                 content: "Bastian Hodapp - Web Developer and more..."
             }
         ]
+    },
+    methods: {
+        changeLocale: function(newLocaleString) {
+            i18n.locale = newLocaleString;
+        }
     }
 };
 </script>
