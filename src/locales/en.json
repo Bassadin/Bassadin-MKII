@@ -5,9 +5,8 @@
     "homepage": {
         "myNameIsIDo": "My name is Bastian. I am a ",
         "iDoOptions": [
-            "Photography Enthusiast.",
-            "Webdesigner.",
-            "Game Programmer.",
+            "Photography Enthusiast",
+            "Programmer",
             "Magic: The Gathering nerd"
         ],
         "timelineDescription": "My CV"

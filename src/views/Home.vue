@@ -6,7 +6,7 @@
                 <vue-typer
                     :text="$t('homepage.iDoOptions')"
                     :shuffle="true"
-                    :pre-type-delay="600"
+                    :pre-type-delay="400"
                     :type-delay="80"
                     :pre-erase-delay="2500"
                     :erase-delay="50"
