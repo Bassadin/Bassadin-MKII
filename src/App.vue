@@ -73,6 +73,10 @@ export default {
             {
                 name: "description",
                 content: "Bastian Hodapp - Web Developer and more..."
+            },
+            {
+                name: "robots",
+                content: "index,follow"
             }
         ]
     },
