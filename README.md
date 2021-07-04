@@ -1,5 +1,7 @@
 # bassadin-mkii
 
+Portfolio page (WIP)
+
 ## Project setup
 ```
 npm install
