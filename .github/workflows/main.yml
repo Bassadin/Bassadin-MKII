@@ -16,7 +16,7 @@ jobs:
               with:
                   node-version: 12
             - name: NPM module install
-              run: npm ci
+              run: npm install
             - name: NPM build
               run: npm run build
             - name: Deploy to FTP Server
