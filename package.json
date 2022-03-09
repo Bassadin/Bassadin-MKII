@@ -1,63 +1,51 @@
 {
-  "name": "bassadin-mkii",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
-  },
-  "dependencies": {
-    "core-js": "^3.8.0",
-    "node-sass": "^7.0.0",
-    "vue": "^2.6.12",
-    "vue-country-flag": "^2.0.2",
-    "vue-i18n": "^8.20.0",
-    "vue-meta": "^2.4.0",
-    "vue-router": "^3.4.3",
-    "vue-typer": "^1.2.0",
-    "vuetify": "^2.3.8"
-  },
-  "devDependencies": {
-    "@vue/cli": "^4.5.3",
-    "@vue/cli-plugin-babel": "^4.5.3",
-    "@vue/cli-plugin-eslint": "^4.5.3",
-    "@vue/cli-plugin-router": "^4.5.3",
-    "@vue/cli-service": "^4.5.3",
-    "@vue/eslint-config-prettier": "^5.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^5.16.0",
-    "eslint-plugin-prettier": "^3.2.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "prettier": "^1.19.1",
-    "sass": "^1.29.0",
-    "sass-loader": "^8.0.0",
-    "vue-cli-plugin-i18n": "^1.0.1",
-    "vue-cli-plugin-vuetify": "^2.0.7",
-    "vue-template-compiler": "^2.6.12",
-    "vuetify-loader": "^1.5.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "bassadin-mkii",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
     },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/prettier"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
+    "dependencies": {
+        "vue": "^3.2.31",
+        "vue-country-flag": "^2.3.2",
+        "vue-i18n": "^8.20.0",
+        "vue-meta": "^2.4.0",
+        "vue-router": "^3.4.3",
+        "vue-typer": "^1.2.0",
+        "vuetify": "^2.3.8"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^2.2.4",
+        "@vue/eslint-config-prettier": "^5.0.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^8.10.0",
+        "eslint-plugin-prettier": "^3.2.0",
+        "eslint-plugin-vue": "^8.5.0",
+        "prettier": "^1.19.1",
+        "sass": "^1.29.0",
+        "vite": "^2.8.6",
+        "vue-template-compiler": "^2.6.12",
+        "vuetify-loader": "^1.5.0"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "@vue/prettier"
+        ],
+        "rules": {},
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": false
     }
-  },
-  "prettier": {
-    "tabWidth": 4,
-    "singleQuote": false
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
 }

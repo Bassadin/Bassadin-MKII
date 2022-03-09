@@ -1,21 +1,18 @@
-import Vue from "vue";
-import App from "./App.vue";
 import router from "./router";
-import vuetify from "./plugins/vuetify";
 import i18n from "./i18n";
 import CountryFlag from "vue-country-flag";
 import VueMeta from "vue-meta";
+import { createApp } from "vue";
+import vuetify from "./plugins/vuetify";
+import App from "./App";
 
-Vue.config.productionTip = false;
-Vue.config.devtools = true;
+const app = createApp(App);
 
-Vue.component("country-flag", CountryFlag);
+app.component("country-flag", CountryFlag);
 
-Vue.use(VueMeta);
+app.use(vuetify);
+app.use(router);
+app.use(i18n);
+app.use(VueMeta);
 
-new Vue({
-    router,
-    vuetify,
-    i18n,
-    render: h => h(App)
-}).$mount("#app");
+app.mount("#app");
