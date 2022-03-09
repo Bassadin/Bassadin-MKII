@@ -43,8 +43,8 @@
 </template>
 
 <script>
-import SocialIconsFooter from "@/components/SocialIconsFooter";
-import i18n from "@/i18n";
+import SocialIconsFooter from "/components/SocialIconsFooter";
+import VueI18n from "vue-i18n";
 
 export default {
     name: "App",
@@ -73,7 +73,7 @@ export default {
     },
     methods: {
         changeLocale: function(newLocaleString) {
-            i18n.locale = newLocaleString;
+            VueI18n.locale = newLocaleString;
         }
     }
 };
