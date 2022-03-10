@@ -35,12 +35,5 @@
             "@vue/prettier"
         ],
         "rules": {},
-        "parserOptions": {
-            "parser": "babel-eslint"
-        }
-    },
-    "prettier": {
-        "tabWidth": 4,
-        "singleQuote": false
     }
 }
