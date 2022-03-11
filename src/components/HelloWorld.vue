@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import { useMeta } from "vue-meta";
+
 export default {
     name: "HelloWorld",
     props: {
@@ -20,6 +22,11 @@ export default {
         return {
             count: 0
         };
+    },
+    setup() {
+        useMeta({
+            title: "Hello World!"
+        });
     }
 };
 </script>

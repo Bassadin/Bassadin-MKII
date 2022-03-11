@@ -8,10 +8,12 @@
         "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
     },
     "dependencies": {
+        "i": "^0.3.7",
+        "npm": "^8.5.4",
         "vue": "^3.2.31",
         "vue-country-flag-next": "^2.3.2",
         "vue-i18n": "^9.1.9",
-        "vue-meta": "^2.4.0",
+        "vue-meta": "^3.0.0-alpha.10",
         "vue-router": "^4.0.13",
         "vue-typer": "^1.2.0"
     },
