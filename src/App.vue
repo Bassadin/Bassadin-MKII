@@ -1,7 +1,8 @@
 <template>
     <div id="super-main">
-        <img alt="Vue logo" src="./assets/logo.png" />
         <HelloWorld msg="Hello Vue 3.0 + Vite" />
+
+        <h1 class="main-title">Bastian Hodapp</h1>
     </div>
 </template>
 
@@ -15,3 +16,7 @@ export default {
     }
 };
 </script>
+
+<style lang="scss" scoped>
+
+</style>
