@@ -16,4 +16,5 @@ app.use(i18n);
 app.use(metaManager);
 app.use(metaPlugin); // optional, only needed for OptionsAPI (see below)
 
+// Mount to app div
 app.mount("#app");
