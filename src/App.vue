@@ -1,6 +1,6 @@
 <template>
     <div id="super-main">
-        <HelloWorld msg="Hello Vue 3.0 + Vite" />
+        <HelloWorld />
 
         <h1 class="main-title">Bastian Hodapp</h1>
     </div>
@@ -12,8 +12,8 @@ import HelloWorld from "./components/HelloWorld.vue";
 export default {
     name: "App",
     components: {
-        HelloWorld
-    }
+        HelloWorld,
+    },
 };
 </script>
 
