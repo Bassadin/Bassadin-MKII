@@ -17,13 +17,13 @@ export default {
     name: "HelloWorld",
     data() {
         return {
-            count: 0
+            count: 0,
         };
     },
     setup() {
         useMeta({
-            title: "Hello World!"
+            title: "Hello World!",
         });
-    }
+    },
 };
 </script>
