@@ -2,9 +2,9 @@ import { createApp } from "vue";
 import i18n from "./i18n";
 import { createMetaManager, plugin as metaPlugin } from "vue-meta";
 
-import App from "./App.vue";
+import App from "@/App.vue";
 
-import "./index.scss";
+import "@/scss/index.scss";
 
 const app = createApp(App);
 
