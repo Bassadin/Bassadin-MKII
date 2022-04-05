@@ -26,8 +26,16 @@ export default {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 50vw;
-    margin-top: 10rem;
+
+    margin-top: 3rem;
+    flex-direction: column;
+    width: 100vw;
+
+    @include breakpoint("m") {
+        flex-direction: row;
+        width: 60vw;
+        margin-top: 15rem;
+    }
 
     h1 {
         color: white;
