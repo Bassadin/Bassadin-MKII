@@ -9,4 +9,9 @@ export default defineConfig({
         vue(),
         vueI18n({ include: path.resolve(__dirname, "./src/locales/**") }),
     ],
+    resolve: {
+        alias: {
+            "@": path.resolve(__dirname, "./src"),
+        },
+    },
 });
