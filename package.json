@@ -15,8 +15,7 @@
         "vue": "^3.2.31",
         "vue-country-flag-next": "^2.3.2",
         "vue-i18n": "^9.1.9",
-        "vue-meta": "^3.0.0-alpha.10",
-        "vue-router": "4"
+        "vue-meta": "^3.0.0-alpha.10"
     },
     "devDependencies": {
         "@intlify/vite-plugin-vue-i18n": "^3.3.1",

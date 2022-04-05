@@ -1,7 +1,6 @@
 import { createApp } from "vue";
 import i18n from "./i18n";
 import { createMetaManager, plugin as metaPlugin } from "vue-meta";
-import { createMemoryHistory } from "vue-router";
 
 import App from "./App.vue";
 
