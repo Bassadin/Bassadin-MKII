@@ -7,6 +7,6 @@ import vueI18n from "@intlify/vite-plugin-vue-i18n";
 export default defineConfig({
     plugins: [
         vue(),
-        vueI18n({ include: path.resolve(__dirname, "./src/locales/**") })
-    ]
+        vueI18n({ include: path.resolve(__dirname, "./src/locales/**") }),
+    ],
 });

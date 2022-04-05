@@ -16,7 +16,7 @@
 
             <v-img
                 class="mx-auto"
-                style="border-radius: 50%; padding: 8px;"
+                style="border-radius: 50%; padding: 8px"
                 src="@/assets/Bastian_white_blackBG.jpg"
                 max-width="300px"
             ></v-img>
@@ -67,10 +67,10 @@ import { VueTyper } from "vue-typer";
 export default {
     name: "home",
     components: {
-        VueTyper
+        VueTyper,
     },
     metaInfo: {
-        title: "Home"
+        title: "Home",
     },
     data: () => ({
         timelineItems: [
@@ -78,28 +78,28 @@ export default {
                 color: "purple",
                 icon: "mdi-domain",
                 timeRangeString: "2007 - 2015",
-                dark: true
+                dark: true,
             },
             {
                 color: "blue darken-3",
                 icon: "mdi-school",
                 timeRangeString: "2015 - 2018",
-                dark: true
+                dark: true,
             },
             {
                 color: "yellow darken-4",
                 icon: "mdi-briefcase",
                 dark: true,
-                timeRangeString: "2018 - 2019"
+                timeRangeString: "2018 - 2019",
             },
             {
                 color: "green darken-1",
                 icon: "mdi-school",
                 dark: true,
-                timeRangeString: "2019 - heute"
-            }
-        ]
-    })
+                timeRangeString: "2019 - heute",
+            },
+        ],
+    }),
 };
 </script>
 
