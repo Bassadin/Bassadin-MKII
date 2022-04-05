@@ -1,20 +1,22 @@
 <template>
     <div id="super-main">
-        <HelloWorld />
+        
 
-        <h1 class="main-title">Bastian Hodapp</h1>
+        <Main></Main>
     </div>
 </template>
 
 <script lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import Main from "@/views/Main.vue";
 
 export default {
     name: "App",
     components: {
-        HelloWorld,
+        Main,
     },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

@@ -1,31 +1,20 @@
 <template>
-    <v-footer
-        dark
-        absolute
-        style="bottom: 0; width: 100%"
-        class="primary lighten-1 text-center"
-    >
-        <v-card flat tile width="100%" class="primary lighten-1">
-            <v-card-text class="white--text pt-3">
-                <v-btn
-                    v-for="icon in socialFooterIcons"
-                    :key="icon.key"
-                    icon
-                    :href="icon.href"
-                    target="blank"
-                >
-                    <v-icon size="32px">{{ icon.icon }}</v-icon>
-                </v-btn>
-            </v-card-text>
+    <div class="primary lighten-1 text-center">
+        <button
+            v-for="icon in socialFooterIcons"
+            :key="icon.key"
+            icon
+            :href="icon.href"
+            target="blank"
+        >
+            <v-icon size="32px">{{ icon.icon }}</v-icon>
+        </button>
 
-            <v-divider></v-divider>
-
-            <v-card-text class="white--text">
-                {{ new Date().getFullYear() }} —
-                <strong>Bassadin</strong>
-            </v-card-text>
-        </v-card>
-    </v-footer>
+        <div>
+            {{ new Date().getFullYear() }} —
+            <strong>Bassadin</strong>
+        </div>
+    </div>
 </template>
 
 <script lang="ts">
