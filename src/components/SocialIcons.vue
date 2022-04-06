@@ -35,6 +35,10 @@ export default {
                 href: "https://codepen.io/bassadin",
             },
             {
+                iconName: "github",
+                href: "https://github.com/bassadin",
+            },
+            {
                 iconName: "email",
                 href: "mailto:bastianhodapp@gmail.com",
             },
