@@ -10,6 +10,18 @@
         <h2 class="coming-soon">More content coming soon...</h2>
 
         <SocialIcons />
+
+        <footer>
+            <p>
+                Source code available on
+                <a
+                    href="https://github.com/Bassadin/Bassadin-MKII"
+                    target="_blank"
+                >
+                    GitHub <mdicon name="github" />
+                </a>
+            </p>
+        </footer>
     </div>
 </template>
 
@@ -27,6 +39,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+footer {
+    padding-bottom: 0.5rem;
+}
+
 .coming-soon {
     color: #aaa;
     margin: 2rem 0;
