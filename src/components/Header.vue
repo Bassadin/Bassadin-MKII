@@ -1,10 +1,10 @@
 <template>
     <header id="site-header">
         <h1 class="site-title">Bastian Hodapp</h1>
-        <nav id="header-nav">
+        <!-- <nav id="header-nav">
             <a class="slide-in-underline" href="/">Home</a>
             <a class="slide-in-underline" href="/about">About</a>
-        </nav>
+        </nav> -->
     </header>
 </template>
 
