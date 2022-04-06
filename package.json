@@ -11,6 +11,8 @@
         "format": "yarn prettier --write ."
     },
     "dependencies": {
+        "@mdi/js": "^6.6.96",
+        "mdi-vue": "^3.0.12",
         "npm": "^8.5.4",
         "vue": "^3.2.31",
         "vue-country-flag-next": "^2.3.2",
