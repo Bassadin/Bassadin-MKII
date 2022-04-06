@@ -7,7 +7,7 @@ on:
     workflow_dispatch:
 
 jobs:
-    deploy:
+    build:
         name: NPM build
         runs-on: ubuntu-latest
         steps:
@@ -19,6 +19,10 @@ jobs:
               run: npm install
             - name: NPM build
               run: npm run build
+    deploy:
+        runs-on: ubuntu-latest
+        name: Deploy to FTP Server
+        steps:
             - name: Deploy to FTP Server
               uses: SamKirkland/FTP-Deploy-Action@4.0.0
               with:
@@ -26,7 +30,7 @@ jobs:
                   username: mkii_github
                   password: ${{ secrets.FTP_Password }}
                   protocol: ftps
-                  local-dir: dist/
+                  local-dir: /
                   security: strict
 #     check-lighthouse:
 #         name: Perform Google Lighthouse Check
