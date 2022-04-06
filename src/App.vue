@@ -7,6 +7,8 @@
             <h1>Bastian Hodapp</h1>
         </div>
 
+        <h2 class="coming-soon">More content coming soon...</h2>
+
         <SocialIcons />
     </div>
 </template>
@@ -25,6 +27,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.coming-soon {
+    color: #aaa;
+    margin: 2rem 0;
+}
+
 .super-main {
     min-height: 100vh;
 }
@@ -42,7 +49,7 @@ export default {
     @include breakpoint("m") {
         flex-direction: row;
         width: 60vw;
-        margin-top: 15rem;
+        margin-top: 10rem;
     }
 
     h1 {
