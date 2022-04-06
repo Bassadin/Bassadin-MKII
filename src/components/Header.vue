@@ -8,7 +8,7 @@
         <span class="vue-icon"
             >Built with
             <a href="https://vuejs.org/" target="_blank">
-                <mdicon name="vuejs" size="32" />
+                <mdicon name="vuejs" />
             </a>
         </span>
         <!-- <h1 class="site-title">Bastian Hodapp</h1> -->
