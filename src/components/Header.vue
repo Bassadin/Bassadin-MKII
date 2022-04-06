@@ -5,6 +5,12 @@
             class="header-logo"
             alt="site header logo"
         />
+        <span class="vue-icon"
+            >Built with
+            <a href="https://vuejs.org/" target="_blank">
+                <mdicon name="vuejs" size="32" />
+            </a>
+        </span>
         <!-- <h1 class="site-title">Bastian Hodapp</h1> -->
         <!-- <nav id="header-nav">
             <a class="slide-in-underline" href="/">Home</a>
@@ -22,13 +28,17 @@ export default {
 <style lang="scss" scoped>
 #site-header {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
     padding: 0.8rem 0;
 
     background-color: #333;
     color: #eee;
+
+    .vue-icon {
+        margin-right: 1.3rem;
+    }
 
     .header-logo {
         margin-left: 1.3rem;
