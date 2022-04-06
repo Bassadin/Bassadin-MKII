@@ -1,5 +1,5 @@
 <template>
-    <div class="social-icons-container">
+    <div class="contact-icons-container">
         <a
             class="link-button"
             v-for="eachIconData in socialFooterIcons"
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.social-icons-container {
+.contact-icons-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
