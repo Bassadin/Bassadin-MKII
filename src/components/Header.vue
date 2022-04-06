@@ -32,6 +32,7 @@ export default {
     flex-direction: row;
     align-items: center;
     padding: 0.8rem 0;
+    border-bottom: 4px solid #665;
 
     background-color: #333;
     color: #eee;
