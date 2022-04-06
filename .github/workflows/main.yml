@@ -31,7 +31,7 @@ jobs:
                   username: mkii_github
                   password: ${{ secrets.FTP_Password }}
                   protocol: ftps
-                  local-dir: /
+                  local-dir: /dist
                   security: strict
 #     check-lighthouse:
 #         name: Perform Google Lighthouse Check
