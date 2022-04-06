@@ -19,11 +19,19 @@ jobs:
               run: npm install
             - name: NPM build
               run: npm run build
+            - uses: actions/upload-artifact@master
+              with:
+                name: build-artifact
+                path: build-artifact/dist
     deploy:
         needs: [build]
         runs-on: ubuntu-latest
         name: Deploy to FTP Server
         steps:
+            - uses: actions/download-artifact@master
+              with:
+                name: build-artifact
+                path: build-artifact/dist
             - name: Deploy to FTP Server
               uses: SamKirkland/FTP-Deploy-Action@4.0.0
               with:
@@ -31,7 +39,7 @@ jobs:
                   username: mkii_github
                   password: ${{ secrets.FTP_Password }}
                   protocol: ftps
-                  local-dir: dist/
+                  local-dir: build-artifact/dist/
                   security: strict
 #     check-lighthouse:
 #         name: Perform Google Lighthouse Check
