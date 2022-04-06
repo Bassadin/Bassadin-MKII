@@ -1,6 +1,11 @@
 <template>
     <header id="site-header">
-        <h1 class="site-title">Bastian Hodapp</h1>
+        <img
+            src="@\assets\avatar_logo512x512.png"
+            class="header-logo"
+            alt="site header logo"
+        />
+        <!-- <h1 class="site-title">Bastian Hodapp</h1> -->
         <!-- <nav id="header-nav">
             <a class="slide-in-underline" href="/">Home</a>
             <a class="slide-in-underline" href="/about">About</a>
@@ -17,15 +22,22 @@ export default {
 <style lang="scss" scoped>
 #site-header {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    padding: 0.8rem 0;
 
     background-color: #333;
     color: #eee;
 
+    .header-logo {
+        margin-left: 1.3rem;
+        border-radius: 0.2rem;
+        height: 50px;
+    }
+
     .site-title {
-        margin: 1.1rem 1.3rem;
+        margin: 0 1.3rem;
     }
 
     nav#header-nav {
