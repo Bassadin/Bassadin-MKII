@@ -32,8 +32,10 @@ import SocialIcons from "./components/SocialIcons.vue";
 export default {
     name: "App",
     components: { Header, SocialIcons },
-    metaInfo: {
-        title: "Bastian Hodapp",
+    metaInfo() {
+        return {
+            title: "Bastian Hodapp",
+        };
     },
 };
 </script>
