@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import i18n from "./i18n";
-import { createMetaManager, plugin as metaPlugin } from "vue-meta";
+import { createMetaManager, plugin as vueMetaPlugin } from "vue-meta";
 import mdiVue from "mdi-vue/v3";
 import * as mdijs from "@mdi/js";
 
@@ -10,12 +10,11 @@ import "@/scss/index.scss";
 
 const app = createApp(App);
 
-const metaManager = createMetaManager();
-
 app.use(i18n);
 
+const metaManager = createMetaManager();
 app.use(metaManager);
-app.use(metaPlugin); // optional, only needed for OptionsAPI (see below)
+app.use(vueMetaPlugin); // optional, only needed for OptionsAPI (see below)
 
 app.use(mdiVue, {
     icons: mdijs,
