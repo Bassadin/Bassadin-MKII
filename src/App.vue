@@ -1,5 +1,8 @@
 <template>
     <div class="super-main">
+        <metainfo>
+            <template v-slot:title="{ content }">{{ content }}</template>
+        </metainfo>
         <Header />
 
         <div class="hero-image">
@@ -35,6 +38,7 @@ export default {
     metaInfo() {
         return {
             title: "Bastian Hodapp",
+            description: "Bastian Hodapp Portfolio",
         };
     },
 };
