@@ -16,7 +16,7 @@ export default defineConfig({
     },
     css: {
         preprocessorOptions: {
-          scss: { additionalData: `@import "@/scss/breakpoints";` },
+            scss: { additionalData: `@import "@/scss/breakpoints";` },
         },
-      },
+    },
 });
