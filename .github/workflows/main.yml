@@ -7,18 +7,6 @@ on:
     workflow_dispatch:
 
 jobs:
-    build:
-        name: NPM build
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v2
-            - name: Cypress run
-              uses: cypress-io/github-action@v2
-              with:
-                command: yarn cypress run-ct
-                build: npm run build
-                start: npm start
     cypress-test:
         name: Cypress tests
         runs-on: ubuntu-latest
@@ -35,6 +23,19 @@ jobs:
               with:
                   name: build-artifact
                   path: dist/
+    build:
+        needs: [cypress-test]
+        name: NPM build
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+            - name: Cypress run
+              uses: cypress-io/github-action@v2
+              with:
+                  command: yarn cypress run-ct
+                  build: npm run build
+                  start: npm start
     deploy:
         needs: [build]
         runs-on: ubuntu-latest
