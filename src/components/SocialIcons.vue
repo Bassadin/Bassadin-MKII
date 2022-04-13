@@ -7,7 +7,11 @@
             :href="eachIconData.href"
             target="blank"
         >
-            <mdicon :name="eachIconData.iconName" size="45" />
+            <mdicon
+                class="link-button--icon"
+                :name="eachIconData.iconName"
+                size="45"
+            />
         </a>
     </div>
 </template>
@@ -55,16 +59,36 @@ export default {
     padding: 2rem 0 1rem 0;
 
     .link-button {
-        background-color: #bbb;
-        color: #111;
-        border-radius: 50%;
-        transition: background-color 0.2s;
+        // background-color: #bbb;
+        background: none;
+        display: block;
+        color: #eee;
         padding: 0.5rem;
-
         margin: 0.5rem;
+        // border-radius: 50%;
 
-        &:hover {
-            background-color: #ddd;
+        // transition: background-color 0.2s;
+        transition: 0.25s;
+
+        box-shadow: 0.3em 0.3em 0 0 #eee, inset 0.3em 0.3em 0 0 #eee;
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 0 0 #eee, inset 6em 3.5em 0 0 #eee;
+
+            .link-button--icon {
+                color: #222;
+                transform: translate(0, 0);
+            }
+        }
+
+        &--icon {
+            display: block;
+
+            transition: color 0.25s;
+            transition: transform 0.25s;
+
+            transform: translate(0.15em, 0.15em);
         }
     }
 }
