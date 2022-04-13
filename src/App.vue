@@ -51,7 +51,7 @@ footer {
 
 .coming-soon {
     color: #aaa;
-    margin: 2rem 0;
+    margin: 4rem 0;
 }
 
 .super-main {
@@ -71,7 +71,7 @@ footer {
     @include breakpoint("m") {
         flex-direction: row;
         width: 60vw;
-        margin-top: 10rem;
+        margin-top: 12rem;
     }
 
     h1 {

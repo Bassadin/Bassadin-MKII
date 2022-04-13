@@ -20,20 +20,33 @@ export default {
 
 <style lang="scss" scoped>
 #site-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 0.8rem 0;
-    border-bottom: 4px solid #665;
+    padding: 0.5rem 0;
 
+    @include breakpoint("m") {
+        padding: 0.8rem 0;
+    }
+
+    border-bottom: 4px solid #665;
     background-color: #333;
     color: #eee;
 
     .header-logo {
-        margin-left: 1.3rem;
+        margin-left: 0.7rem;
         border-radius: 0.2rem;
-        height: 50px;
+        height: 40px;
+
+        @include breakpoint("m") {
+            margin-left: 1rem;
+            height: 50px;
+        }
     }
 
     .vue-icon {
