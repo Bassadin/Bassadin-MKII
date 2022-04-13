@@ -12,29 +12,17 @@
 
         <h2 class="coming-soon">More content coming soon...</h2>
 
-        <SocialIcons />
-
-        <footer>
-            <p>
-                Source code available on
-                <a
-                    href="https://github.com/Bassadin/Bassadin-MKII"
-                    target="_blank"
-                >
-                    GitHub <mdicon name="github" />
-                </a>
-            </p>
-        </footer>
+        <Footer />
     </div>
 </template>
 
 <script lang="ts">
 import Header from "@/components/Header.vue";
-import SocialIcons from "./components/SocialIcons.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
     name: "App",
-    components: { Header, SocialIcons },
+    components: { Header, Footer },
     metaInfo() {
         return {
             title: "Bastian Hodapp",
@@ -45,10 +33,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-footer {
-    padding-bottom: 0.5rem;
-}
-
 .coming-soon {
     color: #aaa;
     margin: 4rem 0;

@@ -52,8 +52,7 @@ export default {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 5rem;
-    padding-bottom: 1rem;
+    padding: 2rem 0 1rem 0;
 
     .link-button {
         background-color: #bbb;
