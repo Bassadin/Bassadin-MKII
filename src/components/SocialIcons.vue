@@ -7,7 +7,7 @@
             :href="eachIconData.href"
             target="blank"
         >
-            <mdicon :name="eachIconData.iconName" size="50" />
+            <mdicon :name="eachIconData.iconName" size="45" />
         </a>
     </div>
 </template>
@@ -59,7 +59,7 @@ export default {
         color: #111;
         border-radius: 50%;
         transition: background-color 0.2s;
-        padding: 0.4rem;
+        padding: 0.5rem;
 
         margin: 0.5rem;
 
