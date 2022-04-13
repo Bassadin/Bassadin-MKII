@@ -17,20 +17,20 @@ jobs:
               uses: cypress-io/github-action@v2
               with:
                   command: yarn cypress run-ct
-                  build: npm run build
-                  start: npm start
+                  build: yarn run build
+                  start: yarn run start
     build:
-        name: NPM build
+        name: Yarn build
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-node@master
               with:
                   node-version: 16
-            - name: NPM module install
-              run: npm ci
-            - name: NPM build
-              run: npm run build
+            - name: Yarn module install
+              run: yarn install --frozen-lockfile
+            - name: Yarn build
+              run: yarn run build
             - uses: actions/upload-artifact@master
               with:
                   name: build-artifact
