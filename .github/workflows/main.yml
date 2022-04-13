@@ -28,7 +28,7 @@ jobs:
               with:
                   node-version: 16
             - name: NPM module install
-              run: npm install
+              run: npm ci
             - name: NPM build
               run: npm run build
             - uses: actions/upload-artifact@master
