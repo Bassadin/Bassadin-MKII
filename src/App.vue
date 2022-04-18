@@ -1,16 +1,17 @@
 <template>
-    <div class="super-main">
+    <div class="site">
         <metainfo>
             <template v-slot:title="{ content }">{{ content }}</template>
         </metainfo>
         <Header />
+        <div class="super-main">
+            <div class="hero-image">
+                <img src="@/assets/Bastian_white_blackBG.jpg" />
+                <h1>Bastian Hodapp</h1>
+            </div>
 
-        <div class="hero-image">
-            <img src="@/assets/Bastian_white_blackBG.jpg" />
-            <h1>Bastian Hodapp</h1>
+            <h2 class="coming-soon">More content coming soon...</h2>
         </div>
-
-        <h2 class="coming-soon">More content coming soon...</h2>
 
         <Footer />
     </div>
@@ -33,13 +34,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.site {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
 .coming-soon {
     color: #aaa;
     margin: 4rem 0;
-}
-
-.super-main {
-    min-height: 100vh;
 }
 
 .hero-image {
@@ -61,6 +64,10 @@ export default {
     h1 {
         color: white;
         font-size: 4em;
+
+        @include breakpoint("m") {
+            margin-left: 4rem;
+        }
     }
 
     img {
