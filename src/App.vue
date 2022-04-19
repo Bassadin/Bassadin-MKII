@@ -4,7 +4,7 @@
             <template v-slot:title="{ content }">{{ content }}</template>
         </metainfo>
         <Header />
-        <div class="super-main">
+        <div class="content">
             <div class="hero-image">
                 <img src="@/assets/Bastian_white_blackBG.jpg" />
                 <h1>Bastian Hodapp</h1>
@@ -53,11 +53,10 @@ export default {
 
     margin-top: 3rem;
     flex-direction: column;
-    width: 100vw;
 
     @include breakpoint("m") {
         flex-direction: row;
-        width: 60vw;
+        width: 70vw;
         margin-top: 12rem;
     }
 
@@ -72,7 +71,7 @@ export default {
 
     img {
         border-radius: 50%;
-        height: 40vh;
+        height: 35vh;
     }
 }
 </style>
