@@ -1,5 +1,6 @@
 <template>
     <footer>
+        <p class="social-heading">Social</p>
         <SocialIcons />
         <p>
             Source code available on
@@ -19,6 +20,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.social-heading {
+    margin-bottom: 0;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
 footer {
     border-top: 2px solid #252500;
     padding-bottom: 0.5rem;
