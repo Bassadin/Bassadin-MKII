@@ -6,8 +6,6 @@ import * as mdijs from "@mdi/js";
 
 import App from "@/App.vue";
 
-import "@/scss/index.scss";
-
 const app = createApp(App);
 
 app.use(i18n);

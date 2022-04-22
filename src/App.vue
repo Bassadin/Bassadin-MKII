@@ -24,6 +24,8 @@
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
+import "@/scss/index.scss";
+
 export default {
     name: "App",
     components: { Header, Footer },
