@@ -6,7 +6,10 @@
         <Header />
         <div class="content">
             <div class="hero-image">
-                <img src="@/assets/Bastian_white_blackBG.jpg" />
+                <img
+                    src="@/assets/Bastian_white_blackBG.jpg"
+                    alt="Bastian Hodapp Image in edge circuit board style"
+                />
                 <h1>Bastian Hodapp</h1>
             </div>
 

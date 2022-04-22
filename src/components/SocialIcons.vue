@@ -5,6 +5,7 @@
             v-for="eachIconData in socialFooterIcons"
             :key="eachIconData.href"
             :href="eachIconData.href"
+            :aria-label="eachIconData.iconName"
             target="blank"
         >
             <mdicon
