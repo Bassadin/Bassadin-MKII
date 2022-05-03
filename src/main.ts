@@ -10,6 +10,7 @@ const app = createApp(App);
 
 app.use(i18n);
 
+// Load vue-meta plugin
 const metaManager = createMetaManager();
 app.use(metaManager);
 app.use(vueMetaPlugin); // optional, only needed for OptionsAPI (see below)
