@@ -12,7 +12,6 @@
                 />
                 <h1>Bastian Hodapp</h1>
             </div>
-
             <h2 class="coming-soon">More content coming soon...</h2>
         </div>
 
