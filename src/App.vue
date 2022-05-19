@@ -12,7 +12,21 @@
                 />
                 <h1>Bastian Hodapp</h1>
             </div>
-            <h2 class="coming-soon">More content coming soon...</h2>
+            <p class="more-info">
+                <p>
+                    I'm Bastian, a software developer from Germany. While my current
+                    focus is Full Stack Web Development (buzz word bingo, woop
+                    woop), I've dabbled in Game Development, Embedded Programming,
+                    Home Automation and other directions of IT before. I love to
+                    learn about new technologies. Clean and structured code is very
+                    important to me. At the moment, I'm studying for my master's
+                    degree in Computer Science.
+                </p>
+                <p>
+                    Next to that, I'm working as a full stack web developer
+                    for <a href="https://compaile.com/">Compaile</a>.
+                </p>
+            </p>
         </div>
 
         <Footer />
@@ -44,9 +58,15 @@ export default {
     grid-template-rows: auto 1fr auto;
 }
 
-.coming-soon {
+.more-info {
     color: #aaa;
     margin: 4rem 0;
+
+    @include breakpoint("m") {
+        width: 60vw;
+        font-size: larger;
+        margin: 5rem auto;
+    }
 }
 
 .hero-image {
