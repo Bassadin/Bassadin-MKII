@@ -62,10 +62,12 @@ export default {
     color: #aaa;
     margin: 4rem 0;
     font-size: larger;
+    margin: 5rem 1rem 5rem 1rem;
 
     @include breakpoint("m") {
         width: 60vw;
-        margin: 5rem auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
