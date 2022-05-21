@@ -35,8 +35,8 @@ export default {
     }
 
     border-bottom: 4px solid #665;
-    background-color: #333;
-    color: #eee;
+    background-color: $header-background-color;
+    color: $text-color;
 
     .header-logo {
         margin-left: 0.7rem;

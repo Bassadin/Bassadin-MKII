@@ -37,8 +37,6 @@
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
-import "@/scss/index.scss";
-
 export default {
     name: "App",
     components: { Header, Footer },
@@ -87,7 +85,7 @@ export default {
     }
 
     h1 {
-        color: white;
+        color: $text-color;
         font-size: 4em;
 
         @include breakpoint("m") {

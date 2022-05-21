@@ -61,25 +61,24 @@ export default {
     margin: 0 0.5rem;
 
     .link-button {
-        // background-color: #bbb;
         background: none;
         display: block;
-        color: #eee;
+        color: $link-button-border-color;
         padding: 0.5rem;
         margin: 0.5rem;
-        // border-radius: 50%;
 
-        // transition: background-color 0.2s;
         transition: 0.25s;
 
-        box-shadow: 0.3em 0.3em 0 0 #eee, inset 0.3em 0.3em 0 0 #eee;
+        box-shadow: 0.3em 0.3em 0 0 $link-button-border-color,
+            inset 0.3em 0.3em 0 0 $link-button-border-color;
 
         &:hover,
         &:focus {
-            box-shadow: 0 0 0 0 #eee, inset 6em 3.5em 0 0 #eee;
+            box-shadow: 0 0 0 0 $link-button-border-color,
+                inset 6em 3.5em 0 0 $link-button-border-color;
 
             .link-button--icon {
-                color: #222;
+                color: $link-button-icon-color;
                 transform: translate(0, 0);
             }
         }
