@@ -62,18 +62,17 @@ export default {
     color: #aaa;
     margin: 4rem 0;
     font-size: larger;
-    margin: 5rem 1rem 5rem 1rem;
+    margin: 2rem 1rem;
 
     @include breakpoint("m") {
+        margin: 5rem auto;
         width: 60vw;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
 .hero-image {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
 
@@ -90,9 +89,11 @@ export default {
         color: $text-color;
         font-size: 4em;
         text-align: center;
+        margin: 0;
+        margin-top: 2rem;
 
         @include breakpoint("m") {
-            margin-left: 4rem;
+            margin: 0 2rem;
         }
     }
 
