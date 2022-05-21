@@ -89,6 +89,7 @@ export default {
     h1 {
         color: $text-color;
         font-size: 4em;
+        text-align: center;
 
         @include breakpoint("m") {
             margin-left: 4rem;

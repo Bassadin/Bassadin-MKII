@@ -7,11 +7,10 @@ html {
     height: 100%;
     color: #eee;
     background-color: $main-background-color;
+    font-family: $font-family;
 }
 
 #app {
-    font-family: $font-family;
-    text-align: center;
     margin: 0;
     padding: 0;
 }

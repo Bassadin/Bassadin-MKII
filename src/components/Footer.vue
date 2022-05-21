@@ -28,6 +28,7 @@ export default {
 }
 
 footer {
+    text-align: center;
     border-top: 2px solid #252500;
     padding-bottom: 0.5rem;
     background-color: #151500;
