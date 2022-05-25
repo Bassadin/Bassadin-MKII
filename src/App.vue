@@ -82,7 +82,7 @@ export default {
     @include breakpoint("m") {
         flex-direction: row;
         width: 70vw;
-        margin-top: 12rem;
+        margin-top: 4rem;
     }
 
     h1 {
