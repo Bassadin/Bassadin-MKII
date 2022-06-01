@@ -21,6 +21,5 @@ app.use(mdiVue, {
     icons: mdijs,
 });
 
-
 // Mount to app div
 app.mount("#app");
