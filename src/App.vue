@@ -59,7 +59,7 @@ export default {
 }
 
 .more-info {
-    color: #aaa;
+    color: $text-color-darker;
     margin: 4rem 0;
     font-size: larger;
     margin: 2rem 1rem;
