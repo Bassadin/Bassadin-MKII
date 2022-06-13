@@ -13,11 +13,11 @@
         "cypress:headless": "cypress run-ct"
     },
     "dependencies": {
-        "@mdi/js": "^6.6.96",
-        "mdi-vue": "^3.0.12",
-        "vue": "^3.2.31",
-        "vue-country-flag-next": "^2.3.2",
-        "vue-i18n": "^9.1.9",
+        "@mdi/js": "^6",
+        "mdi-vue": "^3",
+        "vue": "^3",
+        "vue-country-flag-next": "^2",
+        "vue-i18n": "^9",
         "vue-meta": "^3.0.0-alpha.10"
     },
     "devDependencies": {
@@ -28,7 +28,7 @@
         "cypress": "^9.5.3",
         "prettier": "^2.6.2",
         "sass": "^1.49.9",
-        "vite": "^2.9.1",
+        "vite": "^2",
         "yarn": "^1.22.18"
     },
     "eslintConfig": {
