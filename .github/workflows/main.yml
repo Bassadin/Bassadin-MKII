@@ -53,11 +53,11 @@ jobs:
                   protocol: ftps
                   local-dir: dist/
                   security: strict
-#     check-lighthouse:
-#         name: Perform Google Lighthouse Check
-#         runs-on: ubuntu-latest
-#         needs: deploy
-#         steps:
-#             - uses: foo-software/lighthouse-check-action@master
-#               with:
-#                   urls: "https://bassadin-mkii.bassadin.de/"
+    check-lighthouse:
+        name: Perform Google Lighthouse Check
+        runs-on: ubuntu-latest
+        needs: deploy
+        steps:
+            - uses: foo-software/lighthouse-check-action@master
+              with:
+                  urls: "https://bassadin.de/"
