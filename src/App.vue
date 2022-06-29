@@ -66,7 +66,7 @@ export default {
 
     @include breakpoint("m") {
         margin: 5rem auto;
-        width: 60vw;
+        width: 50vw;
     }
 }
 
@@ -81,7 +81,7 @@ export default {
 
     @include breakpoint("m") {
         flex-direction: row;
-        width: 70vw;
+        width: 50vw;
         margin-top: 4rem;
     }
 
@@ -99,7 +99,7 @@ export default {
 
     img {
         border-radius: 50%;
-        height: 35vh;
+        height: 33vh;
     }
 }
 </style>
