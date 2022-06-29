@@ -1,10 +1,8 @@
-name: Deploy to FTP Server
+name: Build, test and deploy to https://bassadin.de/
 
 on:
     push:
         branches: [master]
-
-    workflow_dispatch:
 
 jobs:
     cypress-test:
@@ -36,7 +34,9 @@ jobs:
                   name: build-artifact
                   path: dist/
     deploy:
-        needs: [cypress-test]
+        needs:
+            - cypress-test
+            - build
         runs-on: ubuntu-latest
         name: Deploy to FTP Server
         steps:
