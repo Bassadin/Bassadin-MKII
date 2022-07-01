@@ -59,7 +59,7 @@ jobs:
         needs: deploy
         steps:
             - name: Create artifacts dir
-              run: mkdir ${{ github.workspace }}/tmp/artifacts
+              run: mkdir -p ${{ github.workspace }}/tmp/artifacts
             - name: Lighthouse audit
               uses: foo-software/lighthouse-check-action@master
               with:
