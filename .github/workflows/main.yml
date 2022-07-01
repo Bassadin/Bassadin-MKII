@@ -58,6 +58,13 @@ jobs:
         runs-on: ubuntu-latest
         needs: deploy
         steps:
-            - uses: foo-software/lighthouse-check-action@master
+            - name: Lighthouse audit
+              uses: foo-software/lighthouse-check-action@master
               with:
+                  outputDirectory: ${{ github.workspace }}/tmp/artifacts
                   urls: "https://bassadin.de/"
+            - name: Upload artifacts
+              uses: actions/upload-artifact@master
+              with:
+                name: Lighthouse reports
+                path: ${{ github.workspace }}/tmp/artifacts
