@@ -9,8 +9,8 @@
         "preview": "vite preview",
         "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
         "format": "yarn prettier --write .",
-        "cypress:open": "cypress open-ct",
-        "cypress:headless": "cypress run-ct"
+        "cypress:open": "cypress open --component",
+        "cypress:headless": "cypress run --component"
     },
     "dependencies": {
         "@mdi/js": "^6",
@@ -21,15 +21,15 @@
         "vue-meta": "^3.0.0-alpha.10"
     },
     "devDependencies": {
-        "@cypress/vite-dev-server": "^2.2.2",
-        "@cypress/vue": "^3.1.1",
+        "@cypress/vite-dev-server": "^3",
+        "@cypress/vue": "^4",
         "@intlify/vite-plugin-vue-i18n": "^3.3.1",
         "@vitejs/plugin-vue": "^2.2.4",
-        "cypress": "^9.5.3",
-        "prettier": "^2.6.2",
-        "sass": "^1.49.9",
-        "vite": "^2",
-        "yarn": "^1.22.18"
+        "cypress": "^10",
+        "prettier": "^2.7",
+        "sass": "^1.54",
+        "vite": "^3",
+        "yarn": "^1.22"
     },
     "eslintConfig": {
         "root": true,
