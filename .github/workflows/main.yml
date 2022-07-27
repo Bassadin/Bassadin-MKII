@@ -12,9 +12,9 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v2
             - name: Cypress run
-              uses: cypress-io/github-action@v2
+              uses: cypress-io/github-action@v4
               with:
-                  command: yarn cypress run-ct
+                  command: yarn cypress run --component
                   build: yarn run build
                   start: yarn run start
     build:
