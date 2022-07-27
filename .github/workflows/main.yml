@@ -16,7 +16,7 @@ jobs:
               with:
                   command: yarn cypress run --component
                   build: yarn run build
-                  start: yarn run start
+                  start: yarn run preview
     build:
         name: Yarn build
         runs-on: ubuntu-latest
