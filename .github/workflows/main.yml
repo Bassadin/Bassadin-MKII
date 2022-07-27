@@ -68,5 +68,5 @@ jobs:
             - name: Upload artifacts
               uses: actions/upload-artifact@master
               with:
-                name: Lighthouse reports
-                path: ${{ github.workspace }}/tmp/artifacts
+                  name: Lighthouse reports
+                  path: ${{ github.workspace }}/tmp/artifacts
