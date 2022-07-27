@@ -14,6 +14,7 @@ jobs:
             - name: Cypress run
               uses: cypress-io/github-action@v4
               with:
+                  component: true
                   build: yarn run build
                   start: yarn run preview
     build:
