@@ -15,7 +15,6 @@ jobs:
               uses: cypress-io/github-action@v4
               with:
                   component: true
-                  build: yarn run build
     build:
         name: Yarn build
         runs-on: ubuntu-latest
