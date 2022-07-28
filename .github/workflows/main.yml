@@ -16,7 +16,6 @@ jobs:
               with:
                   component: true
                   build: yarn run build
-                  start: yarn run preview
     build:
         name: Yarn build
         runs-on: ubuntu-latest
