@@ -1,9 +1,9 @@
 <template>
     <div class="contact-icons-container">
         <a
-            class="link-button"
             v-for="eachIconData in socialFooterIcons"
             :key="eachIconData.href"
+            class="link-button"
             :href="eachIconData.href"
             :aria-label="eachIconData.iconName"
             target="blank"

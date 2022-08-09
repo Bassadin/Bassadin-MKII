@@ -10,7 +10,8 @@
         "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
         "format": "yarn prettier --write .",
         "cypress:open": "cypress open --component",
-        "cypress:headless": "cypress run --component"
+        "cypress:headless": "cypress run --component",
+        "eslint": "eslint --ext .js,.vue,.ts src"
     },
     "dependencies": {
         "@mdi/js": "^6",
@@ -24,21 +25,21 @@
         "@cypress/vite-dev-server": "^3",
         "@cypress/vue": "^4",
         "@intlify/vite-plugin-vue-i18n": "^3.3.1",
+        "@typescript-eslint/eslint-plugin": "^5.33.0",
+        "@typescript-eslint/parser": "^5.33.0",
         "@vitejs/plugin-vue": "^2.2.4",
         "cypress": "^10",
+        "eslint": "^8.0.1",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-n": "^15.0.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-promise": "^6.0.0",
+        "eslint-plugin-vue": "^9.3.0",
         "prettier": "^2.7",
         "sass": "^1.54",
         "vite": "^3",
         "yarn": "^1.22"
-    },
-    "eslintConfig": {
-        "root": true,
-        "env": {
-            "node": true
-        },
-        "extends": [
-            "plugin:vue/essential",
-            "@vue/prettier"
-        ]
     }
 }

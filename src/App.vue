@@ -1,9 +1,9 @@
 <template>
     <div class="site">
         <metainfo>
-            <template v-slot:title="{ content }">{{ content }}</template>
+            <template #title="{ content }">{{ content }}</template>
         </metainfo>
-        <Header />
+        <SiteHeader />
         <div class="content">
             <div class="hero-image">
                 <img
@@ -31,17 +31,17 @@
             </div>
         </div>
 
-        <Footer />
+        <SiteFooter />
     </div>
 </template>
 
 <script lang="ts">
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
+import SiteHeader from "@components/SiteHeader.vue";
+import SiteFooter from "@components/SiteFooter.vue";
 
 export default {
     name: "App",
-    components: { Header, Footer },
+    components: { SiteHeader, SiteFooter },
     metaInfo() {
         return {
             title: "Bastian Hodapp",

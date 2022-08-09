@@ -12,9 +12,9 @@
 </template>
 
 <script lang="ts">
-import SocialIcons from "@/components/SocialIcons.vue";
+import SocialIcons from "@components/SocialIcons.vue";
 export default {
-    name: "Footer",
+    name: "SiteFooter",
     components: { SocialIcons },
 };
 </script>
