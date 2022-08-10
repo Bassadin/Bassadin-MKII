@@ -11,7 +11,8 @@
         "format": "yarn prettier --write .",
         "cypress:open": "cypress open --component",
         "cypress:headless": "cypress run --component",
-        "eslint": "eslint --ext .js,.vue,.ts src"
+        "eslint": "eslint --ext .js,.vue,.ts src",
+        "eslint:fix": "eslint --fix --ext .js,.vue,.ts src"
     },
     "dependencies": {
         "@mdi/js": "^6",
