@@ -1,7 +1,6 @@
 import path from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import vueI18n from "@intlify/vite-plugin-vue-i18n";
 
 const hash = Math.floor(Math.random() * 90000) + 10000;
 
@@ -9,7 +8,6 @@ const hash = Math.floor(Math.random() * 90000) + 10000;
 export default defineConfig({
     plugins: [
         vue(),
-        vueI18n({ include: path.resolve(__dirname, "./src/locales/**") }),
     ],
     resolve: {
         alias: {
