@@ -11,12 +11,8 @@
     </footer>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import SocialIcons from "@components/SocialIcons.vue";
-export default {
-    name: "SiteFooter",
-    components: { SocialIcons },
-};
 </script>
 
 <style lang="scss" scoped>
