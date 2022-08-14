@@ -1,11 +1,15 @@
+/* eslint-env node */
+require("@rushstack/eslint-patch/modern-module-resolution");
+
 module.exports = {
     extends: [
-        // add more generic rulesets here, such as:
-        // 'eslint:recommended',
-        "plugin:vue/vue3-recommended",
-        "plugin:vue/vue3-strongly-recommended",
+        "eslint:recommended",
         "plugin:vue/vue3-essential",
+        "plugin:vue/vue3-strongly-recommended",
+        "plugin:vue/vue3-recommended",
         "plugin:prettier/recommended",
+        "@vue/eslint-config-typescript",
+        "@vue/eslint-config-typescript/recommended",
     ],
     rules: {
         "prettier/prettier": "error",
