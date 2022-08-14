@@ -23,6 +23,17 @@
             </CVItem>
             <CVItem icon-name="school">
                 <template #title>
+                    Bachelor of Science (Computer Science in Economics, not
+                    finished)
+                </template>
+                <template #description>
+                    DHBW Lörrach<br />
+                    2015 - 2028<br />
+                    Not finished
+                </template>
+            </CVItem>
+            <CVItem icon-name="school">
+                <template #title>
                     Martin-Schongauer-Gymnasium Breisach
                 </template>
                 <template #description>
