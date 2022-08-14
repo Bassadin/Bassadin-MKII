@@ -10,7 +10,7 @@
                     src="@/assets/Bastian_white_blackBG.jpg"
                     alt="Bastian Hodapp Image in edge circuit board style"
                 />
-                <h1>Bastian Hodapp</h1>
+                <h1 class="hero-name">Bastian Hodapp</h1>
             </div>
             <div class="more-info">
                 <p>
@@ -56,6 +56,10 @@ export default {
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
+}
+
+.hero-name {
+    font-family: "Sansita Swashed", cursive;
 }
 
 .more-info {
