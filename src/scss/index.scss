@@ -1,12 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sansita+Swashed&display=swap");
 
+* {
+    box-sizing: border-box;
+}
+
 body,
 html {
     margin: 0;
     padding: 0;
     height: 100%;
+
     background-color: $main-background-color;
+
     font-family: $font-family;
+    color: $text-color;
+}
+
+p {
+    color: $text-color-darker;
+    font-size: larger;
 }
 
 #app {

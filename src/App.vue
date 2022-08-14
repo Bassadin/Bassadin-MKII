@@ -5,14 +5,14 @@
         </metainfo>
         <SiteHeader />
         <div class="content">
-            <div class="hero-image">
+            <section class="hero-image">
                 <img
                     src="@/assets/Bastian_white_blackBG.jpg"
                     alt="Bastian Hodapp Image in edge circuit board style"
                 />
                 <h1 class="hero-name">Bastian Hodapp</h1>
-            </div>
-            <div class="more-info">
+            </section>
+            <section class="more-info">
                 <p>
                     I'm Bastian, a software developer from Germany. While my
                     current focus is Full Stack Web Development (buzz word
@@ -28,7 +28,8 @@
                     >. Next to that, I'm working as a full stack web developer
                     for <a href="https://compaile.com/">Compaile</a>.
                 </p>
-            </div>
+            </section>
+            <CurriculumVitae />
         </div>
 
         <SiteFooter />
@@ -38,10 +39,11 @@
 <script lang="ts">
 import SiteHeader from "@/sections/SiteHeader.vue";
 import SiteFooter from "@/sections/SiteFooter.vue";
+import CurriculumVitae from "@/sections/CurriculumVitae.vue";
 
 export default {
     name: "App",
-    components: { SiteHeader, SiteFooter },
+    components: { SiteHeader, SiteFooter, CurriculumVitae },
     metaInfo() {
         return {
             title: "Bastian Hodapp",
@@ -58,20 +60,21 @@ export default {
     grid-template-rows: auto 1fr auto;
 }
 
+.content {
+    margin: 2rem 1rem;
+
+    @include breakpoint("m") {
+        width: 50vw;
+        margin: 5rem auto;
+    }
+}
+
 .hero-name {
     font-family: "Sansita Swashed", cursive;
 }
 
 .more-info {
-    color: $text-color-darker;
-    margin: 4rem 0;
-    font-size: larger;
-    margin: 2rem 1rem;
-
-    @include breakpoint("m") {
-        margin: 5rem auto;
-        width: 50vw;
-    }
+    margin: 2rem 0;
 }
 
 .hero-image {
@@ -85,12 +88,10 @@ export default {
 
     @include breakpoint("m") {
         flex-direction: row;
-        width: 50vw;
         margin-top: 4rem;
     }
 
     h1 {
-        color: $text-color;
         font-size: 4em;
         text-align: center;
         margin: 0;
