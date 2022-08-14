@@ -36,8 +36,8 @@
 </template>
 
 <script lang="ts">
-import SiteHeader from "@components/SiteHeader.vue";
-import SiteFooter from "@components/SiteFooter.vue";
+import SiteHeader from "@/sections/SiteHeader.vue";
+import SiteFooter from "@/sections/SiteFooter.vue";
 
 export default {
     name: "App",
