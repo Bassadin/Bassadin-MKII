@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sansita+Swashed&display=swap");
 
 body,
 html {
@@ -17,9 +17,13 @@ html {
 a {
     text-decoration: none;
     color: $link-color;
-    transition: color 0.2s;
-
-    &:hover {
-        color: color.adjust($link-color, $lightness: +15%);
-    }
+    background: linear-gradient(0deg, $link-color, $link-color) no-repeat right
+        bottom / 0 var(--bg-h);
+    transition: background-size 250ms;
+    padding-bottom: 0px;
+    --bg-h: 2px;
+}
+a:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
 }
