@@ -7,10 +7,10 @@
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",
-        "format": "yarn prettier --write .",
+        "prettier:format": "yarn prettier --write .",
         "cypress:open": "cypress open --component",
         "cypress:headless": "cypress run --component",
-        "eslint": "eslint --ext .js,.vue,.ts src",
+        "eslint:scan": "eslint --ext .js,.vue,.ts src",
         "eslint:fix": "eslint --fix --ext .js,.vue,.ts src"
     },
     "dependencies": {
