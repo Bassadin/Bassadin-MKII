@@ -57,6 +57,7 @@ export default {
         margin-left: 0.7rem;
         border-radius: 0.2rem;
         height: 40px;
+        cursor: pointer;
 
         @include breakpoint("m") {
             margin-left: 1rem;
