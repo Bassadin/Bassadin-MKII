@@ -4,6 +4,7 @@
             src="@\assets\avatar_logo512x512.png"
             class="header-logo"
             alt="site header logo"
+            @click="scrollToTop"
         />
 
         <a class="vue-icon" href="https://vuejs.org/" target="_blank">
@@ -15,6 +16,16 @@
 <script lang="ts">
 export default {
     name: "SiteHeader",
+
+    methods: {
+        scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+            });
+        },
+    },
 };
 </script>
 
