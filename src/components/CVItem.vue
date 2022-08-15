@@ -25,6 +25,11 @@ export default {
 <style lang="scss" scoped>
 .cv-item {
     background-color: $card-background-color;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        background-color: $card-background-color-hover;
+    }
 
     border-radius: $card-border-radius;
 
