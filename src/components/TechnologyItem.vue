@@ -25,6 +25,11 @@ export default {
 <style lang="scss" scoped>
 .technology-item {
     background-color: $card-background-color;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: $card-background-color-hover;
+    }
 
     border-radius: $card-border-radius;
 
