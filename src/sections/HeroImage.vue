@@ -19,12 +19,12 @@
     align-items: center;
     margin: 0 auto;
 
-    margin-top: 3rem;
+    margin-top: 1rem;
     flex-direction: column;
 
     @include breakpoint("m") {
         flex-direction: row;
-        margin-top: 4rem;
+        margin-top: 2.5rem;
     }
 
     h1 {
