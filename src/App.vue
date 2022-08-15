@@ -8,6 +8,7 @@
             <HeroImage />
             <AboutMe />
             <CurriculumVitae />
+            <FavoriteTechnologies />
         </div>
 
         <SiteFooter />
@@ -20,10 +21,18 @@ import SiteFooter from "@/sections/SiteFooter.vue";
 import CurriculumVitae from "@/sections/CurriculumVitae.vue";
 import AboutMe from "./sections/AboutMe.vue";
 import HeroImage from "./sections/HeroImage.vue";
+import FavoriteTechnologies from "./sections/FavoriteTechnologies.vue";
 
 export default {
     name: "App",
-    components: { SiteHeader, SiteFooter, CurriculumVitae, AboutMe, HeroImage },
+    components: {
+        SiteHeader,
+        SiteFooter,
+        CurriculumVitae,
+        AboutMe,
+        HeroImage,
+        FavoriteTechnologies,
+    },
     metaInfo() {
         return {
             title: "Bastian Hodapp",
