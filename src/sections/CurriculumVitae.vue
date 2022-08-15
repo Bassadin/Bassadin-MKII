@@ -60,5 +60,6 @@ export default defineComponent({
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem 1rem;
 }
 </style>

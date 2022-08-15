@@ -34,10 +34,8 @@ export default {
     flex: 0 0 100%;
 
     @include breakpoint("m") {
-        flex: 0 0 calc(50% - 20px);
+        flex: 0 0 calc(50% - 0.5rem);
     }
-
-    margin: 10px;
 
     &--title {
         text-align: center;
