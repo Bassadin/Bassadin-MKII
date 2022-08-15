@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h2>Find an overview of my formal education below:</h2>
+        <h2>Education</h2>
         <div class="cv-item-container">
             <CVItem icon-name="school">
                 <template #title>
