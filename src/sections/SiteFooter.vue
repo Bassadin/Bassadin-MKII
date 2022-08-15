@@ -4,7 +4,11 @@
         <SocialIcons />
         <p>
             Source code available on
-            <a href="https://github.com/Bassadin/Bassadin-MKII" target="_blank">
+            <a
+                href="https://github.com/Bassadin/Bassadin-MKII"
+                target="_blank"
+                class="underline-hover"
+            >
                 GitHub <mdicon name="github" />
             </a>
         </p>

@@ -7,7 +7,11 @@
             @click="scrollToTop"
         />
 
-        <a class="vue-icon" href="https://vuejs.org/" target="_blank">
+        <a
+            class="vue-icon underline-hover"
+            href="https://vuejs.org/"
+            target="_blank"
+        >
             Built with <mdicon name="vuejs" />
         </a>
     </header>

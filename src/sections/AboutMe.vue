@@ -10,10 +10,11 @@
         </p>
         <p>
             At the moment, I'm studying for my
-            <a href="https://www.hs-furtwangen.de/"
+            <a class="underline-hover" href="https://www.hs-furtwangen.de/"
                 >master's degree in Computer Science in Furtwangen</a
             >. Next to that, I'm working as a full stack web developer for
-            <a href="https://compaile.com/">Compaile</a>.
+            <a class="underline-hover" href="https://compaile.com/">Compaile</a
+            >.
         </p>
     </section>
 </template>
