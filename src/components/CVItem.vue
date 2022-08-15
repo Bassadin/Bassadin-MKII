@@ -24,7 +24,9 @@ export default {
 
 <style lang="scss" scoped>
 .cv-item {
-    background-color: $block-background-color;
+    background-color: $card-background-color;
+
+    border-radius: $card-border-radius;
 
     padding: 1rem;
     display: flex;
