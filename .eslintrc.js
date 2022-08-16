@@ -12,10 +12,29 @@ module.exports = {
         "@vue/eslint-config-typescript/recommended",
     ],
     rules: {
-        "prettier/prettier": "error",
-        "vue/no-unused-vars": "error",
+        "@typescript-eslint/no-empty-function": "warn",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "prefer-const": "warn",
+        "prettier/prettier": "warn",
+
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            { argsIgnorePattern: "^_" },
+        ],
+
+        // Remove this later when we're ready
+        "@typescript-eslint/no-explicit-any": "off",
+        "vue/no-unused-components": "warn",
+        "vue/no-unused-properties": [
+            "warn",
+            {
+                groups: ["props", "data", "computed", "methods"],
+                deepData: false,
+            },
+        ],
         "vue/order-in-components": [
-            "error",
+            "warn",
             {
                 order: [
                     "el",
@@ -55,7 +74,7 @@ module.exports = {
             },
         ],
         "vue/attributes-order": [
-            "error",
+            "warn",
             {
                 order: [
                     "DEFINITION",
