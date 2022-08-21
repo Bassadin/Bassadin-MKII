@@ -43,6 +43,7 @@
     img {
         border-radius: 50%;
         height: 33vh;
+        width: auto;
     }
 }
 </style>
