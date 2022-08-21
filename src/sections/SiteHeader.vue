@@ -4,6 +4,8 @@
             src="@/assets/avatar_logo256x256.png"
             class="header-logo"
             alt="site header logo"
+            height="256"
+            width="256"
             @click="scrollToTop"
         />
 
@@ -58,6 +60,7 @@ export default {
         border-radius: 0.2rem;
         cursor: pointer;
         height: 40px;
+        width: auto;
 
         @include breakpoint("m") {
             margin-left: 1rem;

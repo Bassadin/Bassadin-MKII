@@ -1,7 +1,9 @@
 <template>
     <section class="hero-image">
         <img
-            src="@/assets/Bastian_white_blackBG.jpg"
+            src="@/assets/Bastian_white_blackBG.webp"
+            width="1280"
+            height="1280"
             alt="Bastian Hodapp Image in edge circuit board style"
         />
         <h1 class="hero-name">Bastian Hodapp</h1>
