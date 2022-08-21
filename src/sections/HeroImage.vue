@@ -10,7 +10,7 @@
 
 <style lang="scss" scoped>
 .hero-name {
-    font-family: "Sansita Swashed", cursive;
+    font-family: $hero-title-font-family;
 }
 
 .hero-image {
