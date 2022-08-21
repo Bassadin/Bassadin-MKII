@@ -36,8 +36,8 @@ export default defineComponent({
 footer {
     text-align: center;
     color: $text-color;
-    border-top: 2px solid #252500;
+    border-top: 2px solid $footer-border-top-color;
     padding-bottom: 0.5rem;
-    background-color: #151500;
+    background-color: $footer-background-color;
 }
 </style>

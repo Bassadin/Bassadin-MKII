@@ -49,7 +49,7 @@ export default {
         padding: 0.8rem 0;
     }
 
-    border-bottom: 4px solid #665;
+    border-bottom: 4px solid $header-separator-color;
     background-color: $header-background-color;
     color: $text-color;
 
