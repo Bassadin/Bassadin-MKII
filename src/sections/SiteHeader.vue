@@ -1,7 +1,7 @@
 <template>
     <header id="site-header">
         <img
-            src="@\assets\avatar_logo512x512.png"
+            src="@/assets/avatar_logo256x256.png"
             class="header-logo"
             alt="site header logo"
             @click="scrollToTop"
@@ -56,8 +56,8 @@ export default {
     .header-logo {
         margin-left: 0.7rem;
         border-radius: 0.2rem;
-        height: 40px;
         cursor: pointer;
+        height: 40px;
 
         @include breakpoint("m") {
             margin-left: 1rem;
