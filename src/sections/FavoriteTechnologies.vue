@@ -68,6 +68,11 @@ export default defineComponent({
                 url: "https://kubernetes.io/",
                 title: "Kubernetes",
             },
+            {
+                iconName: "git",
+                url: "https://git-scm.com/",
+                title: "Git",
+            },
         ] as TechnologyItemData[],
     }),
 });
