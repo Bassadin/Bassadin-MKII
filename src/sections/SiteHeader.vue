@@ -53,7 +53,7 @@ export default {
 
     border-bottom: 4px solid $header-separator-color;
     background-color: $header-background-color;
-    color: $light-text-color;
+    color: $text-color-primary;
 
     .header-logo {
         margin-left: 0.7rem;

@@ -11,11 +11,11 @@ html {
     background-color: $main-background-color;
 
     font-family: $main-font-family;
-    color: $light-text-color;
+    color: $text-color-primary;
 }
 
 p {
-    color: $light-text-color-darker;
+    color: $text-color-secondary;
     font-size: larger;
 }
 
