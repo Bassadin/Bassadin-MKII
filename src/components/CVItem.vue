@@ -50,6 +50,10 @@ export default {
     }
 
     &--description {
+        margin-bottom: 0;
+        @include breakpoint("m") {
+            margin-bottom: 0.8rem;
+        }
         text-align: center;
     }
 }
