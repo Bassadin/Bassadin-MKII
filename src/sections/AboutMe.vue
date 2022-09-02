@@ -9,6 +9,11 @@
             new technologies. Clean and structured code is very important to me.
         </p>
         <p>
+            I enjoy using tools to improve code quality like ESLint or Prettier.
+            I also like to improve the deploy time of my project using CI/CD
+            tools like GitHub Actions and GitLab CI/CD.
+        </p>
+        <p>
             At the moment, I'm studying for my
             <a class="underline-hover" href="https://www.hs-furtwangen.de/"
                 >master's degree in Computer Science in Furtwangen</a
