@@ -28,7 +28,7 @@
                 </template>
                 <template #description>
                     DHBW Lörrach<br />
-                    2015 - 2028<br />
+                    2015 - 2018<br />
                     Not finished
                 </template>
             </CVItem>
