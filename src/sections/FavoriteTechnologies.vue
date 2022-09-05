@@ -1,6 +1,10 @@
 <template>
     <section>
         <h2>Favorite Technologies</h2>
+        <p>
+            Here are some of my favorite technologies I like to use and/or work
+            with:
+        </p>
         <div class="technology-item-container">
             <TechnologyItem
                 v-for="eachTechnologyItemData in technologyItems"
