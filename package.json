@@ -11,7 +11,8 @@
         "cypress:open": "cypress open --component",
         "cypress:headless": "cypress run --component",
         "eslint:scan": "eslint --ext .js,.vue,.ts src",
-        "eslint:fix": "eslint --fix --ext .js,.vue,.ts src"
+        "eslint:fix": "eslint --fix --ext .js,.vue,.ts src",
+        "prepare": "husky install"
     },
     "dependencies": {
         "@mdi/js": "^7.0",
@@ -40,6 +41,7 @@
         "sass": "^1.54",
         "typescript": "^4.7.4",
         "vite": "^3",
-        "yarn": "^1.22"
+        "yarn": "^1.22",
+        "husky": "^8.0.0"
     }
 }
