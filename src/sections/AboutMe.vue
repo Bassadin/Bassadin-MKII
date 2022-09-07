@@ -17,7 +17,8 @@
             At the moment, I'm studying for my
             <a class="underline-hover" href="https://www.hs-furtwangen.de/"
                 >master's degree in Computer Science in Furtwangen</a
-            >. Next to that, I'm working as a full stack web developer for
+            >. Additionally, I'm working as a full stack web developer working
+            student for
             <a class="underline-hover" href="https://compaile.com/">Compaile</a
             >.
         </p>
