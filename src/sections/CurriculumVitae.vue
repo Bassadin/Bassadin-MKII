@@ -1,6 +1,7 @@
 <template>
     <section>
         <h2>Education</h2>
+        <p>My educational steps, from latest to oldest:</p>
         <div class="cv-item-container">
             <CVItem icon-name="school">
                 <template #title>
