@@ -9,7 +9,7 @@
                 </template>
                 <template #description>
                     HFU Furtwangen<br />
-                    Mar 2022 - Oct 2023
+                    Mar 2022 - Aug 2023
                 </template>
             </CVItem>
             <CVItem icon-name="school">
