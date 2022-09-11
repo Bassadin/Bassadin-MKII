@@ -1,13 +1,15 @@
 <template>
     <header id="site-header">
-        <img
-            src="@/assets/avatar_logo256x256.png"
-            class="header-logo"
-            alt="site header logo"
-            height="256"
-            width="256"
-            @click="scrollToTop"
-        />
+        <router-link to="/">
+            <img
+                src="@/assets/avatar_logo256x256.png"
+                class="header-logo"
+                alt="site header logo"
+                height="256"
+                width="256"
+                @click="scrollToTop"
+            />
+        </router-link>
 
         <a
             class="vue-icon underline-hover"

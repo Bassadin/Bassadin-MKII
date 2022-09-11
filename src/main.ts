@@ -17,5 +17,9 @@ app.use(mdiVue, {
     icons: mdijs,
 });
 
+// Vue router
+import router from "@/router/index";
+app.use(router);
+
 // Mount to app div
 app.mount("#app");

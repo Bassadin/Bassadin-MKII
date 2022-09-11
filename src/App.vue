@@ -3,12 +3,11 @@
         <metainfo>
             <template #title="{ content }">{{ content }}</template>
         </metainfo>
+
         <SiteHeader />
+
         <div class="content">
-            <HeroImage />
-            <AboutMe />
-            <CurriculumVitae />
-            <FavoriteTechnologies />
+            <router-view />
         </div>
 
         <SiteFooter />
@@ -18,20 +17,12 @@
 <script lang="ts">
 import SiteHeader from "@/sections/SiteHeader.vue";
 import SiteFooter from "@/sections/SiteFooter.vue";
-import CurriculumVitae from "@/sections/CurriculumVitae.vue";
-import AboutMe from "./sections/AboutMe.vue";
-import HeroImage from "./sections/HeroImage.vue";
-import FavoriteTechnologies from "./sections/FavoriteTechnologies.vue";
 
 export default {
     name: "App",
     components: {
         SiteHeader,
         SiteFooter,
-        CurriculumVitae,
-        AboutMe,
-        HeroImage,
-        FavoriteTechnologies,
     },
     metaInfo() {
         return {
