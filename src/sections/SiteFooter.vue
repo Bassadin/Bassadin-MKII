@@ -12,6 +12,7 @@
                 GitHub <mdicon name="github" />
             </a>
         </p>
+        <p class="copyright">©️2022 by Bastian Hodapp</p>
     </footer>
 </template>
 
