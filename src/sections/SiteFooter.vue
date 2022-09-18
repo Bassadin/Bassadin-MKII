@@ -13,6 +13,9 @@
             </a>
         </p>
         <p class="copyright">©️2022 by Bastian Hodapp</p>
+        <router-link to="/legal" class="legal">
+            Legal info and data protection
+        </router-link>
     </footer>
 </template>
 
@@ -38,7 +41,7 @@ footer {
     text-align: center;
     color: $text-color-primary;
     border-top: 3px solid $footer-border-top-color;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
     background-color: $footer-background-color;
 }
 </style>
