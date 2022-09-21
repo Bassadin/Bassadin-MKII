@@ -19,9 +19,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
 
     margin-top: 1rem;
+    margin-block-end: 3rem;
+
     flex-direction: column;
 
     @include breakpoint("m") {
