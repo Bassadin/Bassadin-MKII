@@ -41,11 +41,11 @@ export default {
 }
 
 .content {
-    margin: 2rem 1rem;
+    margin: 1rem 1rem;
 
     @include breakpoint("m") {
         width: 50vw;
-        margin: 5rem auto;
+        margin: 1rem auto;
     }
 
     > * {
