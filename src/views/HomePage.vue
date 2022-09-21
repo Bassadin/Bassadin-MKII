@@ -38,6 +38,11 @@
             deployment action.
         </p>
         <p>
+            To ensure code consistency and quality, I use ESLint and Prettier. I
+            also use husky.js to ensure that my code is checked by these two
+            code quality tools before every commit I make.
+        </p>
+        <p>
             The source code is available on
             <a href="https://github.com/Bassadin/Bassadin-MKII">GitHub</a>.
         </p>
