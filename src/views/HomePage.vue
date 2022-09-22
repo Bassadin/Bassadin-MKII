@@ -33,14 +33,14 @@
         <h2>About this website</h2>
         <p>
             This website was build using Vue.js 3, my favorite and most-used
-            frontend JS framework. Using GitHub actions, changes I make to it
-            locally are automatically deployed to my webhoster using an FTP
-            deployment action.
+            frontend JS framework. Using GitHub actions, changes that are
+            committed to the main branch are automatically deployed to my
+            webhoster using an FTP deployment action.
         </p>
         <p>
             To ensure code consistency and quality, I use ESLint and Prettier. I
             also use husky.js to ensure that my code is checked by these two
-            code quality tools before every commit I make.
+            code quality tools before every commit that is made.
         </p>
         <p>
             The source code is available on
