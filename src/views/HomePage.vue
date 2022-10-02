@@ -44,7 +44,11 @@
         </p>
         <p>
             The source code is available on
-            <a href="https://github.com/Bassadin/Bassadin-MKII">GitHub</a>.
+            <a
+                class="underline-hover"
+                href="https://github.com/Bassadin/Bassadin-MKII"
+                >GitHub</a
+            >.
         </p>
     </section>
 </template>
