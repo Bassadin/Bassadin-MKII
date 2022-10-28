@@ -43,14 +43,14 @@ export default defineComponent({
                 title: "Typescript",
             },
             {
-                iconName: "unity",
-                url: "https://unity.com/",
-                title: "Unity",
-            },
-            {
                 iconName: "microsoft-visual-studio-code",
                 url: "https://code.visualstudio.com/",
-                title: "VS Code",
+                title: "Visual Studio Code",
+            },
+            {
+                iconName: "laravel",
+                url: "https://laravel.com/",
+                title: "Laravel",
             },
             {
                 iconName: "nodejs",
@@ -61,6 +61,11 @@ export default defineComponent({
                 iconName: "github",
                 url: "https://github.com/",
                 title: "GitHub",
+            },
+            {
+                iconName: "unity",
+                url: "https://unity.com/",
+                title: "Unity",
             },
             {
                 iconName: "docker",
