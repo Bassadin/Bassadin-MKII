@@ -5,7 +5,8 @@
         <div class="cv-item-container">
             <CVItem icon-name="school">
                 <template #title>
-                    Master of Science (Computer Science)
+                    Master of Science<br />
+                    (Computer Science / Informatik)
                 </template>
                 <template #description>
                     HFU Furtwangen<br />
@@ -14,7 +15,8 @@
             </CVItem>
             <CVItem icon-name="school">
                 <template #title>
-                    Bachelor of Science (Computer Science)
+                    Bachelor of Science<br />
+                    (Computer Science in Media / Medieninformatik)
                 </template>
                 <template #description>
                     HFU Furtwangen<br />
