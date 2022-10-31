@@ -30,7 +30,7 @@
         "@vitejs/plugin-vue": "^3.0",
         "@vue/eslint-config-typescript": "^11.0.0",
         "cypress": "^10",
-        "eslint": "^8.26a",
+        "eslint": "^8.26",
         "eslint-config-prettier": "^8.5.0",
         "eslint-config-standard": "^17.0.0",
         "eslint-plugin-import": "^2.25.2",
