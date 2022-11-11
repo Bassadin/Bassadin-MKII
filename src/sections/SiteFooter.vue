@@ -12,10 +12,12 @@
                 GitHub <mdicon name="github" />
             </a>
         </p>
+        <p>
+            <router-link to="/legal" class="legal">
+                Legal info and data protection
+            </router-link>
+        </p>
         <p class="copyright">©️2022 by Bastian Hodapp</p>
-        <router-link to="/legal" class="legal">
-            Legal info and data protection
-        </router-link>
     </footer>
 </template>
 
@@ -49,7 +51,7 @@ footer {
     background-color: $footer-background-color;
 }
 
-.legal {
-    font-size: larger;
+.copyright {
+    margin: 2.5rem 0 0 0;
 }
 </style>
