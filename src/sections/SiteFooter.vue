@@ -1,7 +1,7 @@
 <template>
     <footer>
         <p class="social-heading">Social</p>
-        <SocialIcons />
+        <SocialIcons class="social-icons-container" />
         <p>
             Source code available on
             <a
@@ -30,9 +30,13 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+.social-icons-container {
+    margin-top: 1rem;
+}
+
 .social-heading {
     margin-bottom: 0;
-    margin-top: 2rem;
+    margin-top: 0;
     font-weight: bold;
     font-size: 1.3em;
 }
@@ -41,7 +45,11 @@ footer {
     text-align: center;
     color: $text-color-primary;
     border-top: 3px solid $footer-border-top-color;
-    padding-bottom: 1.5rem;
+    padding: 2.2rem 0;
     background-color: $footer-background-color;
+}
+
+.legal {
+    font-size: larger;
 }
 </style>
