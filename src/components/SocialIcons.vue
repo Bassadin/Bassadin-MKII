@@ -57,8 +57,6 @@ export default {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 1.3rem 0 1rem 0;
-    margin: 0 0.5rem;
 
     .link-button {
         background: none;
