@@ -1,14 +1,17 @@
 <template>
     <header id="site-header">
         <router-link to="/">
-            <img
-                src="@/assets/avatar_logo256x256.png"
-                class="header-logo"
-                alt="site header logo"
-                height="256"
-                width="256"
-                @click="scrollToTop"
-            />
+            <div class="site-header-title-container">
+                <img
+                    src="@/assets/avatar_logo256x256.png"
+                    class="header-logo"
+                    alt="site header logo"
+                    height="256"
+                    width="256"
+                    @click="scrollToTop"
+                />
+                <h1 class="site-header-title">BH</h1>
+            </div>
         </router-link>
 
         <a
@@ -57,16 +60,29 @@ export default {
     background-color: $header-background-color;
     color: $text-color-primary;
 
-    .header-logo {
-        margin-left: 0.7rem;
-        border-radius: 0.2rem;
-        cursor: pointer;
-        height: 40px;
-        width: auto;
+    .site-header-title-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
-        @include breakpoint("m") {
-            margin-left: 1rem;
-            height: 50px;
+        .header-logo {
+            margin-left: 0.7rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+            height: 40px;
+            width: auto;
+
+            @include breakpoint("m") {
+                margin-left: 1rem;
+                height: 50px;
+            }
+        }
+
+        .site-header-title {
+            font-size: 1.8em;
+            font-family: $hero-title-font-family;
+            margin: 0;
+            margin-left: 1.2rem;
         }
     }
 
