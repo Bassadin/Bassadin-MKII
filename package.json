@@ -22,14 +22,14 @@
         "vue-router": "4.1"
     },
     "devDependencies": {
-        "@cypress/vite-dev-server": "^3",
-        "@cypress/vue": "^4",
+        "@cypress/vite-dev-server": "^5",
+        "@cypress/vue": "^5",
         "@rushstack/eslint-patch": "^1.1.4",
         "@typescript-eslint/eslint-plugin": "^5.33.0",
         "@typescript-eslint/parser": "^5.33.0",
-        "@vitejs/plugin-vue": "^3.0",
+        "@vitejs/plugin-vue": "^4.0",
         "@vue/eslint-config-typescript": "^11.0.0",
-        "cypress": "^10",
+        "cypress": "^12",
         "eslint": "^8.26",
         "eslint-config-prettier": "^8.5.0",
         "eslint-config-standard": "^17.0.0",
@@ -42,7 +42,7 @@
         "prettier": "^2.7",
         "sass": "^1.54",
         "typescript": "^4.7.4",
-        "vite": "^3",
+        "vite": "^4.0",
         "yarn": "^1.22"
     }
 }
