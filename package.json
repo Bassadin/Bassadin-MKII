@@ -8,8 +8,6 @@
         "build": "vite build",
         "preview": "vite preview",
         "prettier:format": "yarn prettier --write .",
-        "cypress:open": "cypress open --component",
-        "cypress:headless": "cypress run --component",
         "eslint:scan": "eslint --ext .js,.vue,.ts src",
         "eslint:fix": "eslint --fix --ext .js,.vue,.ts src",
         "prepare": "husky install"
@@ -22,14 +20,11 @@
         "vue-router": "4.1"
     },
     "devDependencies": {
-        "@cypress/vite-dev-server": "^5",
-        "@cypress/vue": "^5",
         "@rushstack/eslint-patch": "^1.1.4",
         "@typescript-eslint/eslint-plugin": "^5.33.0",
         "@typescript-eslint/parser": "^5.33.0",
         "@vitejs/plugin-vue": "^4.0",
         "@vue/eslint-config-typescript": "^11.0.0",
-        "cypress": "^12",
         "eslint": "^8.26",
         "eslint-config-prettier": "^8.5.0",
         "eslint-config-standard": "^17.0.0",
