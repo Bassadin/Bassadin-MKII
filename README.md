@@ -1,31 +1,22 @@
-# bassadin-mkii
+# Bastian Hodapp Portfolio Page
 
-Portfolio page (WIP)
+My personal webpage.
 
-## Project setup
+## Pipeline status
 
-```
-npm install
-```
+![example workflow](https://github.com/bassadin/Bassadin-MKII/actions/workflows/main.yml/badge.svg)
 
-### Compiles and hot-reloads for development
+![example workflow](https://github.com/bassadin/Bassadin-MKII/actions/workflows/docker-build.yml/badge.svg)
 
-```
-npm run serve
-```
+![example workflow](https://github.com/bassadin/Bassadin-MKII/actions/workflows/codeql-analysis.yml/badge.svg)
 
-### Compiles and minifies for production
+## Project dev setup
 
 ```
-npm run build
+yarn
+yarn dev
 ```
 
-### Lints and fixes files
+## Docker image (built with GitHub Actions pipeline)
 
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[Link to Docker Hub](https://hub.docker.com/r/bassadin/mkii-website)
