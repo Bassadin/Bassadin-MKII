@@ -8,8 +8,8 @@
         "build": "vite build",
         "preview": "vite preview",
         "prettier:format": "yarn prettier --write .",
-        "eslint:scan": "eslint --ext .js,.vue,.ts src",
-        "eslint:fix": "eslint --fix --ext .js,.vue,.ts src",
+        "eslint:scan": "eslint --ext .js,.vue,.ts src/ cypress/",
+        "eslint:fix": "eslint --fix --ext .js,.vue,.ts src/ cypress/",
         "cypress:open": "cypress open",
         "cypress:run": "cypress run",
         "prepare": "husky install"
