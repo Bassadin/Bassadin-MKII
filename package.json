@@ -10,6 +10,8 @@
         "prettier:format": "yarn prettier --write .",
         "eslint:scan": "eslint --ext .js,.vue,.ts src",
         "eslint:fix": "eslint --fix --ext .js,.vue,.ts src",
+        "cypress:open": "cypress open",
+        "cypress:run": "cypress run",
         "prepare": "husky install"
     },
     "dependencies": {
