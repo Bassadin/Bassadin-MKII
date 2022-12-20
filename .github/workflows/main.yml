@@ -1,4 +1,4 @@
-name: Build, test and deploy to https://bassadin.de/
+name: Build, Test and Deploy with FTP
 
 on: push
 
