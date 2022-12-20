@@ -14,23 +14,9 @@
     </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import SiteHeader from "@/sections/SiteHeader.vue";
 import SiteFooter from "@/sections/SiteFooter.vue";
-
-export default {
-    name: "App",
-    components: {
-        SiteHeader,
-        SiteFooter,
-    },
-    metaInfo() {
-        return {
-            title: "Bastian Hodapp",
-            description: "Bastian Hodapp Portfolio",
-        };
-    },
-};
 </script>
 
 <style lang="scss" scoped>

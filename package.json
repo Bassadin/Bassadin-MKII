@@ -17,6 +17,8 @@
     "dependencies": {
         "@mdi/js": "^7.0",
         "@unocss/reset": "^0.47.6",
+        "@vueuse/core": "^9.8.0",
+        "@vueuse/head": "^1.0.22",
         "mdi-vue": "^3.0",
         "vue": "^3.2",
         "vue-meta": "^3.0.0-alpha.10",

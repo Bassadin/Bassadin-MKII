@@ -342,6 +342,11 @@
   resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.3.tgz#ff5e2f1902969d305225a047c8a0fd5c915cebef"
   integrity sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ==
 
+"@types/web-bluetooth@^0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@types/web-bluetooth/-/web-bluetooth-0.0.16.tgz#1d12873a8e49567371f2a75fe3e7f7edca6662d8"
+  integrity sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==
+
 "@types/yauzl@^2.9.1":
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/@types/yauzl/-/yauzl-2.10.0.tgz#b3248295276cf8c6f153ebe6a9aba0c988cb2599"
@@ -431,6 +436,36 @@
   dependencies:
     "@typescript-eslint/types" "5.46.1"
     eslint-visitor-keys "^3.3.0"
+
+"@unhead/dom@^1.0.9":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@unhead/dom/-/dom-1.0.13.tgz#76aab52c913346e248916cbf9a8c64dfd11f0c5d"
+  integrity sha512-ErfhK3Nwk3kpxnPEOrkruKAdS3/TrNlKs0nYtKgFJ1ywJYg+uNwRFDe82v4JdUMhnfmbgL/qcO3PTx3Dv09IEQ==
+  dependencies:
+    "@unhead/schema" "1.0.13"
+
+"@unhead/schema@1.0.13", "@unhead/schema@^1.0.9":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@unhead/schema/-/schema-1.0.13.tgz#f98ed4f7801091611be6d8b49a86b8a576621a82"
+  integrity sha512-K8SiAEkM8G7GaF1QvsKlthLmRqGB8R9SvZXMCucZqb2VQ6bU4IFSs/4q6dKxmV0fXb5AHdKUL9+rX/4rQ6FsZg==
+  dependencies:
+    "@zhead/schema" "^1.0.7"
+    hookable "^5.4.2"
+
+"@unhead/ssr@^1.0.9":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@unhead/ssr/-/ssr-1.0.13.tgz#d4b14bc3d227170d15dd0e3571313873df3bfc05"
+  integrity sha512-pach3THVx8LU54M6aQ4qZeQdcLjXVnPlpHe7pQjHGvD6iBJC5bZc8TL+CHdTRxeiq2DqMA5uyfoor7VJJTi5AQ==
+  dependencies:
+    "@unhead/schema" "1.0.13"
+
+"@unhead/vue@^1.0.9":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@unhead/vue/-/vue-1.0.13.tgz#1d2df3867147794183086db3f1598c411a7637e3"
+  integrity sha512-sGl640UQqN8HUYTKXOh6gErk/vw8byPdx1+ECqX4ec7UZYktsWgfyIReYBu09Qm3O6pIYfX8HlZbDipX+wQAOQ==
+  dependencies:
+    "@unhead/schema" "1.0.13"
+    hookable "^5.4.2"
 
 "@unocss/astro@0.47.6":
   version "0.47.6"
@@ -704,6 +739,43 @@
   version "3.2.45"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.45.tgz#a3fffa7489eafff38d984e23d0236e230c818bc2"
   integrity sha512-Ewzq5Yhimg7pSztDV+RH1UDKBzmtqieXQlpTVm2AwraoRL/Rks96mvd8Vgi7Lj+h+TH8dv7mXD3FRZR3TUvbSg==
+
+"@vueuse/core@^9.8.0":
+  version "9.8.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-9.8.0.tgz#69825026a95174e031b16e30a6943e4403a23586"
+  integrity sha512-TsnPwRu35TQ6RumwelfnK4SmXBgapPcsATffNA96LyXZiboKPSjZAix0wvNm83fcQOg7YVDbQIUxGXpIQwuueQ==
+  dependencies:
+    "@types/web-bluetooth" "^0.0.16"
+    "@vueuse/metadata" "9.8.0"
+    "@vueuse/shared" "9.8.0"
+    vue-demi "*"
+
+"@vueuse/head@^1.0.22":
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/@vueuse/head/-/head-1.0.22.tgz#66b591d6e4dc636c6578d1c04a96bd6c2e00f3b6"
+  integrity sha512-YmUdbzNdCnhmrAFxGnJS+Rixj+swE+TQC9OEaYDHIro6gE7W11jugcdwVP00HrA4WRQhg+TOQ4YcY2oL/PP1hw==
+  dependencies:
+    "@unhead/dom" "^1.0.9"
+    "@unhead/schema" "^1.0.9"
+    "@unhead/ssr" "^1.0.9"
+    "@unhead/vue" "^1.0.9"
+
+"@vueuse/metadata@9.8.0":
+  version "9.8.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/metadata/-/metadata-9.8.0.tgz#2cabcfed2c50e7637a9f1500893301acdde3173a"
+  integrity sha512-Izw87Dm3vCpQqJNbOG6nt8GDCYjphOxds59WQFwKDxMIjyIxoGDFz5YVvkzPKCCpd+xErdi1g+MEyVTrASLeyg==
+
+"@vueuse/shared@9.8.0":
+  version "9.8.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-9.8.0.tgz#6f55744dbccd1246be5bedfc6ef00c0c3dd168ab"
+  integrity sha512-Cm9n23SGDrP/8Nw6n40CtC1QTnd5nvv0mZmakOXPStYxF1O4JH+CDVXW2wVobS0S3QyriWTPWOWiyVEJtk3c+A==
+  dependencies:
+    vue-demi "*"
+
+"@zhead/schema@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@zhead/schema/-/schema-1.0.7.tgz#229d03af31025a02b2de02a7b065542d7121e0df"
+  integrity sha512-jN2ipkz39YrHd8uulgw/Y7x8iOxvR/cTkin/E9zRQVP5JBIrrJMiGyFFj6JBW4Q029xJ5dKtpwy/3RZWpz+dkQ==
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
@@ -1934,6 +2006,11 @@ has@^1.0.3:
   integrity sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
   dependencies:
     function-bind "^1.1.1"
+
+hookable@^5.4.2:
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/hookable/-/hookable-5.4.2.tgz#6a1d3c4b3cb5b4262f99b3070ce0ee92c9c78049"
+  integrity sha512-6rOvaUiNKy9lET1X0ECnyZ5O5kSV0PJbtA5yZUgdEF7fGJEVwSLSislltyt7nFwVVALYHQJtfGeAR2Y0A0uJkg==
 
 http-signature@~1.3.6:
   version "1.3.6"
@@ -3184,6 +3261,11 @@ vite@^4.0:
     rollup "^3.7.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+vue-demi@*:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.13.11.tgz#7d90369bdae8974d87b1973564ad390182410d99"
+  integrity sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==
 
 vue-eslint-parser@^9.0.0, vue-eslint-parser@^9.0.1:
   version "9.1.0"

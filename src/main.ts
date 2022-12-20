@@ -19,6 +19,15 @@ app.use(mdiVue, {
     icons: mdijs,
 });
 
+// VueUse head
+import { createHead } from "@vueuse/head";
+const head = createHead({
+    title: "Bastian Hodapp",
+    meta: [{ name: "description", content: "Bastian Hodapp Portfolio" }],
+});
+
+app.use(head);
+
 // Vue router
 import router from "@/router/index";
 app.use(router);
