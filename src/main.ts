@@ -1,4 +1,6 @@
 import "@/scss/index.scss";
+import "uno.css";
+import "@unocss/reset/normalize.css";
 
 import { createApp } from "vue";
 import App from "@/App.vue";
@@ -16,6 +18,15 @@ import mdiVue from "mdi-vue/v3";
 app.use(mdiVue, {
     icons: mdijs,
 });
+
+// VueUse head
+import { createHead } from "@vueuse/head";
+const head = createHead({
+    title: "Bastian Hodapp",
+    meta: [{ name: "description", content: "Bastian Hodapp Portfolio" }],
+});
+
+app.use(head);
 
 // Vue router
 import router from "@/router/index";

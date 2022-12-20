@@ -2,7 +2,7 @@
     <section>
         <h2>Education</h2>
         <p>My educational steps, from latest to oldest:</p>
-        <div class="cv-item-container">
+        <div class="flex flex-wrap content-center gap-4">
             <CVItem icon-name="school">
                 <template #title>
                     Master of Science<br />
@@ -48,21 +48,6 @@
     </section>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import CVItem from "@/components/CVItem.vue";
-
-export default defineComponent({
-    components: { CVItem },
-    data: () => ({}),
-});
 </script>
-
-<style lang="scss" scoped>
-.cv-item-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem 1rem;
-}
-</style>

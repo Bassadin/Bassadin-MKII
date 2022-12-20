@@ -1,12 +1,30 @@
 import path from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import Unocss from "unocss/vite";
+
+import { presetWind } from "unocss";
+import presetWebFonts from "@unocss/preset-web-fonts";
 
 const hash = Math.floor(Math.random() * 90000) + 10000;
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [vue()],
+    plugins: [
+        vue(),
+        Unocss({
+            presets: [
+                presetWind(),
+                presetWebFonts({
+                    provider: "google",
+                    fonts: {
+                        sans: "Roboto",
+                        mono: ["Fira Code", "Fira Mono:400,700"],
+                    },
+                }),
+            ],
+        }),
+    ],
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "./src"),
