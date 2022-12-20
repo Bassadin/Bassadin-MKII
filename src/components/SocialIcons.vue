@@ -1,9 +1,9 @@
 <template>
-    <div class="contact-icons-container">
+    <div class="flex justify-center flex-wrap">
         <a
             v-for="eachIconData in socialFooterIcons"
             :key="eachIconData.href"
-            class="link-button"
+            class="link-button p-2 m-2 transition-all duration-200 block"
             :href="eachIconData.href"
             :aria-label="eachIconData.iconName"
             target="blank"
@@ -17,78 +17,66 @@
     </div>
 </template>
 
-<script lang="ts">
-export default {
-    name: "SocialIcons",
+<script setup lang="ts">
+interface IconData {
+    iconName: string;
+    href: string;
+}
 
-    data: () => ({
-        socialFooterIcons: [
-            {
-                iconName: "twitter",
-                href: "https://twitter.com/BasVonBassadin",
-            },
-            {
-                iconName: "linkedin",
-                href: "https://www.linkedin.com/in/basvonbassadin/",
-            },
-            {
-                iconName: "reddit",
-                href: "https://www.reddit.com/user/vadsvads",
-            },
-            {
-                iconName: "codepen",
-                href: "https://codepen.io/bassadin",
-            },
-            {
-                iconName: "github",
-                href: "https://github.com/bassadin",
-            },
-            {
-                iconName: "email",
-                href: "mailto:bastianhodapp@gmail.com",
-            },
-        ],
-    }),
-};
+const socialFooterIcons: IconData[] = [
+    {
+        iconName: "twitter",
+        href: "https://twitter.com/BasVonBassadin",
+    },
+    {
+        iconName: "linkedin",
+        href: "https://www.linkedin.com/in/basvonbassadin/",
+    },
+    {
+        iconName: "reddit",
+        href: "https://www.reddit.com/user/vadsvads",
+    },
+    {
+        iconName: "codepen",
+        href: "https://codepen.io/bassadin",
+    },
+    {
+        iconName: "github",
+        href: "https://github.com/bassadin",
+    },
+    {
+        iconName: "email",
+        href: "mailto:bastianhodapp@gmail.com",
+    },
+];
 </script>
 
 <style lang="scss" scoped>
-.contact-icons-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.link-button {
+    background: none;
+    color: $link-button-border-color;
 
-    .link-button {
-        background: none;
+    box-shadow: 0.3em 0.3em 0 0 $link-button-border-color,
+        inset 0.3em 0.3em 0 0 $link-button-border-color;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 0 0 0 $link-button-border-color,
+            inset 6em 3.5em 0 0 $link-button-border-color;
+
+        .link-button--icon {
+            color: $link-button-icon-color;
+            transform: translate(0, 0);
+        }
+    }
+
+    &--icon {
         display: block;
-        color: $link-button-border-color;
-        padding: 0.5rem;
-        margin: 0.5rem;
 
-        transition: 0.25s;
+        transition: color 0.25s;
+        transition: transform 0.25s;
 
-        box-shadow: 0.3em 0.3em 0 0 $link-button-border-color,
-            inset 0.3em 0.3em 0 0 $link-button-border-color;
-
-        &:hover,
-        &:focus {
-            box-shadow: 0 0 0 0 $link-button-border-color,
-                inset 6em 3.5em 0 0 $link-button-border-color;
-
-            .link-button--icon {
-                color: $link-button-icon-color;
-                transform: translate(0, 0);
-            }
-        }
-
-        &--icon {
-            display: block;
-
-            transition: color 0.25s;
-            transition: transform 0.25s;
-
-            transform: translate(0.15em, 0.15em);
-        }
+        transform: translate(0.15em, 0.15em);
     }
 }
 </style>

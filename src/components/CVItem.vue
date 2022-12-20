@@ -12,16 +12,13 @@
     </div>
 </template>
 
-<script lang="ts">
-export default {
-    props: {
-        iconName: {
-            type: String,
-            required: true,
-        },
+<script setup lang="ts">
+defineProps({
+    iconName: {
+        type: String,
+        required: true,
     },
-    data: () => ({}),
-};
+});
 </script>
 
 <style lang="scss" scoped>
