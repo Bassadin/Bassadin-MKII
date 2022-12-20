@@ -2,6 +2,7 @@ import path from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import Unocss from "unocss/vite";
+import colors from "windicss/colors";
 
 import { presetWind } from "unocss";
 import presetWebFonts from "@unocss/preset-web-fonts";
@@ -19,10 +20,30 @@ export default defineConfig({
                     provider: "google",
                     fonts: {
                         sans: "Roboto",
-                        mono: ["Fira Code", "Fira Mono:400,700"],
+                        mono: ["Fira Code", "Roboto Mono"],
+                        hero: ["Sansita Swashed", "cursive"],
                     },
                 }),
             ],
+            theme: {
+                background: {
+                    footer: "rgb(18, 18, 14)",
+                    content: colors.stone,
+                    header: "#333",
+                },
+                colors: {
+                    brand: "#000212",
+                    footer: {
+                        "border-top": "rgb(35, 35, 28)",
+                    },
+                },
+                textColor: {
+                    primary: "#ddd",
+                    secondary: "#aaa",
+                    link: "#edb",
+                    "link-hover": "#ffd",
+                },
+            },
         }),
     ],
     resolve: {
@@ -37,7 +58,6 @@ export default defineConfig({
                 additionalData: `
                     @use "sass:color";
                     @import "@/scss/variables.scss";
-                    @import "@/scss/breakpoints";
                 `,
             },
         },

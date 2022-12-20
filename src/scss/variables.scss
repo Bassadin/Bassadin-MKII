@@ -3,28 +3,22 @@
 // Fonts
 
 @font-face {
-    font-family: "Roboto";
-    src: url("@/assets/fonts/Roboto-Regular.ttf") format("truetype");
-}
-
-@font-face {
     font-family: "Sansita Swashed";
     src: url("@/assets/fonts/SansitaSwashed-VariableFont_wght.ttf")
         format("truetype");
 }
 
-$main-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 $hero-title-font-family: "Sansita Swashed", cursive;
 
-$text-color-primary: #ddd;
-$text-color-secondary: #aaa;
+// $text-color-primary: #ddd;
+// $text-color-secondary: #aaa;
 $link-color: #edb;
 $link-color-hover: #ffd;
 
-$main-background-color: rgb(22, 22, 16);
+// $main-background-color: rgb(22, 22, 16);
 
 // Header
-$header-background-color: #333;
+// $header-background-color: #333;
 $header-separator-color: #665;
 
 // Footer

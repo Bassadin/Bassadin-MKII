@@ -2,7 +2,7 @@
     <a
         :href="url"
         target="_blank"
-        class="technology-item transition-colors duration-200 p-4 flex flex-row items-center rounded-lg basis-full"
+        class="technology-item transition-colors duration-200 p-4 flex flex-row items-center rounded-lg basis-full sm:basis-[calc(33% - 0.6rem)] background-stone-600 background-stone-400:hover"
     >
         <mdicon class="technology-item--icon" :name="iconName" size="45" />
         <h3 class="ml-2">
@@ -23,17 +23,3 @@ defineProps({
     },
 });
 </script>
-
-<style lang="scss" scoped>
-.technology-item {
-    background-color: $card-background-color;
-
-    &:hover {
-        background-color: $card-background-color-hover;
-    }
-
-    @include breakpoint("s") {
-        flex: 0 0 calc(33% - 0.6rem);
-    }
-}
-</style>

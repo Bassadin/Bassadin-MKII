@@ -8,19 +8,16 @@ html {
     padding: 0;
     height: 100%;
 
-    background-color: $main-background-color;
-
-    font-family: $main-font-family;
-    color: $text-color-primary;
+    // background-color: $main-background-color;
 }
 
 section {
     margin-block-end: 2rem;
 }
 
-p {
-    color: $text-color-secondary;
-}
+// p {
+//     color: $text-color-secondary;
+// }
 
 #app {
     margin: 0;
@@ -29,11 +26,11 @@ p {
 
 a {
     text-decoration: none;
-    color: $link-color;
+    // color: $link-color;
 
-    &:hover {
-        color: $link-color-hover;
-    }
+    // &:hover {
+    //     color: $link-color-hover;
+    // }
 }
 
 a.underline-hover {

@@ -1,7 +1,7 @@
 <template>
     <header
-        id="site-header"
-        class="sticky top-0 left-0 width-full flex justify-between flex-row items-center py-2 lg:py-4"
+        id="site-header "
+        class="sticky top-0 left-0 width-full flex justify-between flex-row items-center py-2 lg:py-4 bg-gray-900 color-gray-100 border-solid border-gray-300 border-b-4"
     >
         <router-link to="/">
             <div class="flex flex-row items-center">
@@ -39,10 +39,6 @@ function scrollToTop() {
 
 <style lang="scss" scoped>
 #site-header {
-    border-bottom: 4px solid $header-separator-color;
-    background-color: $header-background-color;
-    color: $text-color-primary;
-
     .site-header-title {
         font-family: $hero-title-font-family;
     }
