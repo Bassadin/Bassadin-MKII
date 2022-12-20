@@ -1,10 +1,12 @@
 <template>
-    <div class="cv-item">
+    <div
+        class="cv-item rounded-lg transition-colors duration-200 p-4 flex flex-col items-center basis-full"
+    >
         <mdicon class="cv-item--icon" :name="iconName" size="45" />
-        <h3 class="cv-item--title">
+        <h3 class="text-center mt-1">
             <slot name="title"></slot>
         </h3>
-        <p class="cv-item--description">
+        <p class="cv-item--description mb-0 text-center">
             <slot name="description"></slot>
         </p>
     </div>
@@ -25,36 +27,19 @@ export default {
 <style lang="scss" scoped>
 .cv-item {
     background-color: $card-background-color;
-    transition: background-color 0.2s ease-in-out;
 
     &:hover {
         background-color: $card-background-color-hover;
     }
 
-    border-radius: $card-border-radius;
-
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    flex: 0 0 100%;
-
     @include breakpoint("m") {
         flex: 0 0 calc(50% - 0.5rem);
     }
 
-    &--title {
-        text-align: center;
-        margin: 0.7rem 0 0 0;
-    }
-
     &--description {
-        margin-bottom: 0;
         @include breakpoint("m") {
             margin-bottom: 0.8rem;
         }
-        text-align: center;
     }
 }
 </style>

@@ -5,7 +5,7 @@
             Here are some of my favorite technologies I like to use and/or work
             with:
         </p>
-        <div class="technology-item-container">
+        <div class="flex-wrap flex justify-center gap-4">
             <TechnologyItem
                 v-for="eachTechnologyItemData in technologyItems"
                 :key="eachTechnologyItemData.title"
@@ -86,12 +86,3 @@ export default defineComponent({
     }),
 });
 </script>
-
-<style lang="scss" scoped>
-.technology-item-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem 1rem;
-}
-</style>

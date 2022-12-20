@@ -1,5 +1,9 @@
 <template>
-    <a :href="url" target="_blank" class="technology-item">
+    <a
+        :href="url"
+        target="_blank"
+        class="technology-item transition-colors duration-200 p-4 flex flex-row items-center rounded-lg"
+    >
         <mdicon class="technology-item--icon" :name="iconName" size="45" />
         <h3 class="technology-item--title">
             <slot name="title"></slot>
@@ -7,36 +11,26 @@
     </a>
 </template>
 
-<script lang="ts">
-export default {
-    props: {
-        iconName: {
-            type: String,
-            required: true,
-        },
-        url: {
-            type: String,
-            required: true,
-        },
+<script setup lang="ts">
+defineProps({
+    iconName: {
+        type: String,
+        required: true,
     },
-};
+    url: {
+        type: String,
+        required: true,
+    },
+});
 </script>
 
 <style lang="scss" scoped>
 .technology-item {
     background-color: $card-background-color;
-    transition: all 0.2s;
 
     &:hover {
         background-color: $card-background-color-hover;
     }
-
-    border-radius: $card-border-radius;
-
-    padding: 1rem 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 
     flex: 0 0 100%;
 
