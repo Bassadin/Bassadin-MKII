@@ -2,7 +2,7 @@
     <section class="mb-8">
         <h2>Education</h2>
         <p>My educational steps, from latest to oldest:</p>
-        <div class="flex flex-wrap content-center gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <CVItem icon-name="school">
                 <template #title>
                     Master of Science<br />
