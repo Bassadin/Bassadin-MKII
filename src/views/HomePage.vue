@@ -1,7 +1,7 @@
 <template>
     <HeroImage />
 
-    <section>
+    <section class="mb-8">
         <h2>About me</h2>
         <p>
             I'm Bastian, a software developer from Germany. While my current
@@ -29,10 +29,10 @@
     <CurriculumVitae />
     <FavoriteTechnologies />
 
-    <section>
+    <section class="mb-8">
         <h2>About this website</h2>
         <p>
-            This website was build using
+            This website was built using
             <a class="underline-hover" target="_blank" href="https://vuejs.org/"
                 >Vue.js 3</a
             >, my favorite and most-used frontend JS framework. Using GitHub
@@ -57,16 +57,8 @@
     </section>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import CurriculumVitae from "@/sections/CurriculumVitae.vue";
 import HeroImage from "@/sections/HeroImage.vue";
 import FavoriteTechnologies from "@/sections/FavoriteTechnologies.vue";
-
-export default {
-    components: {
-        CurriculumVitae,
-        HeroImage,
-        FavoriteTechnologies,
-    },
-};
 </script>

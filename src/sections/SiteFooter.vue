@@ -1,7 +1,9 @@
 <template>
-    <footer class="text-center py-9">
-        <p class="m-0 font-bold text-xl">Social</p>
-        <SocialIcons class="mt-4" />
+    <footer
+        class="text-center py-9 color-primary border-grey-200 bg-footer bg-white border-t-1 border-gray-500"
+    >
+        <h2 class="m-0 font-bold text-2xl">Social</h2>
+        <SocialIcons class="my-8" />
         <p>
             Source code available on
             <a
@@ -24,11 +26,3 @@
 <script setup lang="ts">
 import SocialIcons from "@components/SocialIcons.vue";
 </script>
-
-<style lang="scss" scoped>
-footer {
-    color: $text-color-primary;
-    border-top: 3px solid $footer-border-top-color;
-    background-color: $footer-background-color;
-}
-</style>

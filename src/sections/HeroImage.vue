@@ -9,14 +9,8 @@
             alt="Bastian Hodapp Image in edge circuit board style"
             class="rounded-1/2 w-auto h-33vh"
         />
-        <h1 class="hero-name text-6xl text-center mt-8 lg:mx-8">
+        <h1 class="font-hero text-6xl text-center mt-8 lg:mx-8">
             Bastian Hodapp
         </h1>
     </section>
 </template>
-
-<style lang="scss" scoped>
-.hero-name {
-    font-family: $hero-title-font-family;
-}
-</style>

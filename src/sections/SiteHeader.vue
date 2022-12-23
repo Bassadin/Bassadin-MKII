@@ -1,7 +1,6 @@
 <template>
     <header
-        id="site-header"
-        class="sticky top-0 left-0 width-full flex justify-between flex-row items-center py-2 lg:py-4"
+        class="sticky top-0 left-0 width-full flex justify-between flex-row items-center py-1 border-b-1 bg-white border-gray-500"
     >
         <router-link to="/">
             <div class="flex flex-row items-center">
@@ -13,7 +12,7 @@
                     width="256"
                     @click="scrollToTop"
                 />
-                <h1 class="site-header-title text-2xl ml-5">BH</h1>
+                <h1 class="font-hero text-2xl ml-5">BH</h1>
             </div>
         </router-link>
 
@@ -36,15 +35,3 @@ function scrollToTop() {
     });
 }
 </script>
-
-<style lang="scss" scoped>
-#site-header {
-    border-bottom: 4px solid $header-separator-color;
-    background-color: $header-background-color;
-    color: $text-color-primary;
-
-    .site-header-title {
-        font-family: $hero-title-font-family;
-    }
-}
-</style>

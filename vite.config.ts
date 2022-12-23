@@ -2,8 +2,9 @@ import path from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import Unocss from "unocss/vite";
+import colors from "windicss/colors";
 
-import { presetWind } from "unocss";
+import { presetWind, presetAttributify } from "unocss";
 import presetWebFonts from "@unocss/preset-web-fonts";
 
 const hash = Math.floor(Math.random() * 90000) + 10000;
@@ -19,9 +20,11 @@ export default defineConfig({
                     provider: "google",
                     fonts: {
                         sans: "Roboto",
-                        mono: ["Fira Code", "Fira Mono:400,700"],
+                        mono: ["Fira Code", "Roboto Mono"],
+                        hero: ["Sansita Swashed", "cursive"],
                     },
                 }),
+                presetAttributify(),
             ],
         }),
     ],
@@ -29,17 +32,6 @@ export default defineConfig({
         alias: {
             "@": path.resolve(__dirname, "./src"),
             "@components": path.resolve(__dirname, "./src/components"),
-        },
-    },
-    css: {
-        preprocessorOptions: {
-            scss: {
-                additionalData: `
-                    @use "sass:color";
-                    @import "@/scss/variables.scss";
-                    @import "@/scss/breakpoints";
-                `,
-            },
         },
     },
     build: {

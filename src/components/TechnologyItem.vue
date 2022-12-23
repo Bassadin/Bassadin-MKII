@@ -2,9 +2,9 @@
     <a
         :href="url"
         target="_blank"
-        class="technology-item transition-colors duration-200 p-4 flex flex-row items-center rounded-lg basis-full"
+        class="transition-colors duration-200 px-3 py-1 flex flex-row items-center rounded-lg flex-auto bg-stone-200 hover:bg-orange-800 c-black hover:c-orange-100"
     >
-        <mdicon class="technology-item--icon" :name="iconName" size="45" />
+        <mdicon :name="iconName" size="45" />
         <h3 class="ml-2">
             <slot name="title"></slot>
         </h3>
@@ -23,17 +23,3 @@ defineProps({
     },
 });
 </script>
-
-<style lang="scss" scoped>
-.technology-item {
-    background-color: $card-background-color;
-
-    &:hover {
-        background-color: $card-background-color-hover;
-    }
-
-    @include breakpoint("s") {
-        flex: 0 0 calc(33% - 0.6rem);
-    }
-}
-</style>

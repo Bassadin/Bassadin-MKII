@@ -1,5 +1,7 @@
 <template>
-    <div class="site grid min-h-100vh grid-rows-[auto 1fr auto]">
+    <div
+        class="site grid min-h-100vh grid-rows-[auto 1fr auto] bg-content font-sans"
+    >
         <metainfo>
             <template #title="{ content }">{{ content }}</template>
         </metainfo>
