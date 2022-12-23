@@ -1,9 +1,11 @@
 <template>
     <footer
-        class="text-center py-9 color-primary border-grey-200 border-t-3 bg-footer"
+        class="text-center py-9 color-primary border-grey-200 bg-footer bg-amber-500"
     >
-        <p class="m-0 font-bold text-xl">Social</p>
-        <SocialIcons class="mt-4" />
+        <h2 class="m-0 font-bold text-2xl">Social</h2>
+
+        <SocialIcons class="my-8" />
+
         <p>
             Source code available on
             <a

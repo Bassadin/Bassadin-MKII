@@ -57,16 +57,8 @@
     </section>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import CurriculumVitae from "@/sections/CurriculumVitae.vue";
 import HeroImage from "@/sections/HeroImage.vue";
 import FavoriteTechnologies from "@/sections/FavoriteTechnologies.vue";
-
-export default {
-    components: {
-        CurriculumVitae,
-        HeroImage,
-        FavoriteTechnologies,
-    },
-};
 </script>

@@ -57,7 +57,9 @@
     <h2 id="m3">Verantwortlicher</h2>
     <p>Bastian Hodapp<br />Gratzfeldweg 28<br />79291 Merdingen</p>
     E-Mail-Adresse:
-    <p><a href="mailto:bastianhodapp@gmail.com">bastianhodapp@gmail.com</a></p>
+    <p>
+        <a href="mailto:bastianhodapp@gmail.com">bastianhodapp@gmail.com</a>
+    </p>
     <h2 id="mOverview">Übersicht der Verarbeitungen</h2>
     <p>
         Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und
@@ -382,7 +384,8 @@
             Mutterunternehmen: Twitter Inc., 1355 Market Street, Suite 900, San
             Francisco, CA 94103, USA;
             <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6
-            Abs. 1 S. 1 lit. f) DSGVO); <strong>Datenschutzerklärung:</strong>
+            Abs. 1 S. 1 lit. f) DSGVO);
+            <strong>Datenschutzerklärung:</strong>
             <a href="https://twitter.com/privacy" target="_blank"
                 >https://twitter.com/privacy</a
             >, (Settings:

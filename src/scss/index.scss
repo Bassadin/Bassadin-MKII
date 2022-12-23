@@ -15,9 +15,14 @@ section {
     margin-block-end: 2rem;
 }
 
-// p {
-//     color: $text-color-secondary;
-// }
+a {
+    text-decoration: none;
+    color: #c2410c;
+
+    &:hover {
+        color: #f97316;
+    }
+}
 
 #app {
     margin: 0;

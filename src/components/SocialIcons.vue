@@ -55,8 +55,8 @@ const socialFooterIcons: IconData[] = [
 .link-button {
     background: none;
 
-    $link-button-icon-color: #222;
-    $link-button-border-color: #eee;
+    $link-button-icon-color: #eee;
+    $link-button-border-color: #222;
 
     color: $link-button-border-color;
 
