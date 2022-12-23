@@ -1,6 +1,6 @@
 <template>
     <header
-        class="sticky top-0 left-0 width-full flex justify-between flex-row items-center py-2 lg:py-4 bg-yellow-500"
+        class="sticky top-0 left-0 width-full flex justify-between flex-row items-center py-1 border-b-1 bg-white border-gray-500"
     >
         <router-link to="/">
             <div class="flex flex-row items-center">
