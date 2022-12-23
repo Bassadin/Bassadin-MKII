@@ -52,16 +52,6 @@ export default defineConfig({
             "@components": path.resolve(__dirname, "./src/components"),
         },
     },
-    css: {
-        preprocessorOptions: {
-            scss: {
-                additionalData: `
-                    @use "sass:color";
-                    @import "@/scss/variables.scss";
-                `,
-            },
-        },
-    },
     build: {
         rollupOptions: {
             output: {

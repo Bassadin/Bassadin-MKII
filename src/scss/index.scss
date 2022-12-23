@@ -23,25 +23,3 @@ section {
     margin: 0;
     padding: 0;
 }
-
-a {
-    text-decoration: none;
-    // color: $link-color;
-
-    // &:hover {
-    //     color: $link-color-hover;
-    // }
-}
-
-a.underline-hover {
-    background: linear-gradient(0deg, $link-color, $link-color) no-repeat right
-        bottom / 0 var(--bg-h);
-    transition: background-size 250ms;
-    padding-bottom: 0px;
-    --bg-h: 2px;
-
-    &:where(:hover, :focus-visible) {
-        background-size: 100% var(--bg-h);
-        background-position-x: left;
-    }
-}

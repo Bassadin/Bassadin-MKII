@@ -1,6 +1,6 @@
 <template>
     <div
-        class="cv-item rounded-lg transition-colors duration-200 p-4 flex flex-col items-center basis-full lg:basis-[calc(50% - 0.5rem)]"
+        class="cv-item rounded-lg transition-colors duration-200 p-4 flex flex-col items-center flex-1 min-w-60 bg-stone-200 hover:bg-stone-400"
     >
         <mdicon class="cv-item--icon" :name="iconName" size="45" />
         <h3 class="text-center mt-1">
@@ -20,13 +20,3 @@ defineProps({
     },
 });
 </script>
-
-<style lang="scss" scoped>
-.cv-item {
-    background-color: $card-background-color;
-
-    &:hover {
-        background-color: $card-background-color-hover;
-    }
-}
-</style>

@@ -2,7 +2,7 @@
     <a
         :href="url"
         target="_blank"
-        class="technology-item transition-colors duration-200 p-4 flex flex-row items-center rounded-lg basis-full sm:basis-[calc(33% - 0.6rem)] background-stone-600 background-stone-400:hover"
+        class="technology-item transition-colors duration-200 p-4 flex flex-row items-center rounded-lg basis-full sm:basis-[calc(33% - 0.6rem)] bg-stone-200 hover:bg-stone-400"
     >
         <mdicon class="technology-item--icon" :name="iconName" size="45" />
         <h3 class="ml-2">
