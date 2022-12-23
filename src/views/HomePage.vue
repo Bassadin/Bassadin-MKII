@@ -32,7 +32,7 @@
     <section>
         <h2>About this website</h2>
         <p>
-            This website was build using
+            This website was built using
             <a class="underline-hover" target="_blank" href="https://vuejs.org/"
                 >Vue.js 3</a
             >, my favorite and most-used frontend JS framework. Using GitHub
