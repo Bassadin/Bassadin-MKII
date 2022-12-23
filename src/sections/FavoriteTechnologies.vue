@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="mb-8">
         <h2>Favorite Technologies</h2>
         <p>
             Here are some of my favorite technologies I like to use and/or work

@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="mb-8">
         <h2>Education</h2>
         <p>My educational steps, from latest to oldest:</p>
         <div class="flex flex-wrap content-center gap-4">

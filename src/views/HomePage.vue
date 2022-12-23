@@ -1,7 +1,7 @@
 <template>
     <HeroImage />
 
-    <section>
+    <section class="mb-8">
         <h2>About me</h2>
         <p>
             I'm Bastian, a software developer from Germany. While my current
@@ -29,7 +29,7 @@
     <CurriculumVitae />
     <FavoriteTechnologies />
 
-    <section>
+    <section class="mb-8">
         <h2>About this website</h2>
         <p>
             This website was built using
