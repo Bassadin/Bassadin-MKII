@@ -1,20 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-
-    // background-color: $main-background-color;
-}
-
-section {
-    margin-block-end: 2rem;
-}
-
 a {
     text-decoration: none;
     color: #c2410c;
@@ -22,9 +5,4 @@ a {
     &:hover {
         color: #f97316;
     }
-}
-
-#app {
-    margin: 0;
-    padding: 0;
 }
