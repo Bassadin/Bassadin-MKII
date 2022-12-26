@@ -35,10 +35,11 @@
             This website was built using
             <a class="underline-hover" target="_blank" href="https://vuejs.org/"
                 >Vue.js 3</a
-            >, my favorite and most-used frontend JS framework. Using GitHub
-            actions, changes that are committed to the main branch are
-            automatically deployed to my webhoster using an FTP deployment
-            action.
+            >, my favorite and most-used frontend JS framework. For the design,
+            I'm using UnoCSS in Combination with WindiCSS, a Tailwind-like CSS
+            framework. Using GitHub actions, changes that are committed to the
+            main branch are automatically deployed to my webhoster using an FTP
+            deployment action.
         </p>
         <p>
             To ensure code consistency and quality, I use ESLint and Prettier. I
