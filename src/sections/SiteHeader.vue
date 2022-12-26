@@ -1,6 +1,6 @@
 <template>
     <header
-        class="sticky top-0 left-0 width-full flex justify-between flex-row items-center py-1 border-b-1 bg-white border-gray-500"
+        class="width-full flex justify-between flex-row items-center py-4 border-b-1 bg-white border-gray-500"
     >
         <router-link to="/">
             <div class="flex flex-row items-center">
@@ -12,7 +12,6 @@
                     width="256"
                     @click="scrollToTop"
                 />
-                <h1 class="font-hero text-2xl ml-5">BH</h1>
             </div>
         </router-link>
 
