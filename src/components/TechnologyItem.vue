@@ -2,7 +2,7 @@
     <a
         :href="url"
         target="_blank"
-        class="transition-colors duration-200 px-3 py-1 flex flex-row items-center rounded-lg flex-auto bg-stone-200 hover:bg-orange-800 c-black hover:c-orange-100"
+        class="transition-all duration-200 px-3 py-1 flex flex-row items-center rounded-lg flex-auto bg-stone-200 c-black hover:c-black hover:shadow-lg"
     >
         <mdicon :name="iconName" size="45" />
         <h3 class="ml-2">
