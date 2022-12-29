@@ -7,6 +7,8 @@
             width="1280"
             height="1280"
             alt="Bastian Hodapp Image in edge circuit board style"
+            loading="eager"
+            title="Bastian Hodapp profile image"
             class="rounded-1/2 md:w-1/3 w-1/2 h-auto"
         />
         <h1 class="font-hero text-6xl text-center mt-8 lg:mx-8">

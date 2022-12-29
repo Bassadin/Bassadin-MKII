@@ -7,7 +7,9 @@
                 <img
                     src="@/assets/avatar_logo256x256.png"
                     class="ml-3 rounded-md cursor-pointer h-40px w-auto lg:ml-4 lg:h-50px"
-                    alt="site header logo"
+                    alt="Site Header logo"
+                    title="Site Header logo"
+                    loading="eager"
                     height="256"
                     width="256"
                     @click="scrollToTop"
