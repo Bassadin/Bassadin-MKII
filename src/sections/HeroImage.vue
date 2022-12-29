@@ -7,10 +7,10 @@
             width="1280"
             height="1280"
             alt="Bastian Hodapp Image in edge circuit board style"
-            class="rounded-1/2 w-auto h-33vh"
+            class="rounded-1/2 md:w-1/3 w-1/2 h-auto"
         />
         <h1 class="font-hero text-6xl text-center mt-8 lg:mx-8">
-            Bastian Hodapp
+            Bastian&nbsp;Hodapp: Software&nbsp;Developer
         </h1>
     </section>
 </template>
