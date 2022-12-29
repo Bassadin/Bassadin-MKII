@@ -21,9 +21,38 @@ app.use(mdiVue, {
 
 // VueUse head
 import { createHead } from "@vueuse/head";
+
+const siteTitle = "Bastian Hodapp - Software Developer";
+const canonicalLink = "https://bassadin.de";
+const metaDescription = "Bastian Hodapp: Portfolio, work history and education";
+
 const head = createHead({
-    title: "Bastian Hodapp",
-    meta: [{ name: "description", content: "Bastian Hodapp Portfolio" }],
+    title: siteTitle,
+    meta: [
+        {
+            name: "description",
+            content: metaDescription,
+        },
+        // OpenGraph
+        { property: "og:title", content: siteTitle },
+        { property: "og:site_name", content: "Bassadin" },
+        { property: "og:type", content: "website" },
+        {
+            property: "og:url",
+            content: canonicalLink,
+        },
+        {
+            property: "og:image",
+            content: "/Bastian_white_blackBG-59902.webp",
+        },
+        {
+            property: "og:description",
+            content: metaDescription,
+        },
+        // Theme Color
+        { name: "theme-color", content: "#D99F78" },
+    ],
+    link: [{ rel: "canonical", href: canonicalLink }],
 });
 
 app.use(head);
