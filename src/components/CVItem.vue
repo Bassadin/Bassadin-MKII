@@ -6,7 +6,7 @@
         <h3 class="text-center mt-1">
             <slot name="title"></slot>
         </h3>
-        <p class="lg:mb-3 mb-0 text-center">
+        <p class="lg:mb-3 mb-0 text-center leading-snug">
             <slot name="description"></slot>
         </p>
     </div>
