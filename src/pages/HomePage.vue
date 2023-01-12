@@ -27,6 +27,7 @@
     </section>
 
     <CurriculumVitae />
+    <!-- TODO: Work experience -->
     <FavoriteTechnologies />
 
     <section class="mb-8">
