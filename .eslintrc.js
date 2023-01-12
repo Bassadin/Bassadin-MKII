@@ -7,15 +7,14 @@ module.exports = {
         "plugin:vue/vue3-essential",
         "plugin:vue/vue3-strongly-recommended",
         "plugin:vue/vue3-recommended",
-        "plugin:prettier/recommended",
         "@vue/eslint-config-typescript",
         "@vue/eslint-config-typescript/recommended",
+        "prettier",
     ],
     rules: {
         "@typescript-eslint/no-empty-function": "warn",
         "@typescript-eslint/no-inferrable-types": "off",
         "prefer-const": "warn",
-        "prettier/prettier": "warn",
 
         "no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars": [
