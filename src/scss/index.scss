@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Sansita Swashed";
+    src: url(/fonts/SansitaSwashed-VariableFont_wght.ttf) format("truetype");
+}
+
 h2 {
     margin-block-start: 3.5rem;
 }

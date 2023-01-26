@@ -17,7 +17,7 @@ export default defineConfig({
             presets: [
                 presetWind(),
                 presetWebFonts({
-                    provider: "google",
+                    provider: "none",
                     fonts: {
                         sans: "Roboto",
                         mono: ["Fira Code", "Roboto Mono"],
