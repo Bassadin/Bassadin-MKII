@@ -2,7 +2,6 @@ import path from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import Unocss from "unocss/vite";
-import colors from "windicss/colors";
 
 import { presetWind, presetAttributify } from "unocss";
 import presetWebFonts from "@unocss/preset-web-fonts";
