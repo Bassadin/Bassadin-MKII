@@ -3,7 +3,7 @@ name: Build, Test and Deploy with FTP
 on: push
 
 jobs:
-    eslint:
+    eslint-check:
         runs-on: ubuntu-20.04
         steps:
             - uses: actions/checkout@v1
@@ -22,7 +22,7 @@ jobs:
         name: Cypress tests
         runs-on: ubuntu-20.04
         needs:
-            - eslint
+            - eslint-check
         steps:
             - name: Checkout
               uses: actions/checkout@v2
@@ -45,11 +45,11 @@ jobs:
               with:
                   name: cypress-videos
                   path: cypress/videos
-    build:
+    nuxt-generate:
         name: Yarn build
         runs-on: ubuntu-20.04
         needs:
-            - cypress-test
+            - eslint-check
         steps:
             - uses: actions/checkout@v2
             - uses: pnpm/action-setup@v2
@@ -70,7 +70,7 @@ jobs:
     # Deploy if this is the master branch
     deploy:
         needs:
-            - build
+            - nuxt-generate
         runs-on: ubuntu-20.04
         if: github.ref == 'refs/heads/master'
         name: Deploy to FTP Server
