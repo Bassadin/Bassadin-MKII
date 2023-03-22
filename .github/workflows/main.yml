@@ -26,9 +26,9 @@ jobs:
             - name: Cypress run
               uses: cypress-io/github-action@v4.2.0
               with:
-                  build: yarn build
-                  start: yarn preview
-                  component: true
+                  build: pnpm build
+                  start: pnpm preview
+                  component: false
             - uses: actions/upload-artifact@v2
               if: failure()
               with:
