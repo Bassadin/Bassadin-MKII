@@ -4,11 +4,14 @@ on: push
 
 jobs:
     eslint:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         steps:
             - uses: actions/checkout@v1
               with:
                   fetch-depth: 1
+            - uses: pnpm/action-setup@v2
+              with:
+                  version: 7
 
             - name: pnpm install
               run: pnpm install --frozen-lockfile
@@ -17,12 +20,15 @@ jobs:
               run: pnpm run eslint:scan
     cypress-test:
         name: Cypress tests
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         needs:
             - eslint
         steps:
             - name: Checkout
               uses: actions/checkout@v2
+            - uses: pnpm/action-setup@v2
+              with:
+                  version: 7
             - name: Cypress run
               uses: cypress-io/github-action@v4.2.0
               with:
@@ -41,11 +47,14 @@ jobs:
                   path: cypress/videos
     build:
         name: Yarn build
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         needs:
             - cypress-test
         steps:
             - uses: actions/checkout@v2
+            - uses: pnpm/action-setup@v2
+              with:
+                  version: 7
             - uses: actions/setup-node@master
               with:
                   node-version: 18
@@ -62,7 +71,7 @@ jobs:
     deploy:
         needs:
             - build
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         if: github.ref == 'refs/heads/master'
         name: Deploy to FTP Server
         steps:
