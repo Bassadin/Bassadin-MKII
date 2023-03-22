@@ -1,9 +1,6 @@
 name: Build, Test and Deploy with FTP
 
-on:
-    push:
-        branches:
-            - main
+on: push
 
 jobs:
     eslint:
@@ -54,12 +51,12 @@ jobs:
                   node-version: 18
             - name: pnpm module install
               run: pnpm install --frozen-lockfile
-            - name: pnpm build
-              run: pnpm run build
+            - name: nuxt generate
+              run: pnpm run generate
             - uses: actions/upload-artifact@master
               with:
                   name: build-artifact
-                  path: dist/
+                  path: .output/public/
 
     # Deploy if this is the master branch
     deploy:
@@ -72,13 +69,13 @@ jobs:
             - uses: actions/download-artifact@master
               with:
                   name: build-artifact
-                  path: dist/
+                  path: .output/public/
             - name: Deploy to FTP Server
-              uses: SamKirkland/FTP-Deploy-Action@4.0.0
+              uses: SamKirkland/FTP-Deploy-Action@4.3.4
               with:
                   server: ha01s018.org-dns.com
                   username: bassadin_root_website
                   password: ${{ secrets.FTP_Password }}
                   protocol: ftps
-                  local-dir: dist/
+                  local-dir: .output/public/
                   security: strict
