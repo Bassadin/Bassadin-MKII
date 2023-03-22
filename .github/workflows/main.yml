@@ -70,6 +70,7 @@ jobs:
     # Deploy if this is the master branch
     deploy:
         needs:
+            - cypress-test
             - nuxt-generate
         runs-on: ubuntu-20.04
         if: github.ref == 'refs/heads/master'
