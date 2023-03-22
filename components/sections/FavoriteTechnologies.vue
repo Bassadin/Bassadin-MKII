@@ -19,8 +19,6 @@
 </template>
 
 <script setup lang="ts">
-import TechnologyItem from "@/components/TechnologyItem.vue";
-
 interface TechnologyItemData {
     title: string;
     iconName: string;
@@ -29,52 +27,52 @@ interface TechnologyItemData {
 
 const technologyItems: TechnologyItemData[] = [
     {
-        iconName: "vuejs",
+        iconName: "mdi:vuejs",
         url: "https://vuejs.org/",
         title: "Vue.js",
     },
     {
-        iconName: "language-typescript",
+        iconName: "mdi:language-typescript",
         url: "https://www.typescriptlang.org/",
         title: "Typescript",
     },
     {
-        iconName: "microsoft-visual-studio-code",
+        iconName: "mdi:microsoft-visual-studio-code",
         url: "https://code.visualstudio.com/",
         title: "Visual Studio Code",
     },
     {
-        iconName: "laravel",
+        iconName: "mdi:laravel",
         url: "https://laravel.com/",
         title: "Laravel",
     },
     {
-        iconName: "nodejs",
+        iconName: "mdi:nodejs",
         url: "https://nodejs.org/",
         title: "Node.js",
     },
     {
-        iconName: "github",
+        iconName: "mdi:github",
         url: "https://github.com/",
         title: "GitHub",
     },
     {
-        iconName: "unity",
+        iconName: "mdi:unity",
         url: "https://unity.com/",
         title: "Unity",
     },
     {
-        iconName: "docker",
+        iconName: "mdi:docker",
         url: "https://www.docker.com/",
         title: "Docker",
     },
     {
-        iconName: "kubernetes",
+        iconName: "mdi:kubernetes",
         url: "https://kubernetes.io/",
         title: "Kubernetes",
     },
     {
-        iconName: "git",
+        iconName: "mdi:git",
         url: "https://git-scm.com/",
         title: "Git",
     },

@@ -1,5 +1,5 @@
 <template>
-    <HeroImage />
+    <SectionsHeroImage />
 
     <section class="mb-8">
         <h2>About me</h2>
@@ -26,9 +26,9 @@
         </p>
     </section>
 
-    <CurriculumVitae />
+    <SectionsCurriculumVitae />
     <!-- TODO: Work experience -->
-    <FavoriteTechnologies />
+    <SectionsFavoriteTechnologies />
 
     <section class="mb-8">
         <h2>About this website</h2>
@@ -58,9 +58,3 @@
         </p>
     </section>
 </template>
-
-<script setup lang="ts">
-import CurriculumVitae from "@/sections/CurriculumVitae.vue";
-import HeroImage from "@/sections/HeroImage.vue";
-import FavoriteTechnologies from "@/sections/FavoriteTechnologies.vue";
-</script>

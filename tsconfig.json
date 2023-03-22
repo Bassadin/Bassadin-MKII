@@ -1,20 +1,10 @@
 {
+    // https://nuxt.com/docs/guide/concepts/typescript
+    "extends": "./.nuxt/tsconfig.json",
     "compilerOptions": {
-        "target": "esnext",
-        "module": "esnext",
-        "moduleResolution": "node",
-        "strict": true,
-        "jsx": "preserve",
-        "sourceMap": false,
-        "lib": ["esnext", "dom"],
-        "types": ["vite/client"],
-        "resolveJsonModule": true,
-        "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
         "paths": {
             "@/*": ["./src/*"],
             "@components/*": ["./src/components/*"]
-        },
-        "allowSyntheticDefaultImports": true
-    },
-    "exclude": ["node_modules", "dist", "public"]
+        }
+    }
 }

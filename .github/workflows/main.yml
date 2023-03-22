@@ -1,6 +1,9 @@
 name: Build, Test and Deploy with FTP
 
-on: push
+on:
+    push:
+        branches:
+            - main
 
 jobs:
     eslint:
@@ -10,11 +13,11 @@ jobs:
               with:
                   fetch-depth: 1
 
-            - name: yarn install
-              run: yarn install --frozen-lockfile
+            - name: pnpm install
+              run: pnpm install --frozen-lockfile
 
             - name: Run ESLint
-              run: yarn run eslint
+              run: pnpm run eslint:scan
     cypress-test:
         name: Cypress tests
         runs-on: ubuntu-latest
@@ -49,10 +52,10 @@ jobs:
             - uses: actions/setup-node@master
               with:
                   node-version: 18
-            - name: Yarn module install
-              run: yarn install --frozen-lockfile
-            - name: Yarn build
-              run: yarn run build
+            - name: pnpm module install
+              run: pnpm install --frozen-lockfile
+            - name: pnpm build
+              run: pnpm run build
             - uses: actions/upload-artifact@master
               with:
                   name: build-artifact

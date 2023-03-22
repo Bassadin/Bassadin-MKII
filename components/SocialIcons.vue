@@ -8,7 +8,7 @@
             :aria-label="eachIconData.iconName"
             target="blank"
         >
-            <mdicon
+            <Icon
                 class="link-button--icon"
                 :name="eachIconData.iconName"
                 size="45"
@@ -25,27 +25,27 @@ interface IconData {
 
 const socialFooterIcons: IconData[] = [
     {
-        iconName: "twitter",
+        iconName: "mdi:twitter",
         href: "https://twitter.com/BasVonBassadin",
     },
     {
-        iconName: "linkedin",
+        iconName: "mdi:linkedin",
         href: "https://www.linkedin.com/in/basvonbassadin/",
     },
     {
-        iconName: "reddit",
+        iconName: "mdi:reddit",
         href: "https://www.reddit.com/user/vadsvads",
     },
     {
-        iconName: "codepen",
+        iconName: "mdi:codepen",
         href: "https://codepen.io/bassadin",
     },
     {
-        iconName: "github",
+        iconName: "mdi:github",
         href: "https://github.com/bassadin",
     },
     {
-        iconName: "email",
+        iconName: "mdi:email",
         href: "mailto:bastianhodapp@gmail.com",
     },
 ];

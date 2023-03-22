@@ -3,7 +3,7 @@
         <h2>Education</h2>
         <p>My educational steps, from latest to oldest:</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <CVItem icon-name="school">
+            <CVItem icon-name="mdi:school">
                 <template #title>
                     Master of Science<br />
                     (Computer Science / Informatik)
@@ -13,7 +13,7 @@
                     Mar 2022 - Aug 2023
                 </template>
             </CVItem>
-            <CVItem icon-name="school">
+            <CVItem icon-name="mdi:school">
                 <template #title>
                     Bachelor of Science<br />
                     (Computer Science in Media / Medieninformatik)
@@ -24,7 +24,7 @@
                     Grade: 1.5
                 </template>
             </CVItem>
-            <CVItem icon-name="school">
+            <CVItem icon-name="mdi:school">
                 <template #title>
                     Bachelor of Science (Computer Science in Economics, not
                     finished)
@@ -35,7 +35,7 @@
                     Not finished
                 </template>
             </CVItem>
-            <CVItem icon-name="school">
+            <CVItem icon-name="mdi:school">
                 <template #title>
                     Martin-Schongauer-Gymnasium Breisach
                 </template>
@@ -47,7 +47,3 @@
         </div>
     </section>
 </template>
-
-<script setup lang="ts">
-import CVItem from "@/components/CVItem.vue";
-</script>

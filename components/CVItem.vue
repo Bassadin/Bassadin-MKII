@@ -2,7 +2,7 @@
     <div
         class="rounded-lg transition-colors duration-200 p-4 flex flex-col items-center bg-stone-200"
     >
-        <mdicon :name="iconName" size="45" />
+        <Icon :name="iconName" size="45" />
         <h3 class="text-center mt-1">
             <slot name="title"></slot>
         </h3>

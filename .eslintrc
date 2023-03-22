@@ -1,26 +1,19 @@
-/* eslint-env node */
-require("@rushstack/eslint-patch/modern-module-resolution");
-
-module.exports = {
-    extends: [
-        "eslint:recommended",
-        "plugin:vue/vue3-essential",
-        "plugin:vue/vue3-strongly-recommended",
-        "plugin:vue/vue3-recommended",
-        "@vue/eslint-config-typescript",
-        "@vue/eslint-config-typescript/recommended",
-        "prettier",
+{
+    "root": true,
+    "extends": [
+        "@nuxtjs/eslint-config-typescript",
+        "plugin:nuxt/recommended",
+        "prettier"
     ],
-    rules: {
+    "rules": {
+        "vue/multi-word-component-names": "off",
+        "vue/no-multiple-template-root": "off",
+        "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/no-empty-function": "warn",
         "@typescript-eslint/no-inferrable-types": "off",
         "prefer-const": "warn",
 
         "no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars": [
-            "warn",
-            { argsIgnorePattern: "^_" },
-        ],
 
         // Remove this later when we're ready
         "@typescript-eslint/no-explicit-any": "off",
@@ -28,14 +21,14 @@ module.exports = {
         "vue/no-unused-properties": [
             "warn",
             {
-                groups: ["props", "data", "computed", "methods"],
-                deepData: false,
-            },
+                "groups": ["props", "data", "computed", "methods"],
+                "deepData": false
+            }
         ],
         "vue/order-in-components": [
             "warn",
             {
-                order: [
+                "order": [
                     "el",
                     "name",
                     "key",
@@ -68,14 +61,14 @@ module.exports = {
                     "LIFECYCLE_HOOKS",
                     "methods",
                     ["template", "render"],
-                    "renderError",
-                ],
-            },
+                    "renderError"
+                ]
+            }
         ],
         "vue/attributes-order": [
             "warn",
             {
-                order: [
+                "order": [
                     "DEFINITION",
                     "LIST_RENDERING",
                     "CONDITIONALS",
@@ -86,10 +79,10 @@ module.exports = {
                     "OTHER_DIRECTIVES",
                     "OTHER_ATTR",
                     "EVENTS",
-                    "CONTENT",
+                    "CONTENT"
                 ],
-                alphabetical: false,
-            },
-        ],
-    },
-};
+                "alphabetical": false
+            }
+        ]
+    }
+}

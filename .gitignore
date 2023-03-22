@@ -1,38 +1,9 @@
-.DS_Store
 node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
 dist
-dist-ssr
-*.local
-
-# local env files
-.env.local
-.env.*.local
-
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-
-# Created by https://www.toptal.com/developers/gitignore/api/cypressio
-# Edit at https://www.toptal.com/developers/gitignore?templates=cypressio
-
-### CypressIO ###
-# gitignore template for the CypressIO, browser test framework
-# website: https://www.cypress.io/
-
-cypress/results/*
-cypress/reports/*
-cypress/screenshots/*
-cypress/videos/*
-
-# End of https://www.toptal.com/developers/gitignore/api/cypressio
+.DS_Store

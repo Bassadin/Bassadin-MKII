@@ -2,7 +2,7 @@
     <header
         class="width-full flex justify-between flex-row items-center py-4 border-b-1 bg-white border-gray-500"
     >
-        <router-link to="/">
+        <NuxtLink to="/">
             <div class="flex flex-row items-center">
                 <img
                     src="@/assets/avatar_logo256x256.png"
@@ -15,14 +15,14 @@
                     @click="scrollToTop"
                 />
             </div>
-        </router-link>
+        </NuxtLink>
 
         <a
             class="underline-hover mr-5"
             href="https://vuejs.org/"
             target="_blank"
         >
-            Built with <mdicon name="vuejs" />
+            Built with <Icon name="mdi:vuejs" />
         </a>
     </header>
 </template>

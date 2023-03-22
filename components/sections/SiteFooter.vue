@@ -11,18 +11,14 @@
                 target="_blank"
                 class="underline-hover"
             >
-                GitHub <mdicon name="github" />
+                GitHub <Icon name="mdi:github" />
             </a>
         </p>
         <p>
-            <router-link to="/legal" class="legal">
+            <NuxtLink to="/legal" class="legal">
                 Legal info and data protection
-            </router-link>
+            </NuxtLink>
         </p>
         <p class="mt-10">©️2022 by Bastian Hodapp</p>
     </footer>
 </template>
-
-<script setup lang="ts">
-import SocialIcons from "@components/SocialIcons.vue";
-</script>

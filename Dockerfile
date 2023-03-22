@@ -1,11 +1,16 @@
 # Build the app with node
 FROM node:lts-alpine as build-stage
+
 WORKDIR /app
+
 COPY package.json ./
-COPY yarn.lock ./
-RUN yarn
+COPY pnpm-lock.yaml ./
+
+RUN pnpm
+
 COPY . .
-RUN yarn run build
+
+RUN pnpm run build
 
 # Package the build files into a nginx image
 FROM nginx:stable-alpine as production-stage
