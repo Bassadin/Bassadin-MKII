@@ -81,7 +81,7 @@ jobs:
                   name: build-artifact
                   path: .output/public/
             - name: Deploy to FTP Server
-              uses: SamKirkland/FTP-Deploy-Action@4.3.4
+              uses: SamKirkland/FTP-Deploy-Action@v4.3.4
               with:
                   server: ha01s018.org-dns.com
                   username: bassadin_root_website
