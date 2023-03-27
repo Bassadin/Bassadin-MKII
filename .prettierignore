@@ -1,7 +1,7 @@
-.nuxt
-.output
+.nuxt/
+.output/
+.nitro/
+.cache/
 dist/
 node_modules/
-package-lock.json
-.gitignore
-.prettierignore
+pnpm-lock.yaml
