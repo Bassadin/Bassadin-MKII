@@ -32,14 +32,14 @@ const socialFooterIcons: IconData[] = [
         iconName: "mdi:linkedin",
         href: "https://www.linkedin.com/in/basvonbassadin/",
     },
-    {
-        iconName: "mdi:reddit",
-        href: "https://www.reddit.com/user/vadsvads",
-    },
-    {
-        iconName: "mdi:codepen",
-        href: "https://codepen.io/bassadin",
-    },
+    // {
+    //     iconName: "mdi:reddit",
+    //     href: "https://www.reddit.com/user/vadsvads",
+    // },
+    // {
+    //     iconName: "mdi:codepen",
+    //     href: "https://codepen.io/bassadin",
+    // },
     {
         iconName: "mdi:github",
         href: "https://github.com/bassadin",
