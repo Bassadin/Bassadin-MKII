@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn prettier:format
-yarn eslint:fix
+pnpm prettier:format
+pnpm eslint:fix

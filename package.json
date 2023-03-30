@@ -6,7 +6,7 @@
         "generate": "nuxt generate",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
-        "prettier:format": "yarn prettier --write .",
+        "prettier:format": "prettier --write .",
         "eslint:scan": "eslint",
         "eslint:fix": "eslint --fix",
         "cypress:open": "cypress open --e2e",

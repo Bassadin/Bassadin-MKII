@@ -15,8 +15,8 @@ My personal webpage.
 ## Project dev setup
 
 ```
-yarn
-yarn dev
+pnpm install
+pnpm dev
 ```
 
 ## Docker image (built with GitHub Actions pipeline)
