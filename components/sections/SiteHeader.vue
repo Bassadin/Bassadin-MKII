@@ -19,10 +19,10 @@
 
         <a
             class="underline-hover mr-5"
-            href="https://vuejs.org/"
+            href="https://nuxt.com/"
             target="_blank"
         >
-            Built with <Icon name="mdi:vuejs" />
+            Built with <Icon size="1.6em" name="mdi:nuxt" />
         </a>
     </header>
 </template>
