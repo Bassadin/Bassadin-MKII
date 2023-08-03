@@ -38,7 +38,7 @@
         "sass": "^1.62.1",
         "start-server-and-test": "^2.0.0",
         "typescript": "^5.0.4",
-        "vite": "^4.3.5",
+        "vite": "^4.3.9",
         "webpack": "^5.82.1"
     },
     "dependencies": {
