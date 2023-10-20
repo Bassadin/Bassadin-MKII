@@ -12,8 +12,10 @@
         </p>
         <p>
             I enjoy using tools to improve code quality like ESLint or Prettier.
-            I also like to improve the deploy time of my project using CI/CD
-            tools like GitHub Actions and GitLab CI/CD.
+            For my private projects like this website, I mostly use Vue.js and
+            TypeScript. Improving and reducing the deploy time of my projects
+            using CI/CD tools like GitHub Actions and GitLab CI/CD is something
+            I like a lot.
         </p>
     </section>
 

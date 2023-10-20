@@ -10,7 +10,8 @@
                 </template>
                 <template #description>
                     HFU Furtwangen<br />
-                    Mar 2022 - Aug 2023
+                    Mar 2022 - Sep 2023<br />
+                    Grade: 1.6
                 </template>
             </CVItem>
             <CVItem icon-name="mdi:school">
