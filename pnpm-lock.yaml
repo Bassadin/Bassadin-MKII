@@ -17,9 +17,6 @@ dependencies:
   vue:
     specifier: ^3.3.6
     version: 3.3.6(typescript@5.2.2)
-  windicss:
-    specifier: ^3.5.6
-    version: 3.5.6
 
 devDependencies:
   '@nuxtjs/eslint-config-typescript':
@@ -9423,12 +9420,6 @@ packages:
     dependencies:
       string-width: 4.2.3
     dev: true
-
-  /windicss@3.5.6:
-    resolution: {integrity: sha512-P1mzPEjgFMZLX0ZqfFht4fhV/FX8DTG7ERG1fBLiWvd34pTLVReS5CVsewKn9PApSgXnVfPWwvq+qUsRwpnwFA==}
-    engines: {node: '>= 12'}
-    hasBin: true
-    dev: false
 
   /wrap-ansi@6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
