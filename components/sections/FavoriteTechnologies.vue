@@ -76,5 +76,10 @@ const technologyItems: TechnologyItemData[] = [
         url: "https://git-scm.com/",
         title: "Git",
     },
+    {
+        iconName: "mdi:server-network",
+        url: "https://nestjs.com/",
+        title: "NestJS",
+    },
 ];
 </script>
