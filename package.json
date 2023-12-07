@@ -18,26 +18,26 @@
     },
     "devDependencies": {
         "@nuxtjs/eslint-config-typescript": "^12.1.0",
-        "@typescript-eslint/eslint-plugin": "^6.13.1",
-        "@typescript-eslint/parser": "^6.13.1",
+        "@typescript-eslint/eslint-plugin": "^6.13.2",
+        "@typescript-eslint/parser": "^6.13.2",
         "@unocss/nuxt": "^0.57.7",
         "@unocss/preset-web-fonts": "^0.57.7",
-        "@vueuse/core": "^10.6.1",
-        "@vueuse/nuxt": "^10.6.1",
+        "@vueuse/core": "^10.7.0",
+        "@vueuse/nuxt": "^10.7.0",
         "cypress": "^12.17.4",
-        "eslint": "^8.54.0",
-        "eslint-config-prettier": "^9.0.0",
+        "eslint": "^8.55.0",
+        "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-cypress": "^2.15.1",
         "eslint-plugin-nuxt": "^4.0.0",
         "eslint-plugin-prettier": "^5.0.1",
         "husky": "^8.0.3",
         "nuxt": "^3.8.2",
-        "nuxt-icon": "^0.6.6",
+        "nuxt-icon": "^0.6.7",
         "prettier": "^3.1.0",
         "sass": "^1.69.5",
         "start-server-and-test": "^2.0.3",
-        "typescript": "^5.3.2",
-        "vite": "^5.0.5",
+        "typescript": "^5.3.3",
+        "vite": "^5.0.6",
         "webpack": "^5.89.0"
     },
     "dependencies": {
@@ -45,6 +45,6 @@
         "@unocss/reset": "^0.57.7",
         "mdi-vue": "^3.0.13",
         "unhead": "^1.8.8",
-        "vue": "^3.3.9"
+        "vue": "^3.3.10"
     }
 }
