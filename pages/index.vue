@@ -2,7 +2,7 @@
     <SectionsHeroImage />
 
     <section class="mb-8">
-        <h2>About me</h2>
+        <h2><Icon name="mdi:person" /> About me</h2>
         <p>
             I'm Bastian, a software developer from Germany. While my current
             focus is Full Stack Web Development (buzz word bingo, woop woop),
@@ -20,20 +20,21 @@
     </section>
 
     <SectionsCurriculumVitae />
+    <SectionsWorkExperience />
     <!-- TODO: Work experience -->
     <SectionsFavoriteTechnologies />
 
     <section class="mb-8">
-        <h2>About this website</h2>
+        <h2><Icon name="mdi:information" /> About this website</h2>
         <p>
             This website was built using
             <a class="underline-hover" target="_blank" href="https://nuxt.com/"
                 >Nuxt.js 3</a
             >, which uses Vue.js my favorite and most-used frontend JS
-            framework. For the design, I'm using UnoCSS in Combination with
-            WindiCSS, a Tailwind-like CSS framework. Using GitHub actions,
-            changes that are committed to the main branch are automatically
-            deployed to my webhoster using an FTP deployment action.
+            framework. For the design, I'm using UnoCSS, a Tailwind-like CSS
+            framework. Using GitHub actions, changes that are committed to the
+            main branch are automatically deployed to my webhoster using an FTP
+            deployment action.
         </p>
         <p>
             To ensure code consistency and quality, I use ESLint and Prettier. I
