@@ -9,25 +9,18 @@
         "prettier:format": "prettier --write .",
         "eslint:scan": "eslint",
         "eslint:fix": "eslint --fix",
-        "cypress:open": "cypress open --e2e",
-        "cypress:run": "cypress run --e2e",
-        "e2e": "start-server-and-test dev http://localhost:3000 cypress:open",
-        "pree2e:silent": "npm run build",
-        "e2e:silent": "start-server-and-test preview http://localhost:3000 cypress:run",
         "prepare": "husky install"
     },
     "devDependencies": {
         "@nuxtjs/eslint-config-typescript": "^12.1.0",
         "@typescript-eslint/eslint-plugin": "^6.13.2",
         "@typescript-eslint/parser": "^6.13.2",
-        "@unocss/nuxt": "^0.57.7",
-        "@unocss/preset-web-fonts": "^0.57.7",
+        "@unocss/nuxt": "^0.58.0",
+        "@unocss/preset-web-fonts": "^0.58.0",
         "@vueuse/core": "^10.7.0",
         "@vueuse/nuxt": "^10.7.0",
-        "cypress": "^12.17.4",
         "eslint": "^8.55.0",
         "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-cypress": "^2.15.1",
         "eslint-plugin-nuxt": "^4.0.0",
         "eslint-plugin-prettier": "^5.0.1",
         "husky": "^8.0.3",
@@ -37,14 +30,14 @@
         "sass": "^1.69.5",
         "start-server-and-test": "^2.0.3",
         "typescript": "^5.3.3",
-        "vite": "^5.0.6",
+        "vite": "^5.0.7",
         "webpack": "^5.89.0"
     },
     "dependencies": {
         "@mdi/js": "^7.3.67",
-        "@unocss/reset": "^0.57.7",
+        "@unocss/reset": "^0.58.0",
         "mdi-vue": "^3.0.13",
-        "unhead": "^1.8.8",
-        "vue": "^3.3.10"
+        "unhead": "^1.8.9",
+        "vue": "^3.3.11"
     }
 }
