@@ -13,8 +13,8 @@
     },
     "devDependencies": {
         "@nuxtjs/eslint-config-typescript": "^12.1.0",
-        "@typescript-eslint/eslint-plugin": "^6.13.2",
-        "@typescript-eslint/parser": "^6.13.2",
+        "@typescript-eslint/eslint-plugin": "^6.14.0",
+        "@typescript-eslint/parser": "^6.14.0",
         "@unocss/nuxt": "^0.58.0",
         "@unocss/preset-web-fonts": "^0.58.0",
         "@vueuse/core": "^10.7.0",
@@ -26,11 +26,11 @@
         "husky": "^8.0.3",
         "nuxt": "^3.8.2",
         "nuxt-icon": "^0.6.7",
-        "prettier": "^3.1.0",
+        "prettier": "^3.1.1",
         "sass": "^1.69.5",
         "start-server-and-test": "^2.0.3",
         "typescript": "^5.3.3",
-        "vite": "^5.0.7",
+        "vite": "^5.0.9",
         "webpack": "^5.89.0"
     },
     "dependencies": {
