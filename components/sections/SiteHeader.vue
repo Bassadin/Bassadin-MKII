@@ -1,6 +1,6 @@
 <template>
     <header
-        class="width-full flex justify-between flex-row items-center py-4 border-b-1 bg-white border-gray-500"
+        class="w-full flex justify-between flex-row items-center py-4 border-b-1 bg-white border-gray-500"
     >
         <NuxtLink to="/">
             <div class="flex flex-row items-center">
