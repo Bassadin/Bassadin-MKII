@@ -8,6 +8,10 @@
     src: url(/fonts/SansitaSwashed-VariableFont_wght.ttf) format("truetype");
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h2 {
     margin-block-start: 3.5rem;
 }
