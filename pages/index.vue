@@ -19,7 +19,7 @@
         </p>
     </section>
 
-    <SectionsCurriculumVitae />
+    <SectionsEducationSteps />
     <SectionsWorkExperience />
     <SectionsFavoriteTechnologies />
 

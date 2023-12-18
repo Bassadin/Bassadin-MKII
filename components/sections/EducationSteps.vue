@@ -10,7 +10,11 @@
                 </template>
                 <template #dateRange>Mar 2022 - Sep 2023</template>
                 <template #location>HFU Furtwangen</template>
-                <template #description> Grade: 1.6 </template>
+                <template #description>
+                    <b>Grade:</b> 1.6<br />
+                    <b>Topic of Master Thesis:</b> "RSSI-based Localization in LoRaWAN
+                    networks"
+                </template>
             </CVItem>
             <CVItem icon-name="mdi:school">
                 <template #title>
@@ -19,7 +23,11 @@
                 </template>
                 <template #dateRange>Mar 2016 - May 2020</template>
                 <template #location>HFU Furtwangen</template>
-                <template #description>Grade: 1.5</template>
+                <template #description>
+                    <b>Grade:</b> 1.5<br />
+                    <b>Topic of Bachelor Thesis:</b> "Development of a Laravel-based
+                    WebApp for an Embedded Energy Monitoring System"
+                </template>
             </CVItem>
             <CVItem icon-name="mdi:school">
                 <template #title>
