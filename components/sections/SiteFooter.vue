@@ -19,6 +19,10 @@
                 Legal info and data protection
             </NuxtLink>
         </p>
-        <p class="mt-10">©️2022 by Bastian Hodapp</p>
+        <p class="mt-10">©️{{ currentYear }} by Bastian Hodapp</p>
     </footer>
 </template>
+
+<script setup lang="ts">
+const currentYear = new Date().getFullYear();
+</script>
