@@ -42,11 +42,6 @@ const technologyItems: TechnologyItemData[] = [
         title: "Visual Studio Code",
     },
     {
-        iconName: "mdi:laravel",
-        url: "https://laravel.com/",
-        title: "Laravel",
-    },
-    {
         iconName: "mdi:nodejs",
         url: "https://nodejs.org/",
         title: "Node.js",
@@ -55,6 +50,11 @@ const technologyItems: TechnologyItemData[] = [
         iconName: "mdi:github",
         url: "https://github.com/",
         title: "GitHub",
+    },
+    {
+        iconName: "mdi:git",
+        url: "https://git-scm.com/",
+        title: "Git",
     },
     {
         iconName: "mdi:unity",
@@ -67,19 +67,24 @@ const technologyItems: TechnologyItemData[] = [
         title: "Docker",
     },
     {
-        iconName: "mdi:kubernetes",
-        url: "https://kubernetes.io/",
-        title: "Kubernetes",
-    },
-    {
-        iconName: "mdi:git",
-        url: "https://git-scm.com/",
-        title: "Git",
-    },
-    {
         iconName: "mdi:server-network",
         url: "https://nestjs.com/",
         title: "NestJS",
+    },
+    {
+        iconName: "mdi:nuxt",
+        url: "https://nuxtjs.org/",
+        title: "Nuxt.js",
+    },
+    {
+        iconName: "mdi:tailwind",
+        url: "https://tailwindcss.com/",
+        title: "Tailwind CSS",
+    },
+    {
+        iconName: "mdi:rocket-launch",
+        url: "https://astro.build/",
+        title: "Astro",
     },
 ];
 </script>
