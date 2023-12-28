@@ -19,7 +19,7 @@ jobs:
             - name: Run ESLint
               run: pnpm run eslint:scan
     nuxt-generate:
-        name: Yarn build
+        name: Build
         runs-on: ubuntu-20.04
         needs:
             - eslint-check
