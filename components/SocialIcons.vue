@@ -25,12 +25,8 @@ interface IconData {
 
 const socialFooterIcons: IconData[] = [
     {
-        iconName: "mdi:twitter",
-        href: "https://twitter.com/BasVonBassadin",
-    },
-    {
         iconName: "mdi:linkedin",
-        href: "https://www.linkedin.com/in/basvonbassadin/",
+        href: "https://www.linkedin.com/in/bastianhodapp/",
     },
     {
         iconName: "mdi:github",
@@ -38,7 +34,7 @@ const socialFooterIcons: IconData[] = [
     },
     {
         iconName: "mdi:email",
-        href: "mailto:bastianhodapp@gmail.com",
+        href: "mailto:mail@bassadin.de",
     },
     {
         iconName: "mdi:mastodon",

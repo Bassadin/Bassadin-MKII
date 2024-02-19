@@ -12,7 +12,7 @@
                 <template #location>HFU Furtwangen</template>
                 <template #description>
                     <b>Grade:</b> 1.6<br />
-                    <b>Topic of Master Thesis:</b> "RSSI-based Localization in
+                    <b>Topic of Master's Thesis:</b> "RSSI-based Localization in
                     LoRaWAN networks"
                 </template>
             </CVItem>
@@ -25,7 +25,7 @@
                 <template #location>HFU Furtwangen</template>
                 <template #description>
                     <b>Grade:</b> 1.5<br />
-                    <b>Topic of Bachelor Thesis:</b> "Development of a
+                    <b>Topic of Bachelor's Thesis:</b> "Development of a
                     Laravel-based WebApp for an Embedded Energy Monitoring
                     System"
                 </template>
