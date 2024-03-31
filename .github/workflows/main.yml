@@ -7,8 +7,8 @@ jobs:
         name: Build
         runs-on: ubuntu-20.04
         steps:
-            - uses: actions/checkout@v2
-            - uses: pnpm/action-setup@v2
+            - uses: actions/checkout@v4
+            - uses: pnpm/action-setup@v3
               with:
                   version: 8.15.5
             - uses: actions/setup-node@master
@@ -29,21 +29,21 @@ jobs:
         needs:
             - build
         steps:
-            - uses: actions/checkout@v2
-            - uses: pnpm/action-setup@v2
+            - uses: actions/checkout@v4
+            - uses: pnpm/action-setup@v3
               with:
                   version: 8.15.5
             - uses: actions/setup-node@master
               with:
                   node-version: 20.x
-            - name: pnpm module install
-              run: pnpm install --frozen-lockfile
-            - name: start preview server
-              run: pnpm run preview
+            - uses: actions/download-artifact@master
+              with:
+                  name: build-artifact
+                  path: .output/public/
             - name: Cypress run
               uses: cypress-io/github-action@v6
               with:
-                  start: npm preview
+                  start: npx serve .output/public
                   browser: chrome
 
     # Deploy if this is the master branch
