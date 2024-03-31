@@ -3,11 +3,9 @@ name: Build, Test and Deploy with FTP
 on: push
 
 jobs:
-    nuxt-generate:
+    build:
         name: Build
         runs-on: ubuntu-20.04
-        needs:
-            - eslint-check
         steps:
             - uses: actions/checkout@v2
             - uses: pnpm/action-setup@v2
@@ -25,11 +23,11 @@ jobs:
                   name: build-artifact
                   path: .output/public/
 
-    cypress-test:
+    test-cypress:
         name: Cypress Tests
         runs-on: ubuntu-20.04
         needs:
-            - eslint-check
+            - build
         steps:
             - uses: actions/checkout@v2
             - uses: pnpm/action-setup@v2
@@ -51,7 +49,8 @@ jobs:
     # Deploy if this is the master branch
     deploy:
         needs:
-            - nuxt-generate
+            - build
+            - test-cypress
         runs-on: ubuntu-20.04
         if: github.ref == 'refs/heads/master'
         name: Deploy to FTP Server
