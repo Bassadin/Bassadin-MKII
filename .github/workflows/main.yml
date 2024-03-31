@@ -3,21 +3,6 @@ name: Build, Test and Deploy with FTP
 on: push
 
 jobs:
-    eslint-check:
-        runs-on: ubuntu-20.04
-        steps:
-            - uses: actions/checkout@v1
-              with:
-                  fetch-depth: 1
-            - uses: pnpm/action-setup@v2
-              with:
-                  version: 8.6.11
-
-            - name: pnpm install
-              run: pnpm install --frozen-lockfile
-
-            - name: Run ESLint
-              run: pnpm run eslint:scan
     nuxt-generate:
         name: Build
         runs-on: ubuntu-20.04
@@ -27,10 +12,10 @@ jobs:
             - uses: actions/checkout@v2
             - uses: pnpm/action-setup@v2
               with:
-                  version: 8.6.11
+                  version: 8.15.5
             - uses: actions/setup-node@master
               with:
-                  node-version: 18
+                  node-version: 20.x
             - name: pnpm module install
               run: pnpm install --frozen-lockfile
             - name: nuxt generate
@@ -39,6 +24,29 @@ jobs:
               with:
                   name: build-artifact
                   path: .output/public/
+
+    cypress-test:
+        name: Cypress Tests
+        runs-on: ubuntu-20.04
+        needs:
+            - eslint-check
+        steps:
+            - uses: actions/checkout@v2
+            - uses: pnpm/action-setup@v2
+              with:
+                  version: 8.15.5
+            - uses: actions/setup-node@master
+              with:
+                  node-version: 20.x
+            - name: pnpm module install
+              run: pnpm install --frozen-lockfile
+            - name: start preview server
+              run: pnpm run preview
+            - name: Cypress run
+              uses: cypress-io/github-action@v6
+              with:
+                  start: npm preview
+                  browser: chrome
 
     # Deploy if this is the master branch
     deploy:
