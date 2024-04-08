@@ -5,7 +5,7 @@
             Here are some of my favorite technologies I like to use and/or work
             with:
         </p>
-        <div class="flex-wrap flex justify-center gap-4">
+        <div class="flex-wrap flex justify-center gap-2 md:gap-4">
             <TechnologyItem
                 v-for="eachTechnologyItemData in technologyItems"
                 :key="eachTechnologyItemData.title"
