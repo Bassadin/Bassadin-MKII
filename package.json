@@ -1,5 +1,6 @@
 {
     "private": true,
+    "version": "1.13.0",
     "scripts": {
         "build": "nuxt build",
         "dev": "nuxt dev --host",
