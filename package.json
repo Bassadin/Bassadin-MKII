@@ -8,7 +8,6 @@
         "generate": "nuxt generate",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
-        "prettier:format": "prettier --write .",
         "eslint:scan": "eslint .",
         "eslint:fix": "eslint --fix",
         "prepare": "husky install",
@@ -28,7 +27,6 @@
         "husky": "^9.0.11",
         "nuxt": "^3.11.2",
         "nuxt-icon": "^0.6.10",
-        "prettier": "^3.2.5",
         "sass": "^1.74.1",
         "typescript": "^5.4.5",
         "vite": "^5.2.8"
