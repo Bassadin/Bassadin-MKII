@@ -1,45 +1,45 @@
 <template>
-    <div class="flex justify-center flex-wrap">
-        <a
-            v-for="eachIconData in socialFooterIcons"
-            :key="eachIconData.href"
-            class="link-button p-2 m-2 transition-all duration-200 block"
-            :href="eachIconData.href"
-            :aria-label="eachIconData.iconName"
-            target="blank"
-        >
-            <Icon
-                class="link-button--icon"
-                :name="eachIconData.iconName"
-                size="45"
-            />
-        </a>
-    </div>
+	<div class="flex justify-center flex-wrap">
+		<a
+			v-for="eachIconData in socialFooterIcons"
+			:key="eachIconData.href"
+			class="link-button p-2 m-2 transition-all duration-200 block"
+			:href="eachIconData.href"
+			:aria-label="eachIconData.iconName"
+			target="blank"
+		>
+			<Icon
+				class="link-button--icon"
+				:name="eachIconData.iconName"
+				size="45"
+			/>
+		</a>
+	</div>
 </template>
 
 <script setup lang="ts">
 interface IconData {
-    iconName: string;
-    href: string;
+	iconName: string;
+	href: string;
 }
 
 const socialFooterIcons: IconData[] = [
-    {
-        iconName: "mdi:linkedin",
-        href: "https://www.linkedin.com/in/bastianhodapp/",
-    },
-    {
-        iconName: "mdi:github",
-        href: "https://github.com/bassadin",
-    },
-    {
-        iconName: "mdi:email",
-        href: "mailto:mail@bassadin.de",
-    },
-    {
-        iconName: "mdi:mastodon",
-        href: "https://freiburg.social/@bassadin",
-    },
+	{
+		iconName: "mdi:linkedin",
+		href: "https://www.linkedin.com/in/bastianhodapp/",
+	},
+	{
+		iconName: "mdi:github",
+		href: "https://github.com/bassadin",
+	},
+	{
+		iconName: "mdi:email",
+		href: "mailto:mail@bassadin.de",
+	},
+	{
+		iconName: "mdi:mastodon",
+		href: "https://freiburg.social/@bassadin",
+	},
 ];
 </script>
 

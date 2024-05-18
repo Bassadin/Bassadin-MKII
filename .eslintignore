@@ -1,9 +1,0 @@
-components.d.ts
-nuxt.d.ts
-.nuxt/
-.output/
-.nitro/
-.cache/
-dist/
-node_modules/
-pnpm-lock.yaml
