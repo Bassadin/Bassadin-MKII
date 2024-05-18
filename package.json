@@ -12,7 +12,8 @@
         "eslint:fix": "eslint --fix",
         "prepare": "husky install",
         "cypress:e2e:open": "cypress open --e2e",
-        "cypress:e2e:run": "cypress run --e2e"
+        "cypress:e2e:run": "cypress run --e2e",
+        "postversion": "git push && git push --tags"
     },
     "devDependencies": {
         "@nuxt/eslint": "^0.3.13",

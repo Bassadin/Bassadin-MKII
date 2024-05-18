@@ -19,6 +19,9 @@
 				time of my projects using CI/CD tools like GitHub Actions and
 				GitLab CI/CD is something I like a lot.
 			</p>
+			<p>
+				Read more about my work experience and education on my <a href="https://www.linkedin.com/in/bastianhodapp/">LinkedIn profile</a>.
+			</p>
 		</section>
 
 		<SectionsEducationSteps />
