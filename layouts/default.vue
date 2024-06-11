@@ -1,17 +1,9 @@
 <template>
-	<div
-		class="site grid min-h-100vh grid-rows-[auto 1fr auto] grid-cols-1 font-sans"
-	>
-		<SectionsSiteHeader />
-		<div class="content break-words m-1 lg:m-4 lg:w-50vw lg:mx-auto">
-			<slot />
-		</div>
-		<SectionsSiteFooter />
-	</div>
+    <div class="grid min-h-max grid-cols-1 grid-rows-[auto_1fr_auto] font-sans">
+        <SectionsSiteHeader />
+        <div class="m-1 break-words p-2 lg:m-4 lg:mx-auto lg:w-1/2">
+            <slot />
+        </div>
+        <SectionsSiteFooter />
+    </div>
 </template>
-
-<style lang="scss" scoped>
-.content > * {
-    margin-top: 3rem;
-}
-</style>
