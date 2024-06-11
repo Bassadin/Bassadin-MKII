@@ -14,3 +14,9 @@ My personal webpage, built with Nuxt.js (Vue).pin honkai star rail
 pnpm install
 pnpm dev
 ```
+
+## Versioning
+
+```
+pnpm version major | minor | patch
+```
