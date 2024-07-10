@@ -19,30 +19,30 @@
     },
     "devDependencies": {
         "@nuxt/eslint": "^0.3.13",
-        "@unocss/nuxt": "^0.61.0",
-        "@unocss/preset-web-fonts": "^0.61.0",
-        "@unocss/reset": "^0.61.0",
+        "@unocss/nuxt": "^0.61.3",
+        "@unocss/preset-web-fonts": "^0.61.3",
+        "@unocss/reset": "^0.61.3",
         "@vueuse/core": "^10.11.0",
         "@vueuse/nuxt": "^10.11.0",
         "cross-var": "^1.1.0",
-        "cypress": "^13.11.0",
-        "eslint": "^9.5.0",
+        "cypress": "^13.13.0",
+        "eslint": "^9.6.0",
         "eslint-plugin-nuxt": "^4.0.0",
-        "eslint-plugin-tailwindcss": "^3.17.3",
-        "eslint-plugin-vue": "^9.26.0",
+        "eslint-plugin-tailwindcss": "^3.17.4",
+        "eslint-plugin-vue": "^9.27.0",
         "husky": "^9.0.11",
-        "nuxt": "^3.12.2",
+        "nuxt": "^3.12.3",
         "prettier": "^3.3.2",
-        "sass": "^1.77.5",
-        "typescript": "^5.4.5",
-        "vite": "^5.3.1"
+        "sass": "^1.77.7",
+        "typescript": "^5.5.3",
+        "vite": "^5.3.3"
     },
     "dependencies": {
         "@mdi/js": "^7.4.47",
         "mdi-vue": "^3.0.13",
         "nuxt-icon": "^0.6.10",
-        "unhead": "^1.9.13",
-        "vue": "^3.4.29"
+        "unhead": "^1.9.15",
+        "vue": "^3.4.31"
     },
     "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631"
 }
