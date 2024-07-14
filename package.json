@@ -22,8 +22,6 @@
         "@unocss/nuxt": "^0.61.3",
         "@unocss/preset-web-fonts": "^0.61.3",
         "@unocss/reset": "^0.61.3",
-        "@vueuse/core": "^10.11.0",
-        "@vueuse/nuxt": "^10.11.0",
         "cross-var": "^1.1.0",
         "cypress": "^13.13.0",
         "eslint": "^9.7.0",

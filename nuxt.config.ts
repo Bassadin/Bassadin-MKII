@@ -5,6 +5,7 @@ import presetWebFonts from "@unocss/preset-web-fonts";
 export default defineNuxtConfig({
     modules: ["@unocss/nuxt", "nuxt-icon", "@nuxt/eslint"],
     css: ["@/styles/index.scss"],
+
     unocss: {
         presets: [
             presetWind(),
@@ -18,6 +19,7 @@ export default defineNuxtConfig({
             }),
         ],
     },
+
     eslint: {
         config: {
             stylistic: {
@@ -27,7 +29,10 @@ export default defineNuxtConfig({
             },
         },
     },
+
     features: {
         inlineStyles: false,
     },
+
+    compatibilityDate: "2024-07-14",
 });
