@@ -1,6 +1,9 @@
 <template>
     <section class="mb-8">
-        <h2><Icon name="mdi:school" /> Education</h2>
+        <SectionHeader
+            title="Education"
+            icon="mdi:school"
+        />
         <p>My educational steps, from latest to oldest:</p>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
             <CVItem icon-name="mdi:school">

@@ -3,7 +3,10 @@
         <SectionsHeroImage />
 
         <section class="mb-8">
-            <h2><Icon name="mdi:person" /> About me</h2>
+            <SectionHeader
+                title="About me"
+                icon="mdi:person"
+            />
             <p>
                 I'm Bastian, a software developer from Germany. While my current
                 focus is Full Stack Web Development (buzz word bingo, woop
@@ -29,7 +32,10 @@
         <SectionsFavoriteTechnologies />
 
         <section class="mb-8">
-            <h2><Icon name="mdi:information" /> About this website</h2>
+            <SectionHeader
+                title="About this website"
+                icon="mdi:information"
+            />
             <p>
                 This website was built using
                 <a

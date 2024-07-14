@@ -1,6 +1,9 @@
 <template>
     <section class="mb-8">
-        <h2><Icon name="mdi:briefcase" /> Work Experience</h2>
+        <SectionHeader
+            title="Work Experience"
+            icon="mdi:briefcase"
+        />
         <p>My work experience, from latest to oldest:</p>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
             <CVItem icon-name="mdi:briefcase">

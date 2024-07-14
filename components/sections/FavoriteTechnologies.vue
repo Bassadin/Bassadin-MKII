@@ -1,6 +1,9 @@
 <template>
     <section class="mb-8">
-        <h2><Icon name="mdi:code-braces" /> Favorite Technologies</h2>
+        <SectionHeader
+            title="Favorite Technologies"
+            icon="mdi:code-braces"
+        />
         <p>
             Here are some of my favorite technologies I like to use and/or work
             with:
