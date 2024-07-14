@@ -1,0 +1,36 @@
+name: Deploy with FTP
+
+on:
+    workflow_run:
+        workflows: ["Build and Test"]
+        tags:
+            - 'v*'
+        types:
+            - completed
+
+jobs:
+    deploy:
+        needs:
+            - build
+            - test-cypress
+        runs-on: ubuntu-20.04
+        environment:
+            name: production
+            url: https://bassadin.de/
+        if: startsWith(github.ref, 'refs/tags/v')
+        name: Deploy to FTP Server
+        steps:
+            - uses: dawidd6/action-download-artifact@v6
+              with:
+                workflow: build-test.yml
+                name: build-artifact
+                path: .output/public/
+            - name: Deploy to FTP Server
+              uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+              with:
+                  server: ha01s018.org-dns.com
+                  username: bassadin_root_website
+                  password: ${{ secrets.FTP_Password }}
+                  protocol: ftps
+                  local-dir: .output/public/
+                  security: strict
