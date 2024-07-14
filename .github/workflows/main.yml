@@ -52,6 +52,9 @@ jobs:
             - build
             - test-cypress
         runs-on: ubuntu-20.04
+        environment: 
+          name: production
+          url: https://bassadin.de/
         if: github.ref == 'refs/heads/master'
         name: Deploy to FTP Server
         steps:
