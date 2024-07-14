@@ -1,10 +1,11 @@
 name: Deploy with FTP
 
 on:
-    workflow_run:
-        workflows: ["Build and Test"]
+    push:
         tags:
-            - 'v*'
+            - "v*"
+    workflow_run:
+        workflows: [Build and Test]
         types:
             - completed
 
@@ -22,9 +23,9 @@ jobs:
         steps:
             - uses: dawidd6/action-download-artifact@v6
               with:
-                workflow: build-test.yml
-                name: build-artifact
-                path: .output/public/
+                  workflow: build-test.yml
+                  name: build-artifact
+                  path: .output/public/
             - name: Deploy to FTP Server
               uses: SamKirkland/FTP-Deploy-Action@v4.3.4
               with:
