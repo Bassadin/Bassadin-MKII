@@ -55,6 +55,7 @@ jobs:
         environment: 
           name: production
           url: https://bassadin.de/
+        if: startsWith(github.ref, 'refs/tags/v')
         name: Deploy to FTP Server
         steps:
             - uses: actions/download-artifact@master
