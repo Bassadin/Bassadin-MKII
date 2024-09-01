@@ -4,7 +4,9 @@
             title="Work Experience"
             icon="mdi:briefcase"
         />
-        <p class="my-3">My work experience, from latest to oldest:</p>
+        <p class="my-3">
+            My work experience, from latest to oldest:
+        </p>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
             <CVItem icon-name="mdi:briefcase">
                 <template #title>
