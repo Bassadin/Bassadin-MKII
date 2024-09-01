@@ -18,10 +18,8 @@
         "postversion": "git push && git push --tags"
     },
     "devDependencies": {
-        "@nuxt/eslint": "^0.3.13",
-        "@unocss/nuxt": "^0.61.9",
-        "@unocss/preset-web-fonts": "^0.61.9",
-        "@unocss/reset": "^0.61.9",
+        "@nuxt/eslint": "^0.5.5",
+        "@nuxtjs/tailwindcss": "^6.12.1",
         "cross-var": "^1.1.0",
         "cypress": "^13.14.1",
         "eslint": "^9.9.1",
@@ -44,3 +42,4 @@
     },
     "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631"
 }
+

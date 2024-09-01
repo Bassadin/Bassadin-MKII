@@ -7,7 +7,7 @@
                 title="About me"
                 icon="mdi:person"
             />
-            <p>
+            <p class="my-3">
                 I'm Bastian, a software developer from Germany. While my current
                 focus is Full Stack Web Development (buzz word bingo, woop
                 woop), I've dabbled in Game Development, Embedded Programming,
@@ -15,14 +15,14 @@
                 about new technologies and clean and structured code is very
                 important to me.
             </p>
-            <p>
+            <p class="my-3">
                 I enjoy using tools to improve code quality like ESLint or
                 Prettier. For my private projects like this website, I mostly
                 use Vue.js and TypeScript. Improving and reducing the deploy
                 time of my projects using CI/CD tools like GitHub Actions and
                 GitLab CI/CD is something I like a lot.
             </p>
-            <p>
+            <p class="my-3">
                 Read more about my work experience and education on my <a href="https://www.linkedin.com/in/bastianhodapp/">LinkedIn profile</a>.
             </p>
         </section>
@@ -36,7 +36,7 @@
                 title="About this website"
                 icon="mdi:information"
             />
-            <p>
+            <p class="my-3">
                 This website was built using
                 <a
                     target="_blank"
@@ -48,7 +48,7 @@
                 the main branch are automatically deployed to my webhoster using
                 an FTP deployment action.
             </p>
-            <p>
+            <p class="my-3">
                 To ensure code consistency and quality, I use ESLint and
                 Prettier. I also use husky.js to check my code through these
                 code quality tools before every commit that is made.

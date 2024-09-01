@@ -10,7 +10,7 @@
             loading="eager"
         >
         <h1
-            class="font-hero mt-8 w-full text-center text-4xl lg:mx-8 lg:text-6xl"
+            class="mt-8 w-full text-center font-hero text-4xl font-bold lg:mx-8 lg:text-6xl"
         >
             Bastian&nbsp;Hodapp: Software&nbsp;Developer
         </h1>

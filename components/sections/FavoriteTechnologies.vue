@@ -4,7 +4,7 @@
             title="Favorite Technologies"
             icon="mdi:code-braces"
         />
-        <p>
+        <p class="my-3">
             Here are some of my favorite technologies I like to use and/or work
             with:
         </p>

@@ -1,6 +1,6 @@
 <template>
     <footer
-        class="border-t-2 border-gray-500 bg-gray-100 py-9 text-center"
+        class="border-t-2 border-stone-400 bg-stone-100 py-9 text-center dark:bg-stone-700"
     >
         <h2 class="m-0 text-2xl font-bold">
             Social

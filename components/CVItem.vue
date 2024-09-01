@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex flex-col items-center rounded-lg bg-stone-200 p-4 transition-colors duration-200"
+        class="flex flex-col items-center rounded-lg bg-stone-200 p-4 transition-colors duration-200 dark:bg-stone-700"
     >
         <Icon
             :name="iconName"

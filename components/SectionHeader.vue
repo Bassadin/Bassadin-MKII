@@ -1,5 +1,5 @@
 <template>
-    <h2 class="mt-12">
+    <h2 class="my-3 mt-12 text-2xl font-bold">
         <Icon :name="icon" /> {{ title }}
     </h2>
 </template>

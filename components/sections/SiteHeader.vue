@@ -1,6 +1,6 @@
 <template>
     <header
-        class="mb-6 flex w-full flex-row items-center justify-between border-b-2 border-b-gray-500 bg-white py-4"
+        class="mb-6 flex w-full flex-row items-center justify-between py-4 shadow dark:shadow-gray-50"
     >
         <NuxtLink to="/">
             <div class="flex flex-row items-center">
@@ -18,11 +18,12 @@
         </NuxtLink>
 
         <a
-            class="underline-hover mr-5"
+            class="underline-hover mr-5 flex items-center"
             href="https://nuxt.com/"
             target="_blank"
         >
             Built with <Icon
+                class="ml-1"
                 size="1.6em"
                 name="mdi:nuxt"
             />

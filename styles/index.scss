@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
     font-family: "Roboto";
     src: url(/fonts/Roboto-Regular.ttf) format("truetype");
@@ -14,10 +18,10 @@
 
 a {
     text-decoration: none;
-    color: #c2410c;
+    @apply text-primary transition-colors;
 
     &:hover {
-        color: #f97316;
+        @apply text-primary-hover;
     }
 }
 
