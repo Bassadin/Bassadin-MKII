@@ -23,7 +23,7 @@
         </p>
         <div
             v-if="slots.description"
-            class="mb-1 mt-3 h-0.5 w-3/4 bg-gray-400"
+            class="my-3 h-0.5 w-3/4 bg-gray-400"
         />
         <p class="mb-0 text-center leading-snug lg:mb-3">
             <slot name="description" />
