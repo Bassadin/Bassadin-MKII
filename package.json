@@ -18,27 +18,27 @@
         "postversion": "git push && git push --tags"
     },
     "devDependencies": {
-        "@nuxt/eslint": "^0.5.5",
+        "@nuxt/eslint": "^0.5.6",
         "@nuxtjs/tailwindcss": "^6.12.1",
         "cross-var": "^1.1.0",
-        "cypress": "^13.14.1",
+        "cypress": "^13.14.2",
         "eslint": "^9.9.1",
         "eslint-plugin-nuxt": "^4.0.0",
         "eslint-plugin-tailwindcss": "^3.17.4",
-        "eslint-plugin-vue": "^9.27.0",
+        "eslint-plugin-vue": "^9.28.0",
         "husky": "^9.1.5",
-        "nuxt": "^3.13.0",
+        "nuxt": "^3.13.1",
         "prettier": "^3.3.3",
-        "sass": "^1.77.8",
+        "sass": "^1.78.0",
         "typescript": "^5.5.4",
-        "vite": "^5.4.2"
+        "vite": "^5.4.3"
     },
     "dependencies": {
         "@mdi/js": "^7.4.47",
         "mdi-vue": "^3.0.13",
         "nuxt-icon": "^0.6.10",
-        "unhead": "^1.10.0",
-        "vue": "^3.4.38"
+        "unhead": "^1.10.4",
+        "vue": "^3.5.2"
     },
-    "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631"
+    "packageManager": "pnpm@9.9.0"
 }
