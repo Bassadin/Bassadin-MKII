@@ -11,9 +11,9 @@
             <a
                 href="https://github.com/Bassadin/Bassadin-MKII"
                 target="_blank"
-                class="underline-hover"
+                class="inline-flex items-center"
             >
-                GitHub <Icon name="mdi:github" />
+                GitHub
             </a>
         </p>
         <p>

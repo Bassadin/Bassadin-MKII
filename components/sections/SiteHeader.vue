@@ -18,7 +18,7 @@
         </NuxtLink>
 
         <a
-            class="underline-hover mr-5 flex items-center"
+            class="mr-5 flex items-center"
             href="https://nuxt.com/"
             target="_blank"
         >
