@@ -1,6 +1,7 @@
 name: Build and push Docker image to Docker Hub
 
 on:
+    merge_group:
     push:
         tags:
             - "*"
