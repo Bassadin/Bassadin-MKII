@@ -18,23 +18,23 @@
         "postversion": "git push && git push --tags"
     },
     "devDependencies": {
-        "@nuxt/eslint": "0.5.7",
-        "@nuxtjs/tailwindcss": "6.12.1",
         "cross-var": "1.1.0",
         "cypress": "13.15.0",
         "eslint": "9.11.1",
         "eslint-plugin-nuxt": "4.0.0",
         "eslint-plugin-tailwindcss": "3.17.4",
         "eslint-plugin-vue": "9.28.0",
-        "husky": "9.1.6",
-        "nuxt": "3.13.2",
         "prettier": "3.3.3",
+        "husky": "9.1.6",
         "sass": "1.79.4",
         "typescript": "5.6.2",
         "vite": "5.4.8"
     },
     "dependencies": {
+        "@nuxt/eslint": "0.5.7",
         "@mdi/js": "^7.4.47",
+        "@nuxtjs/tailwindcss": "6.12.1",
+        "nuxt": "3.13.2",
         "mdi-vue": "^3.0.13",
         "nuxt-icon": "^0.6.10",
         "unhead": "^1.10.4",

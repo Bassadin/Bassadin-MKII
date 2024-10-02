@@ -1,28 +1,29 @@
 FROM node:20.17.0-slim as base
 
-# Build the app with node
-ENV PORT=80
+ENV NODE_ENV=production
 
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 
 RUN corepack enable
 
-COPY . /app
-WORKDIR /app
+WORKDIR /src
 
-FROM base AS prod-deps
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --prod --frozen-lockfile --ignore-scripts
-
+# Build
 FROM base AS build
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+
+COPY --link pnpm-lock.yaml package.json .
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile --ignore-scripts
+
+COPY --link . .
+
 RUN pnpm run build
+RUN pnpm prune
 
 # Package the build files into a nginx image
-FROM base AS prod
-COPY --from=prod-deps /app/node_modules /app/node_modules
-COPY --from=build /app/.output /app/.output
+FROM base
+COPY --from=build /src/.output /src/.output
 
-EXPOSE 80
+EXPOSE 3000
 
-CMD node /app/.output/server/index.mjs
+CMD node .output/server/index.mjs
