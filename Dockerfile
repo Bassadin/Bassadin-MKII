@@ -1,5 +1,4 @@
-ARG NODE_VERSION=20.13.1
-FROM node:${NODE_VERSION}-slim as base
+FROM node:20.17.0-slim as base
 
 # Build the app with node
 ENV PORT=80
