@@ -24,21 +24,21 @@
         "eslint-plugin-nuxt": "4.0.0",
         "eslint-plugin-tailwindcss": "3.17.5",
         "eslint-plugin-vue": "9.29.1",
-        "prettier": "3.3.3",
         "husky": "9.1.6",
+        "prettier": "3.3.3",
         "sass": "1.80.3",
         "typescript": "5.6.3",
         "vite": "5.4.10"
     },
     "dependencies": {
-        "@nuxt/eslint": "0.5.7",
         "@mdi/js": "^7.4.47",
+        "@nuxt/eslint": "0.6.0",
         "@nuxtjs/tailwindcss": "6.12.2",
-        "nuxt": "3.13.2",
         "mdi-vue": "^3.0.13",
+        "nuxt": "3.13.2",
         "nuxt-icon": "^0.6.10",
-        "unhead": "^1.10.4",
-        "vue": "^3.5.2"
+        "unhead": "^1.11.10",
+        "vue": "^3.5.12"
     },
     "packageManager": "pnpm@9.12.2"
 }
