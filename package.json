@@ -40,5 +40,5 @@
         "unhead": "^1.11.10",
         "vue": "^3.5.12"
     },
-    "packageManager": "pnpm@9.12.2"
+    "packageManager": "pnpm@9.12.3"
 }
