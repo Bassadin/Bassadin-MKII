@@ -3,6 +3,12 @@ export default defineNuxtConfig({
     modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxt/eslint"],
     css: ["@/styles/index.scss"],
 
+    features: {
+        inlineStyles: false,
+    },
+
+    compatibilityDate: "2024-07-14",
+
     eslint: {
         config: {
             stylistic: {
@@ -12,10 +18,4 @@ export default defineNuxtConfig({
             },
         },
     },
-
-    features: {
-        inlineStyles: false,
-    },
-
-    compatibilityDate: "2024-07-14",
 });
