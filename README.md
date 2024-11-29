@@ -1,6 +1,6 @@
 # Bastian Hodapp Portfolio Page
 
-My personal webpage, built with Nuxt.js (Vue).pin honkai star rail
+My personal webpage, built with Nuxt.js (Vue).
 
 ## Pipeline status
 
