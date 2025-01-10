@@ -1,44 +1,44 @@
 {
-    "private": true,
-    "name": "bassadin-mkii",
-    "version": "2.3.0",
-    "type": "module",
-    "scripts": {
-        "build": "nuxt build",
-        "dev": "nuxt dev --host",
-        "docker:build": "cross-var docker build . -t $npm_package_name:$npm_package_version",
-        "generate": "nuxt generate",
-        "preview": "nuxt preview",
-        "postinstall": "nuxt prepare",
-        "eslint:scan": "eslint .",
-        "eslint:fix": "eslint --fix",
-        "prepare": "husky install",
-        "cypress:e2e:open": "cypress open --e2e",
-        "cypress:e2e:run": "cypress run --e2e",
-        "postversion": "git push && git push --tags"
-    },
-    "devDependencies": {
-        "cross-var": "1.1.0",
-        "cypress": "13.17.0",
-        "eslint": "9.17.0",
-        "eslint-plugin-nuxt": "4.0.0",
-        "eslint-plugin-tailwindcss": "3.17.5",
-        "eslint-plugin-vue": "9.32.0",
-        "husky": "9.1.7",
-        "prettier": "3.4.2",
-        "sass": "1.83.0",
-        "typescript": "5.7.2",
-        "vite": "6.0.6"
-    },
-    "dependencies": {
-        "@mdi/js": "^7.4.47",
-        "@nuxt/eslint": "0.7.4",
-        "@nuxtjs/tailwindcss": "6.12.2",
-        "mdi-vue": "^3.0.13",
-        "nuxt": "3.14.1592",
-        "nuxt-icon": "^0.6.10",
-        "unhead": "^1.11.11",
-        "vue": "^3.5.13"
-    },
-    "packageManager": "pnpm@9.15.2"
+  "private": true,
+  "name": "bassadin-mkii",
+  "version": "2.3.0",
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --host",
+    "docker:build": "cross-var docker build . -t $npm_package_name:$npm_package_version",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "eslint:scan": "eslint .",
+    "eslint:fix": "eslint --fix",
+    "prepare": "husky",
+    "cypress:e2e:open": "cypress open --e2e",
+    "cypress:e2e:run": "cypress run --e2e",
+    "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "cross-var": "1.1.0",
+    "cypress": "13.17.0",
+    "eslint": "9.17.0",
+    "eslint-plugin-nuxt": "4.0.0",
+    "eslint-plugin-tailwindcss": "3.17.5",
+    "eslint-plugin-vue": "9.32.0",
+    "husky": "9.1.7",
+    "prettier": "3.4.2",
+    "sass": "1.83.0",
+    "typescript": "5.7.2",
+    "vite": "6.0.6"
+  },
+  "dependencies": {
+    "@mdi/js": "^7.4.47",
+    "@nuxt/eslint": "0.7.4",
+    "@nuxtjs/tailwindcss": "6.12.2",
+    "mdi-vue": "^3.0.13",
+    "nuxt": "3.14.1592",
+    "nuxt-icon": "^0.6.10",
+    "unhead": "^1.11.11",
+    "vue": "^3.5.13"
+  },
+  "packageManager": "pnpm@9.15.2"
 }
