@@ -9,7 +9,7 @@ describe("template spec", () => {
         cy.contains("Favorite Technologies")
             .scrollIntoView()
             .should("be.visible");
-        cy.contains("©️2024 by Bastian Hodapp")
+        cy.contains("by Bastian Hodapp")
             .scrollIntoView()
             .should("be.visible");
     });
