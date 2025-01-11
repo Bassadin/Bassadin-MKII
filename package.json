@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
-    "@nuxt/eslint": "0.7.4",
+    "@nuxt/eslint": "0.7.5",
     "@nuxtjs/tailwindcss": "6.12.2",
     "mdi-vue": "^3.0.13",
     "nuxt": "3.14.1592",
