@@ -18,7 +18,7 @@
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
-    "@nuxt/icon": "1.13.0",
+    "@nuxt/icon": "1.14.0",
     "cross-var": "1.1.0",
     "cypress": "14.4.1",
     "eslint": "9.29.0",
