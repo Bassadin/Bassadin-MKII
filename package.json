@@ -21,7 +21,7 @@
     "@nuxt/icon": "1.15.0",
     "cross-var": "1.1.0",
     "cypress": "14.5.3",
-    "eslint": "9.31.0",
+    "eslint": "9.32.0",
     "eslint-plugin-nuxt": "4.0.0",
     "eslint-plugin-tailwindcss": "3.18.2",
     "husky": "9.1.7",
