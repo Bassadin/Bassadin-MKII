@@ -20,7 +20,7 @@
   "devDependencies": {
     "@nuxt/icon": "1.15.0",
     "cross-var": "1.1.0",
-    "cypress": "15.5.0",
+    "cypress": "15.6.0",
     "eslint": "9.39.1",
     "eslint-plugin-nuxt": "4.0.0",
     "eslint-plugin-tailwindcss": "3.18.2",
