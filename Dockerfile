@@ -1,4 +1,4 @@
-FROM node:24.11.1-slim@sha256:48abc13a19400ca3985071e287bd405a1d99306770eb81d61202fb6b65cf0b57 as base
+FROM node:24.12.0-slim@sha256:732887b2c52d7251840a19d203afc68a61532b1ff8b5bf3b76efd49ded39e908 as base
 
 ENV NODE_ENV=production
 
