@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-icon/components";
+import avatarLogo from "../../assets/avatar_logo256x256.png";
+import { Image } from "astro:assets";
+---
+
+<header
+    class="mb-6 flex w-full flex-row items-center justify-between py-4 shadow dark:shadow-gray-50"
+>
+    <a href="/">
+        <div class="flex flex-row items-center">
+            <Image
+                src={avatarLogo}
+                class="ml-3 h-14 w-auto cursor-pointer rounded-md lg:ml-4"
+                alt="Site Header logo"
+                title="Site Header logo"
+                loading="eager"
+                height="56"
+                width="56"
+            />
+        </div>
+    </a>
+
+    <a
+        class="mr-5 flex items-center"
+        href="https://astro.build/"
+        target="_blank"
+    >
+        Built with <Icon class="ml-1" size="1.6em" name="mdi:rocket-launch" />
+    </a>
+</header>

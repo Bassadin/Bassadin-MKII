@@ -1,51 +1,45 @@
 {
-  "private": true,
-  "name": "bassadin-mkii",
-  "version": "3.1.0",
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev --host",
-    "docker:build": "cross-var docker build . -t $npm_package_name:$npm_package_version",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "eslint:scan": "eslint .",
-    "eslint:fix": "eslint --fix",
-    "prepare": "husky",
-    "cypress:e2e:open": "cypress open --e2e",
-    "cypress:e2e:run": "cypress run --e2e",
-    "postversion": "git push && git push --tags"
-  },
-  "devDependencies": {
-    "@nuxt/icon": "2.2.1",
-    "cross-var": "1.1.0",
-    "cypress": "15.11.0",
-    "eslint": "9.39.3",
-    "eslint-plugin-nuxt": "4.0.0",
-    "eslint-plugin-tailwindcss": "3.18.2",
-    "husky": "9.1.7",
-    "prettier": "3.8.1",
-    "sass": "1.97.3",
-    "typescript": "5.9.3",
-    "vite": "7.3.1"
-  },
-  "dependencies": {
-    "@mdi/js": "^7.4.47",
-    "@nuxt/eslint": "1.15.2",
-    "@nuxtjs/tailwindcss": "6.14.0",
-    "mdi-vue": "^3.0.13",
-    "nuxt": "4.3.1",
-    "unhead": "2.1.7",
-    "vue": "^3.5.13"
-  },
-  "packageManager": "pnpm@10.30.3",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "core-js",
-      "cypress",
-      "esbuild"
-    ]
-  }
+    "private": true,
+    "name": "bassadin-mkii",
+    "version": "3.1.0",
+    "type": "module",
+    "scripts": {
+        "build": "astro build",
+        "dev": "astro dev --host",
+        "preview": "astro preview",
+        "eslint:scan": "eslint .",
+        "eslint:fix": "eslint --fix",
+        "prepare": "husky",
+        "cypress:e2e:open": "cypress open --e2e",
+        "cypress:e2e:run": "cypress run --e2e",
+        "postversion": "git push && git push --tags"
+    },
+    "devDependencies": {
+        "@astrojs/check": "0.9.6",
+        "@iconify-json/mdi": "1.2.3",
+        "astro-icon": "1.1.5",
+        "cross-var": "1.1.0",
+        "cypress": "15.11.0",
+        "eslint": "9.39.3",
+        "eslint-plugin-tailwindcss": "3.18.2",
+        "husky": "9.1.7",
+        "prettier": "3.8.1",
+        "sass": "1.97.3",
+        "typescript": "5.9.3"
+    },
+    "dependencies": {
+        "@astrojs/tailwind": "6.0.2",
+        "astro": "5.18.0",
+        "tailwindcss": "3.4.17"
+    },
+    "packageManager": "pnpm@10.30.3",
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "@parcel/watcher",
+            "core-js",
+            "cypress",
+            "esbuild",
+            "sharp"
+        ]
+    }
 }

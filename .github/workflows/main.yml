@@ -17,12 +17,12 @@ jobs:
                   node-version: 24.x
             - name: pnpm module install
               run: pnpm install --frozen-lockfile
-            - name: nuxt generate
-              run: pnpm run generate
+            - name: astro build
+              run: pnpm run build
             - uses: actions/upload-artifact@master
               with:
                   name: build-artifact
-                  path: .output/public/
+                  path: dist/
 
     test-cypress:
         name: Cypress Tests
@@ -38,11 +38,11 @@ jobs:
             - uses: actions/download-artifact@master
               with:
                   name: build-artifact
-                  path: .output/public/
+                  path: dist/
             - name: Cypress run
               uses: cypress-io/github-action@v6
               with:
-                  start: npx serve .output/public
+                  start: npx serve dist
                   browser: chrome
 
     deploy:
@@ -60,7 +60,7 @@ jobs:
             - uses: actions/download-artifact@master
               with:
                   name: build-artifact
-                  path: .output/public/
+                  path: dist/
             - name: Deploy to FTP Server
               uses: SamKirkland/FTP-Deploy-Action@a51268f67f6605236975928ae28b0f7e9971d50a # v4.3.6
               with:
@@ -68,5 +68,5 @@ jobs:
                   username: bassadin_root_website
                   password: ${{ secrets.FTP_Password }}
                   protocol: ftps
-                  local-dir: .output/public/
+                  local-dir: dist/
                   security: strict
