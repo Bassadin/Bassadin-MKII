@@ -1,0 +1,41 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+    iconName: string;
+}
+
+const { iconName } = Astro.props;
+const hasLocation = Astro.slots.has("location");
+const hasDateRange = Astro.slots.has("dateRange");
+const hasDescription = Astro.slots.has("description");
+---
+
+<div
+    class="flex flex-col items-center rounded-lg bg-stone-200 p-4 transition-colors duration-200 dark:bg-stone-700"
+>
+    <Icon name={iconName} size="45" />
+    <h3 class="my-1 text-center">
+        <slot name="title" />
+    </h3>
+    {
+        hasLocation && (
+            <p class="my-1 text-center text-sm">
+                <Icon name="mdi:map-marker" />
+                <slot name="location" />
+            </p>
+        )
+    }
+    {
+        hasDateRange && (
+            <p class="my-1 text-center text-xs">
+                <Icon name="mdi:calendar" />
+                <slot name="dateRange" />
+            </p>
+        )
+    }
+    {hasDescription && <div class="my-3 h-0.5 w-3/4 bg-gray-400" />}
+    <p class="mb-0 text-center leading-snug lg:mb-3">
+        <slot name="description" />
+    </p>
+</div>

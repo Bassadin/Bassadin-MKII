@@ -1,11 +1,12 @@
 import tailwind from "eslint-plugin-tailwindcss";
-import withNuxt from "./.nuxt/eslint.config.mjs";
 
-export default withNuxt(
+export default [
     ...tailwind.configs["flat/recommended"],
     {
-        rules: {
-            "vue/multi-word-component-names": "off",
+        settings: {
+            tailwindcss: {
+                config: "./tailwind.config.js",
+            },
         },
     },
-);
+];
