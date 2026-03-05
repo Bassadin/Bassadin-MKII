@@ -1,6 +1,13 @@
-<!-- eslint-disable tailwindcss/no-custom-classname -->
-<template>
-    <section class="w-full">
+---
+import Layout from "../layouts/Layout.astro";
+import SiteHeader from "../components/sections/SiteHeader.astro";
+import SiteFooter from "../components/sections/SiteFooter.astro";
+---
+
+<Layout title="Legal | Bassadin">
+    <SiteHeader />
+    <div class="m-1 break-words p-2 lg:m-4 lg:mx-auto lg:w-1/2">
+        <section class="w-full">
         <h1>Datenschutzerklärung</h1>
         <h2 id="m14">
             Einleitung
@@ -684,4 +691,6 @@
                 Thomas Schwenke</a>
         </p>
     </section>
-</template>
+    </div>
+    <SiteFooter />
+</Layout>

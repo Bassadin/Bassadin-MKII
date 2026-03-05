@@ -1,29 +1,7 @@
-<template>
-    <section class="mb-8">
-        <SectionHeader
-            title="Favorite Technologies"
-            icon="mdi:code-braces"
-        />
-        <p class="my-3">
-            Here are some of my favorite technologies I like to use and/or work
-            with:
-        </p>
-        <div class="flex flex-wrap justify-center gap-2 md:gap-4">
-            <TechnologyItem
-                v-for="eachTechnologyItemData in technologyItems"
-                :key="eachTechnologyItemData.title"
-                :icon-name="eachTechnologyItemData.iconName"
-                :url="eachTechnologyItemData.url"
-            >
-                <template #title>
-                    {{ eachTechnologyItemData.title }}
-                </template>
-            </TechnologyItem>
-        </div>
-    </section>
-</template>
+---
+import SectionHeader from "../SectionHeader.astro";
+import TechnologyItem from "../TechnologyItem.astro";
 
-<script setup lang="ts">
 interface TechnologyItemData {
     title: string;
     iconName: string;
@@ -92,4 +70,21 @@ const technologyItems: TechnologyItemData[] = [
         title: "Astro",
     },
 ];
-</script>
+---
+
+<section class="mb-8">
+    <SectionHeader title="Favorite Technologies" icon="mdi:code-braces" />
+    <p class="my-3">
+        Here are some of my favorite technologies I like to use and/or work
+        with:
+    </p>
+    <div class="flex flex-wrap justify-center gap-2 md:gap-4">
+        {
+            technologyItems.map((item) => (
+                <TechnologyItem iconName={item.iconName} url={item.url}>
+                    <Fragment slot="title">{item.title}</Fragment>
+                </TechnologyItem>
+            ))
+        }
+    </div>
+</section>

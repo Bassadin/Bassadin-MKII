@@ -1,0 +1,60 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface IconData {
+    iconName: string;
+    href: string;
+}
+
+const socialFooterIcons: IconData[] = [
+    {
+        iconName: "mdi:linkedin",
+        href: "https://www.linkedin.com/in/bastianhodapp/",
+    },
+    {
+        iconName: "mdi:github",
+        href: "https://github.com/bassadin",
+    },
+    {
+        iconName: "mdi:email",
+        href: "mailto:mail@bassadin.de",
+    },
+    {
+        iconName: "mdi:mastodon",
+        href: "https://freiburg.social/@bassadin",
+    },
+];
+---
+
+<div class="flex flex-wrap justify-center">
+    {
+        socialFooterIcons.map((icon) => (
+            <a
+                class="link-button group m-2 block bg-none text-stone-800 shadow-stone-800 transition-all duration-200 hover:text-stone-800 dark:text-stone-200 dark:shadow-stone-200 dark:hover:text-stone-50"
+                href={icon.href}
+                aria-label={icon.iconName}
+                target="_blank"
+            >
+                <Icon
+                    class="block translate-x-0.5 translate-y-0.5 p-2 text-stone-800 transition-all group-hover:translate-x-0 group-hover:translate-y-0 group-hover:text-stone-50 dark:text-stone-50 dark:group-hover:text-stone-800"
+                    name={icon.iconName}
+                    size="60"
+                />
+            </a>
+        ))
+    }
+</div>
+
+<style>
+    .link-button {
+        box-shadow:
+            0.3em 0.3em 0 0,
+            inset 0.3em 0.3em 0 0;
+    }
+    .link-button:hover,
+    .link-button:focus {
+        box-shadow:
+            0 0 0 0,
+            inset 6em 3.5em 0 0;
+    }
+</style>

@@ -1,0 +1,53 @@
+---
+import SectionHeader from "../SectionHeader.astro";
+import CVItem from "../CVItem.astro";
+---
+
+<section class="mb-8">
+    <SectionHeader title="Education" icon="mdi:school" />
+    <p class="my-3">My educational steps, from latest to oldest:</p>
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <CVItem iconName="mdi:school">
+            <Fragment slot="title">
+                Master of Science<br />
+                (Computer Science / Informatik)
+            </Fragment>
+            <Fragment slot="dateRange">Mar 2022 - Sep 2023</Fragment>
+            <Fragment slot="location">HFU Furtwangen</Fragment>
+            <Fragment slot="description">
+                <b>Grade:</b> 1.6<br />
+                <b>Topic of Master's Thesis:</b> "RSSI-based Localization in LoRaWAN
+                networks"
+            </Fragment>
+        </CVItem>
+        <CVItem iconName="mdi:school">
+            <Fragment slot="title">
+                Bachelor of Science<br />
+                (Computer Science in Media / Medieninformatik)
+            </Fragment>
+            <Fragment slot="dateRange">Mar 2016 - May 2020</Fragment>
+            <Fragment slot="location">HFU Furtwangen</Fragment>
+            <Fragment slot="description">
+                <b>Grade:</b> 1.5<br />
+                <b>Topic of Bachelor's Thesis:</b> "Development of a Laravel-based
+                WebApp for an Embedded Energy Monitoring System"
+            </Fragment>
+        </CVItem>
+        <CVItem iconName="mdi:school">
+            <Fragment slot="title">
+                Bachelor of Science (Computer Science in Economics, not
+                finished)
+            </Fragment>
+            <Fragment slot="dateRange">2015 - 2018</Fragment>
+            <Fragment slot="location">DHBW Lörrach</Fragment>
+            <Fragment slot="description">Not finished</Fragment>
+        </CVItem>
+        <CVItem iconName="mdi:school">
+            <Fragment slot="title">Abitur (High School Diploma)</Fragment>
+            <Fragment slot="location"
+                >Martin-Schongauer-Gymnasium Breisach</Fragment
+            >
+            <Fragment slot="description">Grade: 1.8</Fragment>
+        </CVItem>
+    </div>
+</section>
