@@ -1,6 +1,7 @@
 # Astro
 .astro/
 dist/
+.output/
 
 # private config
 .env
