@@ -20,7 +20,7 @@ const hasDescription = Astro.slots.has("description");
     </h3>
     {
         hasLocation && (
-            <p class="my-1 text-center flex items-center gap-2 text-sm">
+            <p class="my-1 text-center flex items-center gap-1 text-sm">
                 <Icon name="mdi:map-marker" />
                 <slot name="location" />
             </p>
@@ -28,14 +28,14 @@ const hasDescription = Astro.slots.has("description");
     }
     {
         hasDateRange && (
-            <p class="my-1 text-center flex items-center gap-2 text-xs">
+            <p class="my-1 text-center flex items-center gap-1 text-xs">
                 <Icon name="mdi:calendar" />
                 <slot name="dateRange" />
             </p>
         )
     }
     {hasDescription && <div class="my-3 h-0.5 w-3/4 bg-gray-400" />}
-    <p class="mb-0 leading-snug lg:mb-3">
+    <p class="mb-0 lg:mx-2 mt-2 leading-snug lg:mb-3">
         <slot name="description" />
     </p>
 </div>
