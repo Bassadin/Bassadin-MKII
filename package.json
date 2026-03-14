@@ -20,7 +20,7 @@
         "astro-icon": "1.1.5",
         "cross-var": "1.1.0",
         "cypress": "15.11.0",
-        "eslint": "9.39.4",
+        "eslint": "10.0.3",
         "eslint-plugin-tailwindcss": "3.18.2",
         "husky": "9.1.7",
         "prettier": "3.8.1",
