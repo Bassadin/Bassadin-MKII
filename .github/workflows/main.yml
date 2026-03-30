@@ -12,14 +12,14 @@ jobs:
         steps:
             - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
             - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
-            - uses: actions/setup-node@master
+            - uses: actions/setup-node@60c11408891ef62846c29c28c2374afe5c91fad5 # master
               with:
                   node-version: 24.x
             - name: pnpm module install
               run: pnpm install --frozen-lockfile
             - name: astro build
               run: pnpm run build
-            - uses: actions/upload-artifact@master
+            - uses: actions/upload-artifact@0c366cb4fc8897159c94880f94b55bc716ad6a66 # master
               with:
                   name: build-artifact
                   path: dist/
@@ -32,10 +32,10 @@ jobs:
         steps:
             - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
             - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
-            - uses: actions/setup-node@master
+            - uses: actions/setup-node@60c11408891ef62846c29c28c2374afe5c91fad5 # master
               with:
                   node-version: 24.x
-            - uses: actions/download-artifact@master
+            - uses: actions/download-artifact@2a5974104b6d5dbdb2f9468a3e54da3bdd241578 # master
               with:
                   name: build-artifact
                   path: dist/
@@ -57,7 +57,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/v')
         name: Deploy to FTP Server
         steps:
-            - uses: actions/download-artifact@master
+            - uses: actions/download-artifact@2a5974104b6d5dbdb2f9468a3e54da3bdd241578 # master
               with:
                   name: build-artifact
                   path: dist/
