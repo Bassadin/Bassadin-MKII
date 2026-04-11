@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: 6.0.2
-        version: 6.0.2(astro@6.0.8(@types/node@25.5.0)(jiti@1.21.7)(rollup@4.60.0)(sass@1.98.0)(typescript@5.9.3)(yaml@2.8.3))(tailwindcss@3.4.19(yaml@2.8.3))
+        version: 6.0.2(astro@6.0.8(@types/node@25.5.0)(jiti@1.21.7)(rollup@4.60.0)(sass@1.99.0)(typescript@5.9.3)(yaml@2.8.3))(tailwindcss@3.4.19(yaml@2.8.3))
       astro:
         specifier: 6.0.8
-        version: 6.0.8(@types/node@25.5.0)(jiti@1.21.7)(rollup@4.60.0)(sass@1.98.0)(typescript@5.9.3)(yaml@2.8.3)
+        version: 6.0.8(@types/node@25.5.0)(jiti@1.21.7)(rollup@4.60.0)(sass@1.99.0)(typescript@5.9.3)(yaml@2.8.3)
       tailwindcss:
         specifier: 3.4.19
         version: 3.4.19(yaml@2.8.3)
@@ -46,8 +46,8 @@ importers:
         specifier: 3.8.1
         version: 3.8.1
       sass:
-        specifier: 1.98.0
-        version: 1.98.0
+        specifier: 1.99.0
+        version: 1.99.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -2866,8 +2866,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.98.0:
-    resolution: {integrity: sha512-+4N/u9dZ4PrgzGgPlKnaaRQx64RO0JBKs9sDhQ2pLgN6JQZ25uPQZKQYaBJU48Kd5BxgXoJ4e09Dq7nMcOUW3A==}
+  sass@1.99.0:
+    resolution: {integrity: sha512-kgW13M54DUB7IsIRM5LvJkNlpH+WhMpooUcaWGFARkF1Tc82v9mIWkCbCYf+MBvpIUBSeSOTilpZjEPr2VYE6Q==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3608,9 +3608,9 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/tailwind@6.0.2(astro@6.0.8(@types/node@25.5.0)(jiti@1.21.7)(rollup@4.60.0)(sass@1.98.0)(typescript@5.9.3)(yaml@2.8.3))(tailwindcss@3.4.19(yaml@2.8.3))':
+  '@astrojs/tailwind@6.0.2(astro@6.0.8(@types/node@25.5.0)(jiti@1.21.7)(rollup@4.60.0)(sass@1.99.0)(typescript@5.9.3)(yaml@2.8.3))(tailwindcss@3.4.19(yaml@2.8.3))':
     dependencies:
-      astro: 6.0.8(@types/node@25.5.0)(jiti@1.21.7)(rollup@4.60.0)(sass@1.98.0)(typescript@5.9.3)(yaml@2.8.3)
+      astro: 6.0.8(@types/node@25.5.0)(jiti@1.21.7)(rollup@4.60.0)(sass@1.99.0)(typescript@5.9.3)(yaml@2.8.3)
       autoprefixer: 10.4.27(postcss@8.5.8)
       postcss: 8.5.8
       postcss-load-config: 4.0.2(postcss@8.5.8)
@@ -4353,7 +4353,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@6.0.8(@types/node@25.5.0)(jiti@1.21.7)(rollup@4.60.0)(sass@1.98.0)(typescript@5.9.3)(yaml@2.8.3):
+  astro@6.0.8(@types/node@25.5.0)(jiti@1.21.7)(rollup@4.60.0)(sass@1.99.0)(typescript@5.9.3)(yaml@2.8.3):
     dependencies:
       '@astrojs/compiler': 3.0.1
       '@astrojs/internal-helpers': 0.8.0
@@ -4405,8 +4405,8 @@ snapshots:
       unist-util-visit: 5.1.0
       unstorage: 1.17.5
       vfile: 6.0.3
-      vite: 7.3.1(@types/node@25.5.0)(jiti@1.21.7)(sass@1.98.0)(yaml@2.8.3)
-      vitefu: 1.1.2(vite@7.3.1(@types/node@25.5.0)(jiti@1.21.7)(sass@1.98.0)(yaml@2.8.3))
+      vite: 7.3.1(@types/node@25.5.0)(jiti@1.21.7)(sass@1.99.0)(yaml@2.8.3)
+      vitefu: 1.1.2(vite@7.3.1(@types/node@25.5.0)(jiti@1.21.7)(sass@1.99.0)(yaml@2.8.3))
       xxhash-wasm: 1.1.0
       yargs-parser: 22.0.0
       zod: 4.3.6
@@ -6889,7 +6889,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.98.0:
+  sass@1.99.0:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.5
@@ -7327,7 +7327,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@7.3.1(@types/node@25.5.0)(jiti@1.21.7)(sass@1.98.0)(yaml@2.8.3):
+  vite@7.3.1(@types/node@25.5.0)(jiti@1.21.7)(sass@1.99.0)(yaml@2.8.3):
     dependencies:
       esbuild: 0.27.4
       fdir: 6.5.0(picomatch@4.0.4)
@@ -7339,12 +7339,12 @@ snapshots:
       '@types/node': 25.5.0
       fsevents: 2.3.3
       jiti: 1.21.7
-      sass: 1.98.0
+      sass: 1.99.0
       yaml: 2.8.3
 
-  vitefu@1.1.2(vite@7.3.1(@types/node@25.5.0)(jiti@1.21.7)(sass@1.98.0)(yaml@2.8.3)):
+  vitefu@1.1.2(vite@7.3.1(@types/node@25.5.0)(jiti@1.21.7)(sass@1.99.0)(yaml@2.8.3)):
     optionalDependencies:
-      vite: 7.3.1(@types/node@25.5.0)(jiti@1.21.7)(sass@1.98.0)(yaml@2.8.3)
+      vite: 7.3.1(@types/node@25.5.0)(jiti@1.21.7)(sass@1.99.0)(yaml@2.8.3)
 
   volar-service-css@0.0.70(@volar/language-service@2.4.28):
     dependencies:
