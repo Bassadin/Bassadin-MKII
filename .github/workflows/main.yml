@@ -6,6 +6,20 @@ on:
   merge_group:
 
 jobs:
+    eslint:
+        name: ESLint Check
+        runs-on: ubuntu-24.04
+        steps:
+            - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+            - uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4
+            - uses: actions/setup-node@master
+              with:
+                  node-version: 24.x
+            - name: pnpm module install
+              run: pnpm install --frozen-lockfile
+            - name: Run ESLint
+              run: pnpm run eslint:scan
+
     build:
         name: Build
         runs-on: ubuntu-24.04
@@ -47,6 +61,7 @@ jobs:
 
     deploy:
         needs:
+        - eslint
             - build
             - test-cypress
         runs-on: ubuntu-24.04
