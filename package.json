@@ -19,7 +19,7 @@
         "@iconify-json/mdi": "1.2.3",
         "astro-icon": "1.2.0",
         "cross-var": "1.1.0",
-        "cypress": "15.21.1",
+        "cypress": "16.0.0",
         "eslint": "10.10.0",
         "eslint-plugin-tailwindcss": "3.18.3",
         "husky": "9.1.7",
