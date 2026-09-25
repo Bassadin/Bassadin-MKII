@@ -29,16 +29,8 @@
     "dependencies": {
         "@tailwindcss/vite": "4.3.3",
         "astro": "7.2.8",
+        "sharp": "0.35.4",
         "tailwindcss": "4.3.3"
     },
-    "packageManager": "pnpm@10.34.5",
-    "pnpm": {
-        "onlyBuiltDependencies": [
-            "@parcel/watcher",
-            "core-js",
-            "cypress",
-            "esbuild",
-            "sharp"
-        ]
-    }
+    "packageManager": "pnpm@12.5.1"
 }

@@ -1,3 +1,161 @@
+---
+lockfileVersion: '9.0'
+
+importers:
+
+  .:
+    configDependencies: {}
+    packageManagerDependencies:
+      pnpm:
+        specifier: 12.5.1
+        version: 12.5.1
+
+packages:
+
+  '@pnpm/exe.android-arm64@12.5.1':
+    resolution: {integrity: sha512-6LGBmQuDzUmgpHSuy+haG0jrmkwFNa4EuShDZqK3cIBv4Wfb75CzjJmowkzr+iJg40vnBKMQ62t4Ko6mwsId7A==}
+    cpu: [arm64]
+    os: [android]
+
+  '@pnpm/exe.android-x64@12.5.1':
+    resolution: {integrity: sha512-091oCltP3Rx89yxL1Wh5rXkUXEyFzyxIzSHKRFDyDFlQkb8Ox8FaDcm+M8PNkMyqnLA+qeGOLzY7Rjj9izl1Ww==}
+    cpu: [x64]
+    os: [android]
+
+  '@pnpm/exe.darwin-arm64@12.5.1':
+    resolution: {integrity: sha512-r1vEMQPVjRexZMyL2HonxJoo3+nuB/+G+tg+f2PK6faRdXX1TDwevKXOxJAfqlPInTy6W/pm912+s+m0NcR4BQ==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@pnpm/exe.darwin-x64@12.5.1':
+    resolution: {integrity: sha512-YHwI1g2B+Y2cAEylOR31r781GWijdJL7Gy7TEn/ZpZ5v/Cuwp5/Pz0EFCgo0M2MKLafAbL/laUMGvOpAdnerAw==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@pnpm/exe.freebsd-x64@12.5.1':
+    resolution: {integrity: sha512-sFUMHiYFs6q5syFwgaVppzhQSmqnXoJIz/YwTXIOXTDE76ndIpTRpDGAnBCBKjsaEBnqjJA/2l6hpJcNDNoMiA==}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@pnpm/exe.linux-arm64-musl@12.5.1':
+    resolution: {integrity: sha512-zupuxYZBuBEGjUz805/4/Asq01UNziFADANt8yp+LdUjU9bbMa3xY78Bx1PsGDqBy7aiad4sdUMK8ZxH4n4gmQ==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@pnpm/exe.linux-arm64@12.5.1':
+    resolution: {integrity: sha512-6hbMWW2/eQo1b5wvQPe/ndLHVTH88Rav6N+ffD4/h6IuFMjWCgasFYYsFv0GrvpqREAx3SwmZSvli+0NFXqbxA==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@pnpm/exe.linux-ppc64@12.5.1':
+    resolution: {integrity: sha512-Gg3maDzaE/ZFMV9HIx/BwMN0Y6QbEs13URfxmiYHtKjjLAs5wEQZRMUP87YNLYO7cNaEfbM8GRbS9vPosyD9Gw==}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [glibc]
+
+  '@pnpm/exe.linux-riscv64@12.5.1':
+    resolution: {integrity: sha512-6fgWxXYMBMsWQ8DAiRevscX4QZQjwh+FsyCj8ZOk8pMXvqeq84MqBLCmS6KckvnbdqJ+HlSVQ7fs/kd0ldwfhA==}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [glibc]
+
+  '@pnpm/exe.linux-s390x@12.5.1':
+    resolution: {integrity: sha512-nzMZruRvxDhEfYUhzu+7EmM39+82Dgagc/6hPFPqGqzXNGcIG0anuxbUxfeNtI64SHt91KuuYUmCB/inlM+Pag==}
+    cpu: [s390x]
+    os: [linux]
+    libc: [glibc]
+
+  '@pnpm/exe.linux-x64-musl@12.5.1':
+    resolution: {integrity: sha512-kHCbegdTNHpzmPtUD4S5fqkVkqgdQR47spF9p2VPP3dIIkZl6Ytk8w0vhlAsAGgge8FmucfwX+vvPKgm0NtOCQ==}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@pnpm/exe.linux-x64@12.5.1':
+    resolution: {integrity: sha512-3PkUBYo5z4dgtlnTNIFj7QGpcDUAuqXz9WGVigPDCeccEnhGiRkWmA5102TmYJHtwJP3LfmE+ZF9PGeWhn8p9Q==}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@pnpm/exe.win32-arm64@12.5.1':
+    resolution: {integrity: sha512-49NvjZIXHly56/PLoEDD7VphbO4N8dwMXoApElDFCpVGDNGeKlwlib1tXtnpTF6i2/XIsAj7GgatHB5KHXgBnA==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@pnpm/exe.win32-x64@12.5.1':
+    resolution: {integrity: sha512-ePUmQFPAPJFNMwg1lelDx2PdjHqYRiF0yfg5e6qeDbPNOu97QNo557Ru/SxmCrmt8ydQWNuZXWpdEp019md5vw==}
+    cpu: [x64]
+    os: [win32]
+
+  pnpm@12.5.1:
+    resolution: {integrity: sha512-4/MFvHhKK8ifWtO2E4iJRw+ujSr182thIW7JHCw9ZAiXdfneOKrDMQROpA8kXLDVZmOS399lgk4ZB+9qLGLeXw==}
+    engines: {node: '>=18.*'}
+    hasBin: true
+
+snapshots:
+
+  '@pnpm/exe.android-arm64@12.5.1':
+    optional: true
+
+  '@pnpm/exe.android-x64@12.5.1':
+    optional: true
+
+  '@pnpm/exe.darwin-arm64@12.5.1':
+    optional: true
+
+  '@pnpm/exe.darwin-x64@12.5.1':
+    optional: true
+
+  '@pnpm/exe.freebsd-x64@12.5.1':
+    optional: true
+
+  '@pnpm/exe.linux-arm64-musl@12.5.1':
+    optional: true
+
+  '@pnpm/exe.linux-arm64@12.5.1':
+    optional: true
+
+  '@pnpm/exe.linux-ppc64@12.5.1':
+    optional: true
+
+  '@pnpm/exe.linux-riscv64@12.5.1':
+    optional: true
+
+  '@pnpm/exe.linux-s390x@12.5.1':
+    optional: true
+
+  '@pnpm/exe.linux-x64-musl@12.5.1':
+    optional: true
+
+  '@pnpm/exe.linux-x64@12.5.1':
+    optional: true
+
+  '@pnpm/exe.win32-arm64@12.5.1':
+    optional: true
+
+  '@pnpm/exe.win32-x64@12.5.1':
+    optional: true
+
+  pnpm@12.5.1:
+    optionalDependencies:
+      '@pnpm/exe.android-arm64': 12.5.1
+      '@pnpm/exe.android-x64': 12.5.1
+      '@pnpm/exe.darwin-arm64': 12.5.1
+      '@pnpm/exe.darwin-x64': 12.5.1
+      '@pnpm/exe.freebsd-x64': 12.5.1
+      '@pnpm/exe.linux-arm64': 12.5.1
+      '@pnpm/exe.linux-arm64-musl': 12.5.1
+      '@pnpm/exe.linux-ppc64': 12.5.1
+      '@pnpm/exe.linux-riscv64': 12.5.1
+      '@pnpm/exe.linux-s390x': 12.5.1
+      '@pnpm/exe.linux-x64': 12.5.1
+      '@pnpm/exe.linux-x64-musl': 12.5.1
+      '@pnpm/exe.win32-arm64': 12.5.1
+      '@pnpm/exe.win32-x64': 12.5.1
+
+---
 lockfileVersion: '9.0'
 
 settings:
@@ -14,6 +172,9 @@ importers:
       astro:
         specifier: 7.2.8
         version: 7.2.8(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(sass@1.104.0)(yaml@2.9.0)
+      sharp:
+        specifier: 0.35.4
+        version: 0.35.4(@types/node@26.4.1)
       tailwindcss:
         specifier: 4.3.3
         version: 4.3.3
@@ -29,16 +190,16 @@ importers:
         version: 1.2.0
       cross-var:
         specifier: 1.1.0
-        version: 1.1.0
+        version: 1.1.0(supports-color@8.1.1)
       cypress:
         specifier: 16.1.0
         version: 16.1.0
       eslint:
         specifier: 10.10.0
-        version: 10.10.0(jiti@2.7.0)
+        version: 10.10.0(jiti@2.7.0)(supports-color@8.1.1)
       eslint-plugin-tailwindcss:
         specifier: 4.4.0
-        version: 4.4.0(eslint@10.10.0(jiti@2.7.0))(tailwindcss@4.3.3)(typescript@7.0.2)
+        version: 4.4.0(eslint@10.10.0(jiti@2.7.0)(supports-color@8.1.1))(supports-color@8.1.1)(tailwindcss@4.3.3)(typescript@7.0.2)
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -3945,14 +4106,14 @@ snapshots:
   '@esbuild/win32-x64@0.28.2':
     optional: true
 
-  '@eslint-community/eslint-utils@4.10.1(eslint@10.10.0(jiti@2.7.0))':
+  '@eslint-community/eslint-utils@4.10.1(eslint@10.10.0(jiti@2.7.0)(supports-color@8.1.1))':
     dependencies:
-      eslint: 10.10.0(jiti@2.7.0)
+      eslint: 10.10.0(jiti@2.7.0)(supports-color@8.1.1)
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.2': {}
 
-  '@eslint/config-array@0.23.5':
+  '@eslint/config-array@0.23.5(supports-color@8.1.1)':
     dependencies:
       '@eslint/object-schema': 3.0.5
       debug: 4.4.3(supports-color@8.1.1)
@@ -4013,8 +4174,7 @@ snapshots:
       '@iconify/types': 2.0.0
       import-meta-resolve: 4.2.0
 
-  '@img/colour@1.1.0':
-    optional: true
+  '@img/colour@1.1.0': {}
 
   '@img/sharp-darwin-arm64@0.35.4':
     optionalDependencies:
@@ -4419,7 +4579,7 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
-  '@typescript-eslint/project-service@8.70.0(typescript@7.0.2)':
+  '@typescript-eslint/project-service@8.70.0(supports-color@8.1.1)(typescript@7.0.2)':
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.70.0(typescript@7.0.2)
       '@typescript-eslint/types': 8.70.0
@@ -4439,9 +4599,9 @@ snapshots:
 
   '@typescript-eslint/types@8.70.0': {}
 
-  '@typescript-eslint/typescript-estree@8.70.0(typescript@7.0.2)':
+  '@typescript-eslint/typescript-estree@8.70.0(supports-color@8.1.1)(typescript@7.0.2)':
     dependencies:
-      '@typescript-eslint/project-service': 8.70.0(typescript@7.0.2)
+      '@typescript-eslint/project-service': 8.70.0(supports-color@8.1.1)(typescript@7.0.2)
       '@typescript-eslint/tsconfig-utils': 8.70.0(typescript@7.0.2)
       '@typescript-eslint/types': 8.70.0
       '@typescript-eslint/visitor-keys': 8.70.0
@@ -4454,13 +4614,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.70.0(eslint@10.10.0(jiti@2.7.0))(typescript@7.0.2)':
+  '@typescript-eslint/utils@8.70.0(eslint@10.10.0(jiti@2.7.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@7.0.2)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.10.1(eslint@10.10.0(jiti@2.7.0))
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.10.0(jiti@2.7.0)(supports-color@8.1.1))
       '@typescript-eslint/scope-manager': 8.70.0
       '@typescript-eslint/types': 8.70.0
-      '@typescript-eslint/typescript-estree': 8.70.0(typescript@7.0.2)
-      eslint: 10.10.0(jiti@2.7.0)
+      '@typescript-eslint/typescript-estree': 8.70.0(supports-color@8.1.1)(typescript@7.0.2)
+      eslint: 10.10.0(jiti@2.7.0)(supports-color@8.1.1)
       typescript: 7.0.2
     transitivePeerDependencies:
       - supports-color
@@ -4762,20 +4922,20 @@ snapshots:
       esutils: 2.0.3
       js-tokens: 3.0.2
 
-  babel-core@6.26.3:
+  babel-core@6.26.3(supports-color@8.1.1):
     dependencies:
       babel-code-frame: 6.26.0
       babel-generator: 6.26.1
-      babel-helpers: 6.24.1
+      babel-helpers: 6.24.1(supports-color@8.1.1)
       babel-messages: 6.23.0
       babel-register: 6.26.0
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
+      babel-traverse: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
       babylon: 6.18.0
       convert-source-map: 1.9.0
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@8.1.1)
       json5: 0.5.1
       lodash: 4.18.1
       minimatch: 3.1.5
@@ -4797,63 +4957,63 @@ snapshots:
       source-map: 0.5.7
       trim-right: 1.0.1
 
-  babel-helper-bindify-decorators@6.24.1:
+  babel-helper-bindify-decorators@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-runtime: 6.26.0
-      babel-traverse: 6.26.0
+      babel-traverse: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-helper-builder-binary-assignment-operator-visitor@6.24.1:
+  babel-helper-builder-binary-assignment-operator-visitor@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-helper-explode-assignable-expression: 6.24.1
+      babel-helper-explode-assignable-expression: 6.24.1(supports-color@8.1.1)
       babel-runtime: 6.26.0
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-helper-call-delegate@6.24.1:
+  babel-helper-call-delegate@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-helper-hoist-variables: 6.24.1
       babel-runtime: 6.26.0
-      babel-traverse: 6.26.0
+      babel-traverse: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-helper-define-map@6.26.0:
+  babel-helper-define-map@6.26.0(supports-color@8.1.1):
     dependencies:
-      babel-helper-function-name: 6.24.1
+      babel-helper-function-name: 6.24.1(supports-color@8.1.1)
       babel-runtime: 6.26.0
       babel-types: 6.26.0
       lodash: 4.18.1
     transitivePeerDependencies:
       - supports-color
 
-  babel-helper-explode-assignable-expression@6.24.1:
+  babel-helper-explode-assignable-expression@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-runtime: 6.26.0
-      babel-traverse: 6.26.0
+      babel-traverse: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-helper-explode-class@6.24.1:
+  babel-helper-explode-class@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-helper-bindify-decorators: 6.24.1
+      babel-helper-bindify-decorators: 6.24.1(supports-color@8.1.1)
       babel-runtime: 6.26.0
-      babel-traverse: 6.26.0
+      babel-traverse: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-helper-function-name@6.24.1:
+  babel-helper-function-name@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-helper-get-function-arity: 6.24.1
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
+      babel-traverse: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
@@ -4879,31 +5039,31 @@ snapshots:
       babel-types: 6.26.0
       lodash: 4.18.1
 
-  babel-helper-remap-async-to-generator@6.24.1:
+  babel-helper-remap-async-to-generator@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-helper-function-name: 6.24.1
+      babel-helper-function-name: 6.24.1(supports-color@8.1.1)
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
+      babel-traverse: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-helper-replace-supers@6.24.1:
+  babel-helper-replace-supers@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-helper-optimise-call-expression: 6.24.1
       babel-messages: 6.23.0
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
+      babel-traverse: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-helpers@6.24.1:
+  babel-helpers@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -4939,45 +5099,45 @@ snapshots:
 
   babel-plugin-syntax-trailing-function-commas@6.22.0: {}
 
-  babel-plugin-transform-async-generator-functions@6.24.1:
+  babel-plugin-transform-async-generator-functions@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-helper-remap-async-to-generator: 6.24.1
+      babel-helper-remap-async-to-generator: 6.24.1(supports-color@8.1.1)
       babel-plugin-syntax-async-generators: 6.13.0
       babel-runtime: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-async-to-generator@6.24.1:
+  babel-plugin-transform-async-to-generator@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-helper-remap-async-to-generator: 6.24.1
+      babel-helper-remap-async-to-generator: 6.24.1(supports-color@8.1.1)
       babel-plugin-syntax-async-functions: 6.13.0
       babel-runtime: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-class-constructor-call@6.24.1:
+  babel-plugin-transform-class-constructor-call@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-plugin-syntax-class-constructor-call: 6.18.0
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-class-properties@6.24.1:
+  babel-plugin-transform-class-properties@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-helper-function-name: 6.24.1
+      babel-helper-function-name: 6.24.1(supports-color@8.1.1)
       babel-plugin-syntax-class-properties: 6.13.0
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-decorators@6.24.1:
+  babel-plugin-transform-decorators@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-helper-explode-class: 6.24.1
+      babel-helper-explode-class: 6.24.1(supports-color@8.1.1)
       babel-plugin-syntax-decorators: 6.13.0
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
@@ -4995,34 +5155,34 @@ snapshots:
     dependencies:
       babel-runtime: 6.26.0
 
-  babel-plugin-transform-es2015-block-scoping@6.26.0:
+  babel-plugin-transform-es2015-block-scoping@6.26.0(supports-color@8.1.1):
     dependencies:
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
+      babel-traverse: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
       lodash: 4.18.1
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-classes@6.24.1:
+  babel-plugin-transform-es2015-classes@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-helper-define-map: 6.26.0
-      babel-helper-function-name: 6.24.1
+      babel-helper-define-map: 6.26.0(supports-color@8.1.1)
+      babel-helper-function-name: 6.24.1(supports-color@8.1.1)
       babel-helper-optimise-call-expression: 6.24.1
-      babel-helper-replace-supers: 6.24.1
+      babel-helper-replace-supers: 6.24.1(supports-color@8.1.1)
       babel-messages: 6.23.0
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
+      babel-traverse: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-computed-properties@6.24.1:
+  babel-plugin-transform-es2015-computed-properties@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -5039,9 +5199,9 @@ snapshots:
     dependencies:
       babel-runtime: 6.26.0
 
-  babel-plugin-transform-es2015-function-name@6.24.1:
+  babel-plugin-transform-es2015-function-name@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-helper-function-name: 6.24.1
+      babel-helper-function-name: 6.24.1(supports-color@8.1.1)
       babel-runtime: 6.26.0
       babel-types: 6.26.0
     transitivePeerDependencies:
@@ -5051,53 +5211,53 @@ snapshots:
     dependencies:
       babel-runtime: 6.26.0
 
-  babel-plugin-transform-es2015-modules-amd@6.24.1:
+  babel-plugin-transform-es2015-modules-amd@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-plugin-transform-es2015-modules-commonjs: 6.26.2
+      babel-plugin-transform-es2015-modules-commonjs: 6.26.2(supports-color@8.1.1)
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-modules-commonjs@6.26.2:
+  babel-plugin-transform-es2015-modules-commonjs@6.26.2(supports-color@8.1.1):
     dependencies:
       babel-plugin-transform-strict-mode: 6.24.1
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-modules-systemjs@6.24.1:
+  babel-plugin-transform-es2015-modules-systemjs@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-helper-hoist-variables: 6.24.1
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-modules-umd@6.24.1:
+  babel-plugin-transform-es2015-modules-umd@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-plugin-transform-es2015-modules-amd: 6.24.1
+      babel-plugin-transform-es2015-modules-amd: 6.24.1(supports-color@8.1.1)
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-object-super@6.24.1:
+  babel-plugin-transform-es2015-object-super@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-helper-replace-supers: 6.24.1
+      babel-helper-replace-supers: 6.24.1(supports-color@8.1.1)
       babel-runtime: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-parameters@6.24.1:
+  babel-plugin-transform-es2015-parameters@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-helper-call-delegate: 6.24.1
+      babel-helper-call-delegate: 6.24.1(supports-color@8.1.1)
       babel-helper-get-function-arity: 6.24.1
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@8.1.1)
+      babel-traverse: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
@@ -5131,9 +5291,9 @@ snapshots:
       babel-runtime: 6.26.0
       regexpu-core: 2.0.0
 
-  babel-plugin-transform-exponentiation-operator@6.24.1:
+  babel-plugin-transform-exponentiation-operator@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-helper-builder-binary-assignment-operator-visitor: 6.24.1
+      babel-helper-builder-binary-assignment-operator-visitor: 6.24.1(supports-color@8.1.1)
       babel-plugin-syntax-exponentiation-operator: 6.13.0
       babel-runtime: 6.26.0
     transitivePeerDependencies:
@@ -5163,25 +5323,25 @@ snapshots:
       babel-runtime: 6.26.0
       babel-types: 6.26.0
 
-  babel-preset-es2015@6.24.1:
+  babel-preset-es2015@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-plugin-check-es2015-constants: 6.22.0
       babel-plugin-transform-es2015-arrow-functions: 6.22.0
       babel-plugin-transform-es2015-block-scoped-functions: 6.22.0
-      babel-plugin-transform-es2015-block-scoping: 6.26.0
-      babel-plugin-transform-es2015-classes: 6.24.1
-      babel-plugin-transform-es2015-computed-properties: 6.24.1
+      babel-plugin-transform-es2015-block-scoping: 6.26.0(supports-color@8.1.1)
+      babel-plugin-transform-es2015-classes: 6.24.1(supports-color@8.1.1)
+      babel-plugin-transform-es2015-computed-properties: 6.24.1(supports-color@8.1.1)
       babel-plugin-transform-es2015-destructuring: 6.23.0
       babel-plugin-transform-es2015-duplicate-keys: 6.24.1
       babel-plugin-transform-es2015-for-of: 6.23.0
-      babel-plugin-transform-es2015-function-name: 6.24.1
+      babel-plugin-transform-es2015-function-name: 6.24.1(supports-color@8.1.1)
       babel-plugin-transform-es2015-literals: 6.22.0
-      babel-plugin-transform-es2015-modules-amd: 6.24.1
-      babel-plugin-transform-es2015-modules-commonjs: 6.26.2
-      babel-plugin-transform-es2015-modules-systemjs: 6.24.1
-      babel-plugin-transform-es2015-modules-umd: 6.24.1
-      babel-plugin-transform-es2015-object-super: 6.24.1
-      babel-plugin-transform-es2015-parameters: 6.24.1
+      babel-plugin-transform-es2015-modules-amd: 6.24.1(supports-color@8.1.1)
+      babel-plugin-transform-es2015-modules-commonjs: 6.26.2(supports-color@8.1.1)
+      babel-plugin-transform-es2015-modules-systemjs: 6.24.1(supports-color@8.1.1)
+      babel-plugin-transform-es2015-modules-umd: 6.24.1(supports-color@8.1.1)
+      babel-plugin-transform-es2015-object-super: 6.24.1(supports-color@8.1.1)
+      babel-plugin-transform-es2015-parameters: 6.24.1(supports-color@8.1.1)
       babel-plugin-transform-es2015-shorthand-properties: 6.24.1
       babel-plugin-transform-es2015-spread: 6.22.0
       babel-plugin-transform-es2015-sticky-regex: 6.24.1
@@ -5192,76 +5352,74 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-preset-stage-0@6.24.1:
+  babel-preset-stage-0@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-plugin-transform-do-expressions: 6.22.0
       babel-plugin-transform-function-bind: 6.22.0
-      babel-preset-stage-1: 6.24.1
+      babel-preset-stage-1: 6.24.1(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  babel-preset-stage-1@6.24.1:
+  babel-preset-stage-1@6.24.1(supports-color@8.1.1):
     dependencies:
-      babel-plugin-transform-class-constructor-call: 6.24.1
+      babel-plugin-transform-class-constructor-call: 6.24.1(supports-color@8.1.1)
       babel-plugin-transform-export-extensions: 6.22.0
-      babel-preset-stage-2: 6.24.1
+      babel-preset-stage-2: 6.24.1(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  babel-preset-stage-2@6.24.1:
+  babel-preset-stage-2@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-plugin-syntax-dynamic-import: 6.18.0
-      babel-plugin-transform-class-properties: 6.24.1
-      babel-plugin-transform-decorators: 6.24.1
-      babel-preset-stage-3: 6.24.1
+      babel-plugin-transform-class-properties: 6.24.1(supports-color@8.1.1)
+      babel-plugin-transform-decorators: 6.24.1(supports-color@8.1.1)
+      babel-preset-stage-3: 6.24.1(supports-color@8.1.1)
     transitivePeerDependencies:
       - supports-color
 
-  babel-preset-stage-3@6.24.1:
+  babel-preset-stage-3@6.24.1(supports-color@8.1.1):
     dependencies:
       babel-plugin-syntax-trailing-function-commas: 6.22.0
-      babel-plugin-transform-async-generator-functions: 6.24.1
-      babel-plugin-transform-async-to-generator: 6.24.1
-      babel-plugin-transform-exponentiation-operator: 6.24.1
+      babel-plugin-transform-async-generator-functions: 6.24.1(supports-color@8.1.1)
+      babel-plugin-transform-async-to-generator: 6.24.1(supports-color@8.1.1)
+      babel-plugin-transform-exponentiation-operator: 6.24.1(supports-color@8.1.1)
       babel-plugin-transform-object-rest-spread: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
   babel-register@6.26.0:
     dependencies:
-      babel-core: 6.26.3
+      babel-core: 6.26.3(supports-color@8.1.1)
       babel-runtime: 6.26.0
       core-js: 2.6.12
       home-or-tmp: 2.0.0
       lodash: 4.18.1
       mkdirp: 0.5.6
       source-map-support: 0.4.18
-    transitivePeerDependencies:
-      - supports-color
 
   babel-runtime@6.26.0:
     dependencies:
       core-js: 2.6.12
       regenerator-runtime: 0.11.1
 
-  babel-template@6.26.0:
+  babel-template@6.26.0(supports-color@8.1.1):
     dependencies:
       babel-runtime: 6.26.0
-      babel-traverse: 6.26.0
+      babel-traverse: 6.26.0(supports-color@8.1.1)
       babel-types: 6.26.0
       babylon: 6.18.0
       lodash: 4.18.1
     transitivePeerDependencies:
       - supports-color
 
-  babel-traverse@6.26.0:
+  babel-traverse@6.26.0(supports-color@8.1.1):
     dependencies:
       babel-code-frame: 6.26.0
       babel-messages: 6.23.0
       babel-runtime: 6.26.0
       babel-types: 6.26.0
       babylon: 6.18.0
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@8.1.1)
       globals: 9.18.0
       invariant: 2.2.4
       lodash: 4.18.1
@@ -5446,10 +5604,10 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  cross-var@1.1.0:
+  cross-var@1.1.0(supports-color@8.1.1):
     dependencies:
-      babel-preset-es2015: 6.24.1
-      babel-preset-stage-0: 6.24.1
+      babel-preset-es2015: 6.24.1(supports-color@8.1.1)
+      babel-preset-stage-0: 6.24.1(supports-color@8.1.1)
       babel-register: 6.26.0
       cross-spawn: 5.1.0
       exit: 0.1.2
@@ -5537,9 +5695,11 @@ snapshots:
 
   dayjs@1.11.23: {}
 
-  debug@2.6.9:
+  debug@2.6.9(supports-color@8.1.1):
     dependencies:
       ms: 2.0.0
+    optionalDependencies:
+      supports-color: 8.1.1
 
   debug@3.2.7(supports-color@8.1.1):
     dependencies:
@@ -5682,10 +5842,10 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-plugin-tailwindcss@4.4.0(eslint@10.10.0(jiti@2.7.0))(tailwindcss@4.3.3)(typescript@7.0.2):
+  eslint-plugin-tailwindcss@4.4.0(eslint@10.10.0(jiti@2.7.0)(supports-color@8.1.1))(supports-color@8.1.1)(tailwindcss@4.3.3)(typescript@7.0.2):
     dependencies:
-      '@typescript-eslint/utils': 8.70.0(eslint@10.10.0(jiti@2.7.0))(typescript@7.0.2)
-      eslint: 10.10.0(jiti@2.7.0)
+      '@typescript-eslint/utils': 8.70.0(eslint@10.10.0(jiti@2.7.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@7.0.2)
+      eslint: 10.10.0(jiti@2.7.0)(supports-color@8.1.1)
       postcss: 8.5.28
       postcss-nested: 7.0.2(postcss@8.5.28)
       synckit: 0.11.13
@@ -5707,11 +5867,11 @@ snapshots:
 
   eslint-visitor-keys@5.0.1: {}
 
-  eslint@10.10.0(jiti@2.7.0):
+  eslint@10.10.0(jiti@2.7.0)(supports-color@8.1.1):
     dependencies:
-      '@eslint-community/eslint-utils': 4.10.1(eslint@10.10.0(jiti@2.7.0))
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.10.0(jiti@2.7.0)(supports-color@8.1.1))
       '@eslint-community/regexpp': 4.12.2
-      '@eslint/config-array': 0.23.5
+      '@eslint/config-array': 0.23.5(supports-color@8.1.1)
       '@eslint/config-helpers': 0.7.0
       '@eslint/core': 1.2.1
       '@eslint/plugin-kit': 0.7.3
@@ -6681,7 +6841,6 @@ snapshots:
       '@img/sharp-win32-ia32': 0.35.4
       '@img/sharp-win32-x64': 0.35.4
       '@types/node': 26.4.1
-    optional: true
 
   shebang-command@1.2.0:
     dependencies:
