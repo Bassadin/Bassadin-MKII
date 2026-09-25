@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #be5025;
+    --color-primary-hover: #f97316;
+
+    --font-sans: "Roboto";
+    --font-mono: "Fira Code", "Roboto Mono";
+    --font-hero: "Sansita Swashed", cursive;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Sansita Swashed";
+    src: url(/fonts/SansitaSwashed-VariableFont_wght.ttf) format("truetype");
+}
+
+@layer base {
+    * {
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+        @apply text-primary transition-colors;
+
+        &:hover {
+            @apply text-primary-hover;
+        }
+    }
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+}

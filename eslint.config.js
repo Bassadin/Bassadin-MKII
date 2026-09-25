@@ -1,11 +1,12 @@
 import tailwind from "eslint-plugin-tailwindcss";
 
 export default [
-    ...tailwind.configs["flat/recommended"],
+    { ignores: [".astro/"] },
+    tailwind.configs.recommended,
     {
         settings: {
             tailwindcss: {
-                config: "./tailwind.config.js",
+                cssConfigPath: "./src/styles/index.css",
             },
         },
     },
