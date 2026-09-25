@@ -40,7 +40,7 @@ jobs:
                   name: build-artifact
                   path: dist/
             - name: Cypress run
-              uses: cypress-io/github-action@v6
+              uses: cypress-io/github-action@01e3b659a495b41649cdd0aa82e1d1624e26520b # v7.4.4
               with:
                   start: npx serve dist
                   browser: chrome
