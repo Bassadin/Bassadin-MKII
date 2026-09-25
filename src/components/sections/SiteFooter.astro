@@ -1,5 +1,6 @@
 ---
 import SocialIcons from "../SocialIcons.astro";
+import { version } from "@root/package.json";
 
 const currentYear = new Date().getFullYear();
 ---
@@ -19,4 +20,5 @@ const currentYear = new Date().getFullYear();
         <a href="/legal">Legal info and data protection</a>
     </p>
     <p class="mt-8">©️{currentYear} by Bastian Hodapp</p>
+    <p class="text-sm">v{version}</p>
 </footer>
