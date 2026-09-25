@@ -61,7 +61,7 @@ jobs:
 
     deploy:
         needs:
-        - eslint
+            - eslint
             - build
             - test-cypress
         runs-on: ubuntu-24.04
