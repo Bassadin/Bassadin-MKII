@@ -2,6 +2,10 @@ name: Build, Test and Deploy with FTP
 
 on:
   push:
+    branches:
+      - master
+    tags:
+      - v*
   pull_request:
   merge_group:
 
