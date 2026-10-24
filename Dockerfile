@@ -15,7 +15,7 @@ COPY --link . .
 RUN pnpm run build
 
 # Serve static files with nginx
-FROM nginx:alpine@sha256:892bb2152464f0c5d8972593a5f5afaf8054552580b699d95f8ff4af08c2d33d
+FROM nginx:alpine@sha256:a3554c0d0b48177b1413c26e01f695334428020d9df01243fbae3e11cfd17417
 COPY --from=builder /src/dist /usr/share/nginx/html
 
 EXPOSE 80
