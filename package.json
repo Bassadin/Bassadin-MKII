@@ -15,7 +15,7 @@
         "postversion": "git push && git push --tags"
     },
     "devDependencies": {
-        "@astrojs/check": "0.9.11",
+        "@astrojs/check": "0.9.12",
         "@iconify-json/mdi": "1.2.3",
         "astro-icon": "1.2.0",
         "cross-var": "1.1.0",
