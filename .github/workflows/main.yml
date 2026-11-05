@@ -18,7 +18,7 @@ jobs:
             - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
             - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
               with:
-                  node-version: 24.x
+                  node-version: 26.x
             - name: pnpm module install
               run: pnpm install --frozen-lockfile
             - name: Run ESLint
@@ -32,7 +32,7 @@ jobs:
             - uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6
             - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
               with:
-                  node-version: 24.x
+                  node-version: 26.x
             - name: pnpm module install
               run: pnpm install --frozen-lockfile
             - name: astro build
@@ -52,7 +52,7 @@ jobs:
             - uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6
             - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
               with:
-                  node-version: 24.x
+                  node-version: 26.x
             - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
               with:
                   name: build-artifact
